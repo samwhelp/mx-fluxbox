@@ -41,7 +41,15 @@ if [ ! "$?" = "0" ]; then
 fi
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
-ln -nsf /usr/share/backgrounds/mxfb*.png ~/.fluxbox/backgrounds
+
+#setup fluxbox backgrounds
+HBG="$HOME/.fluxbox/backgrounds"
+SBG="/usr/share/backgrounds"
+[ ! -d "$HBG" ] && mkdir -p "$HBG"
+ls -1 "$SBG"/mxfb*.jpg &>/dev/null && ln -nsf "$SBG"/mxfb*.jpg "$HBG"
+ls -1 "$SBG"/mxfb*.png &>/dev/null && ln -nsf "$SBG"/mxfb*.png "$HBG"
+ls -1 "$SBG"/mx*fb.jpg &>/dev/null && ln -nsf "$SBG"/mx*fb.jpg "$HBG"
+ls -1 "$SBG"/mx*fb.png &>/dev/null && ln -nsf "$SBG"/mx*fb.png "$HBG"
 
 #setup default translated mx-fluxbox menu
 
