@@ -93,7 +93,7 @@ cp -r /etc/skel/.config/rofi "$HOME"/.config
 cp -r /etc/skel/.config/tint2 "$HOME"/.config
 
 #set up the system monitors
-cp -r /usr/share/mxflux/.fluxbox/components/.gkrellm2 "$HOME"/.gkrellm2
+cp -r /usr/share/mxflux/.gkrellm2 "$HOME"/.gkrellm2
 
 sleep 2
 
