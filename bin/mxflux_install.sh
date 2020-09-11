@@ -93,7 +93,12 @@ cp -r /etc/skel/.config/rofi "$HOME"/.config
 cp -r /etc/skel/.config/tint2 "$HOME"/.config
 
 #set up the system monitors
-cp -r /usr/share/mxflux/.gkrellm2 "$HOME"/.gkrellm2
+
+if [ -d "$HOME/.gkrellm2" ]; then
+    mv $HOME/.gkrellm2  $HOME/.restore/fluxbox/gkrellm2.$(date +%Y%m%H%M%S) 
+fi
+
+cp -r /usr/share/mxflux/.gkrellm2 "$HOME"
 
 sleep 2
 
