@@ -28,13 +28,16 @@ localize_fluxbox_menu-mx
 #add system monitors 
 #gkrellm &
 
-# use tint2 panel
-#tint2 &
+# arandr genrated screenlayout 
+# before conky
 
 # export Qt variables
 export QT_QPA_PLATFORMTHEME=gtk2
 export QT_PLATFORMTHEME=gtk2
 export QT_PLATFORM_PLUGIN=gtk2
+
+# add tint2 panel
+# tint2 &
 
 # add desktop icons
 idesktoggle idesk on 1>/dev/null 2>&1 &
@@ -69,9 +72,6 @@ xfce4-power-manager &
 #tool to set and preserve screen resolution, if necessary
 #arandr
 
-#put apt-notifier on the toolbar
-ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py 1>/dev/null 2>&1  &
-
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
 
@@ -85,6 +85,9 @@ which fbautostart > /dev/null
 if [ $? -eq 0 ]; then
     fbautostart
 fi
+
+# put apt-notifier on the toolbar
+nohup sh -c 'sleep 3; ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py 1>/dev/null 2>&1  &'  1>/dev/null 2>&1  &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

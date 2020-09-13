@@ -41,7 +41,15 @@ if [ ! "$?" = "0" ]; then
 fi
 
 cp -r /usr/share/mxflux/.fluxbox "$HOME"
-ln -nsf /usr/share/backgrounds/mxfb*.png ~/.fluxbox/backgrounds
+
+#setup fluxbox backgrounds
+HBG="$HOME/.fluxbox/backgrounds"
+SBG="/usr/share/backgrounds"
+[ ! -d "$HBG" ] && mkdir -p "$HBG"
+ls -1 "$SBG"/mxfb*.jpg &>/dev/null && ln -nsf "$SBG"/mxfb*.jpg "$HBG"
+ls -1 "$SBG"/mxfb*.png &>/dev/null && ln -nsf "$SBG"/mxfb*.png "$HBG"
+ls -1 "$SBG"/mx*fb.jpg &>/dev/null && ln -nsf "$SBG"/mx*fb.jpg "$HBG"
+ls -1 "$SBG"/mx*fb.png &>/dev/null && ln -nsf "$SBG"/mx*fb.png "$HBG"
 
 #setup default translated mx-fluxbox menu
 
@@ -85,7 +93,12 @@ cp -r /etc/skel/.config/rofi "$HOME"/.config
 cp -r /etc/skel/.config/tint2 "$HOME"/.config
 
 #set up the system monitors
-cp -r /usr/share/mxflux/.fluxbox/components/.gkrellm2 "$HOME"/.gkrellm2
+
+if [ -d "$HOME/.gkrellm2" ]; then
+    mv $HOME/.gkrellm2  $HOME/.restore/fluxbox/gkrellm2.$(date +%Y%m%H%M%S) 
+fi
+
+cp -r /usr/share/mxflux/.gkrellm2 "$HOME"
 
 sleep 2
 
