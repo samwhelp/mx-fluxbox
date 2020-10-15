@@ -78,6 +78,15 @@ if [ ! -e "$HOME/.config/volumeicon/volumeicon-fluxbox" ]; then
 	cp /etc/skel/.config/volumeicon/volumeicon-fluxbox "$HOME/.config/volumeicon/"
 fi
 
+#custome gtk files if they don't exist
+if [ ! -e "$HOME/.gtkrc-2.0-mine" ]; then
+	cp /etc/skel/.config/.gtkrc-2.0-mine "$HOME/.gtkrc-2.0-mine"
+fi
+
+if [ ! -e "$HOME/.gtkrc-2.0" ]; then
+	cp /etc/skel/.config/.gtkrc-2.0 "$HOME/.gtkrc-2.0"
+fi
+
 #set up rofi and tint2 configs
 
 if [ -d "$HOME/.config/rofi" ]; then
