@@ -1,3 +1,9 @@
+mx-fluxbox (20.10.01) mx; urgency=medium
+
+  * add fluxbox x-session-manager alternative 
+
+ -- fehlix <fehlix@mxlinux.org>  Wed, 21 Oct 2020 10:52:55 -0400
+
 mx-fluxbox (20.09.10) mx; urgency=medium
 
   * adjust tint2 startup handling to not create startup lines twice
