@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remove" ] ; then    
+    if ! update-alternatives --list x-session-manager | grep -sq /usr/bin/startfluxbox; then
+       update-alternatives --install /usr/bin/x-session-manager \
+        x-session-manager /usr/bin/startfluxbox 35 \
+        --slave /usr/share/man/man1/x-session-manager.1.gz \
+          x-session-manager.1.gz /usr/share/man/man1/startfluxbox.1.gz || :
+    fi
+fi
+
+
+#DEBHELPER#

@@ -1,3 +1,9 @@
+mx-fluxbox (20.10.02) mx; urgency=medium
+
+  * move x-session-manager alt to mx-fluxbox-data metapackage 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 25 Oct 2020 16:55:46 -0400
+
 mx-fluxbox (20.10.01) mx; urgency=medium
 
   * add fluxbox x-session-manager alternative 
