@@ -8,8 +8,6 @@ Homepage: https://mxlinux.org
 
 Package: mx-fluxbox-data
 Replaces: mx-fluxbox (<< 20.06.02)
-Conflicts: mx-fluxbox (<< 20.06.02)
-Breaks: mx-fluxbox (<< 20.06.02)
 Architecture: all
 Description: mx apps and configuration defaults for fluxbox
 
