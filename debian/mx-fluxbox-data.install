@@ -25,7 +25,7 @@ components/.gtkrc-2.0-mine root/
 components/settings.ini root/.config/gtk-3.0
 backgrounds/* usr/share/backgrounds
 #help/* usr/share/mxflux/help
-menu/out-of-sight usr/share/mxflux/menu/out-of-sight
+menu/* usr/share/mxflux/menu
 translations_script/mo/am/mx-fluxbox.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-fluxbox.mo     /usr/share/locale/ar/LC_MESSAGES
 translations_script/mo/bg/mx-fluxbox.mo     /usr/share/locale/bg/LC_MESSAGES

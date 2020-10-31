@@ -1,3 +1,10 @@
+mx-fluxbox (20.10.30) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * created submenus out of menu entries Settings and Appearance
+
+ -- j b <jb@X1Cmx>  Sat, 31 Oct 2020 09:42:02 -0400
+
 mx-fluxbox (20.10.03) mx; urgency=medium
 
   * revise control file 
