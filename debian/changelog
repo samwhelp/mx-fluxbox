@@ -1,9 +1,12 @@
-mx-fluxbox (20.10.30) UNRELEASED; urgency=medium
+mx-fluxbox (20.11.01) mx; urgency=medium
 
-  * Non-maintainer upload.
+  [ j b ]
   * created submenus out of menu entries Settings and Appearance
 
- -- j b <jb@X1Cmx>  Sat, 31 Oct 2020 09:42:02 -0400
+  [ Dolphin Oracle ]
+  * update packages 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 03 Nov 2020 18:22:42 -0500
 
 mx-fluxbox (20.10.03) mx; urgency=medium
 
