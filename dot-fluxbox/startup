@@ -16,6 +16,11 @@
 # logout, then log back in to fluxbox session
 localize_fluxbox_menu-mx
 
+# User folders update
+xdg-user-dirs-update
+# Update common folders names to match current locale
+xdg-user-dirs-gtk-update
+
 #start a compositor if using complicated conkies
 #compton &
 
