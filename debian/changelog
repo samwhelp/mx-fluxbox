@@ -1,6 +1,5 @@
-mx-fluxbox (20.11.02+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (20.11.03) mx; urgency=medium
 
-  * Non-maintainer upload.
   * added folder base-mxfb for Base respin
 
  -- j b <jb@X1Cmx>  Fri, 27 Nov 2020 13:37:12 -0500
