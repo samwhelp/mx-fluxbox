@@ -5,10 +5,10 @@ components/.fehbg  usr/share/mxflux/.fluxbox/components
 components/.gkrellm2 usr/share/mxflux
 components/rofi/ etc/skel/.config
 components/mxfb_version /etc
-components/tint2/ etc/skel/.config
-components/gazelle.lnk usr/local/share/live-files/files/etc/skel/.idesktop/
-components/mxfcelogo-rounded_48.png usr/share/mxflux
-components/mx-welcome64.png usr/share/mxflux
+components/tint2 etc/skel/.config
+base-mxfb/gazelle.lnk /usr/local/share/live-files/files/etc/skel/.idesktop/gazelle.lnk
+base-mxfb/mxfcelogo-rounded_48.png usr/share/mxflux
+base-mxfb/mx-welcome64.png usr/share/mxflux
 pixmaps/mx*.png  usr/share/icons
 pixmaps/system*.png  usr/local/share/icons
 #menu-translations/* usr/share/mxflux/menu-translations
