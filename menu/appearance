@@ -19,5 +19,9 @@
         [exec] (Fluxbox) {toggletint2}
         [exec] (Traditional) {toggletint2}
     [end]
-    [exec] (Wallpaper) {nitrogen}
+    [submenu] (Wallpaper) 
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [separator]
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [end]
 [end]
