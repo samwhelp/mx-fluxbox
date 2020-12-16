@@ -99,4 +99,4 @@ nohup sh -c 'sleep 3; ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py
 
 exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "~/.fluxbox/log"
+# exec fluxbox -log ~/.fluxbox/log
