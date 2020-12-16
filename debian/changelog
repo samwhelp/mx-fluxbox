@@ -1,3 +1,9 @@
+mx-fluxbox (20.11.06) UNRELEASED; urgency=medium
+
+  * submenus copied to ~/.fluxbox/submenus and menu-mx revised to point there
+
+ -- j b <jb@X1Cmx>  Wed, 16 Dec 2020 13:39:32 -0500
+
 mx-fluxbox (20.11.05) mx; urgency=medium
 
   * revert to using native wallpapers command instead of nitrogen
