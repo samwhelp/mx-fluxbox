@@ -1,4 +1,10 @@
-mx-fluxbox (20.11.06) UNRELEASED; urgency=medium
+mx-fluxbox (21.01.01) mx; urgency=medium
+
+  * test new depends 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 14 Jan 2021 18:24:58 -0500
+
+mx-fluxbox (20.11.06) mx; urgency=medium
 
   * submenus copied to ~/.fluxbox/submenus and menu-mx revised to point there
 
