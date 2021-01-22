@@ -1,3 +1,9 @@
+mx-fluxbox (21.01.01+nmu1) UNRELEASED; urgency=medium
+
+  * added desktop files for dockmaker and idesktool 
+
+ -- Jerry Bond <jb@X1Cmx>  Fri, 22 Jan 2021 16:56:33 -0500
+
 mx-fluxbox (21.01.01) mx; urgency=medium
 
   * test new depends 
