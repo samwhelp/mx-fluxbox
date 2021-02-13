@@ -14,8 +14,7 @@
 # localize fluxbox menu
 # to reset default localized menu configuration, delete ~/.fluxbox/menu-chkd
 # logout, then log back in to fluxbox session
-# keep disabled on raspberry pi configs
-#localize_fluxbox_menu-mx
+localize_fluxbox_menu-mx
 
 # User folders update
 xdg-user-dirs-update
@@ -25,9 +24,6 @@ xdg-user-dirs-gtk-update
 
 #start a compositor if using complicated conkies
 #compton &
-
-# try to force time update
-ping -c 2 yahoo.com
 
 #start Xfce panel
 #xfce4-panel &

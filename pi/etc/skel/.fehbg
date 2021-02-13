@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '~/.fluxbox/backgrounds/mxlinuxwine-fb.png' 
+feh --bg-scale '/usr/share/backgrounds/mxlinuxwine-fb.png' 

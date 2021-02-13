@@ -69,7 +69,7 @@ session.autoRaiseDelay:	250
 session.tabsAttachArea:	Window
 session.styleOverlay:	~/.fluxbox/overlay
 session.forcePseudoTransparency:	true
-session.styleFile:	~.fluxbox/styles/MX-debian-blue-rounded
+session.styleFile:	/home/pi/.fluxbox/styles/MX-debian-blue-rounded
 session.slitlistFile:	~/.fluxbox/slitlist
 session.appsFile:	~/.fluxbox/apps
 session.doubleClickInterval:	250
