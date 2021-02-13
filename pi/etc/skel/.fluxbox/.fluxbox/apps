@@ -1,0 +1,88 @@
+[app] (name=tint2) (class=Tint2)
+  [Layer]	{12}
+[end]
+[app] (class=Conky)
+  [Layer]	{12}
+[end]
+[app] (name=xfce4-appfinder) (class=Xfce4-appfinder)
+  [Dimensions]	{34% 68%}
+  [Position]	(UPPERLEFT)	{30% 13%}
+  [Close]	{yes}
+[end]
+[app] (name=yad) (class=Yad)
+  [Dimensions]	{34% 52%}
+  [Position]	(UPPERLEFT)	{39% 25%}
+  [Close]	{yes}
+[end]
+[app] (name=synaptic) (class=Synaptic)
+  [Dimensions]	{56% 72%}
+  [Position]	(UPPERLEFT)	{18% 11%}
+[end]
+[app] (name=piclone) (class=Piclone)
+  [Dimensions]	{30% 17%}
+  [Position]	(UPPERLEFT)	{27% 39%}
+[end]
+[app] (name=rc_gui) (class=Rc_gui)
+  [Dimensions]	{43% 41%}
+  [Position]	(UPPERLEFT)	{27% 30%}
+[end]
+[app] (name=mx-tools) (class=mx-tools)
+  [Dimensions]	{50% 67%}
+  [Position]	(UPPERLEFT)	{22% 16%}
+[end]
+[app] (name=geany) (class=Geany)
+  [Dimensions]	{59% 74%}
+  [Position]	(UPPERLEFT)	{16% 13%}
+[end]
+[app] (name=featherpad) (class=FeatherPad)
+  [Dimensions]	{41% 73%}
+  [Position]	(UPPERLEFT)	{26% 10%}
+[end]
+[app] (name=tint2conf) (class=Tint2conf)
+  [Dimensions]	{72% 63%}
+  [Position]	(UPPERLEFT)	{12% 11%}
+[end]
+[app] (name=qpdfview) (class=qpdfview)
+  [Dimensions]	{100% 100%}
+  [Position]	(UPPERLEFT)	{0% 3%}
+  [Close]	{yes}
+[end]
+[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1610619534-1312894908)
+  [Dimensions]	{64% 51%}
+  [Position]	(UPPERLEFT)	{16% 18%}
+[end]
+[app] (name=mx-datetime) (class=mx-datetime)
+  [Dimensions]	{36% 40%}
+  [Position]	(UPPERLEFT)	{32% 25%}
+[end]
+[app] (name=thunar) (class=Thunar)
+  [Dimensions]	{56% 57%}
+  [Position]	(UPPERLEFT)	{20% 14%}
+[end]
+[app] (name=fbrun) (class=FbRun)
+  [Position]	(UPPERLEFT)	{41% 37%}
+[end]
+[app] (name=soffice) (class=Soffice)
+  [Dimensions]	{72% 91%}
+  [Position]	(UPPERLEFT)	{13% 3%}
+[end]
+[app] (name=vlc) (class=vlc) (role=vlc-main)
+  [Dimensions]	{65% 73%}
+  [Position]	(UPPERLEFT)	{19% 7%}
+  [Close]	{yes}
+[end]
+[app] (name=vokoscreenNG) (class=vokoscreenNG)
+  [Position]	(UPPERLEFT)	{19% 26%}
+[end]
+[app] (name=rp-prefapps) (class=Rp-prefapps)
+  [Position]	(UPPERLEFT)	{25% 26%}
+[end]
+[app] (name=pavucontrol) (class=Pavucontrol)
+  [Position]	(UPPERLEFT)	{25% 23%}
+[end]
+[app] (name=Navigator) (class=Pale moon) (role=browser)
+  [Position]	(UPPERLEFT)	{9% 7%}
+[end]
+[app] (name=job-scheduler) (class=job-scheduler)
+  [Position]	(UPPERLEFT)	{15% 13%}
+[end]

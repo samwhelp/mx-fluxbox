@@ -1,0 +1,27 @@
+[Added Associations]
+text/plain=featherpad.desktop;geany.desktop;
+application/vnd.debian.binary-package=pi-gpk-install-local-file.desktop;xarchiver.desktop;
+application/x-shellscript=geany.desktop;featherpad.desktop;
+application/zip=org.gnome.FileRoller.desktop;xarchiver.desktop;
+inode/directory=org.xfce.Catfish.desktop;Thunar-folder-handler.desktop;
+application/xml=geany.desktop;
+application/pdf=qpdfview.desktop;
+text/x-scheme=geany.desktop;
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
+x-scheme-handler/mailto=exo-mail-reader.desktop;
+
+[Default Applications]
+text/plain=featherpad.desktop
+audio/mpeg=vlc.desktop
+application/x-deb=gdebi.desktop;
+application/pdf=qpdfview.desktop
+image/png=nomacs.desktop
+image/jpg=nomacs.desktop
+image/jpeg=nomacs.desktop
+image/gif=nomacs.desktop
+image/bmp=nomacs.desktop
+application/vnd.ms-htmlhelp=palemoon.desktop
+application/xhtml+xml=palemoon.desktop
+text/html=palemoon.desktop
+application/x-java-archive=Java.desktop

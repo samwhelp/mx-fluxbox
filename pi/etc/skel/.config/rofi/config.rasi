@@ -1,0 +1,13 @@
+configuration {
+
+	modi: "drun,run";
+	width: 25;
+	show-icons: true;
+	lines: 20;
+	fake-transparency: true;
+	sidebar-mode: true;
+	
+}
+
+
+@import "/usr/share/rofi/themes/glue_pro_blue.rasi"
