@@ -40,7 +40,7 @@ if [ ! "$?" = "0" ]; then
 	exit 1
 fi
 
-cp -r /usr/share/mxflux/.fluxbox "$HOME"
+cp -r /etc/skel/.fluxbox "$HOME"
 
 #setup fluxbox backgrounds
 HBG="$HOME/.fluxbox/backgrounds"
@@ -70,7 +70,7 @@ cp /etc/skel/.idesktop/*.lnk "$HOME"/.idesktop
 
 cp /etc/skel/.ideskrc "$HOME"/.ideskrc
 
-cp /usr/share/mxflux/.fluxbox/components/.fehbg "$HOME"/.fehbg
+cp /etc/skel/.fehbg "$HOME"/.fehbg
 
 #install volumeicon file
 #only replace if it doesn't exist
@@ -107,7 +107,7 @@ if [ -d "$HOME/.gkrellm2" ]; then
     mv $HOME/.gkrellm2  $HOME/.restore/fluxbox/gkrellm2.$(date +%Y%m%H%M%S) 
 fi
 
-cp -r /usr/share/mxflux/.gkrellm2 "$HOME"
+cp -r /etc/skel/.gkrellm2 "$HOME"
 
 sleep 2
 

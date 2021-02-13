@@ -1,9 +1,13 @@
-mx-fluxbox (21.01.01+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (21.01.01+nmu3) UNRELEASED; urgency=medium
 
+  [ Jerry Bond ]
   * added desktop files for dockmaker and idesktool 
   * added desktop file for exit-options
 
- -- Jerry Bond <jb@X1Cmx>  Mon, 25 Jan 2021 07:24:44 -0500
+  [ Dolphin Oracle ]
+  * pi configs (mx-fluxbox-data-pi) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 12 Feb 2021 21:31:41 -0500
 
 mx-fluxbox (21.01.01) mx; urgency=medium
 

@@ -31,7 +31,7 @@ case $? in
 esac
 
 #restore default files
-cd /usr/share/mxflux/.fluxbox/
+cd /etc/skel/.fluxbox/
 cp startup init menu-mx  "$HOME/.fluxbox/"
 
 ##start end_msg box

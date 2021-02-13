@@ -1,0 +1,35 @@
+# the default submenus can be found in /usr/share/mxflux/menu/
+
+[begin] (Fluxbox)
+	[exec] (All Apps) {rofi -show drun}
+	[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Browser) {palemoon}
+    [exec] (Email) {claws-mail}
+    [exec] (File manager ) {thunar $HOME/.fluxbox} 
+    [exec] (Help ) {thunar /usr/share/mxflux/help}
+    [exec] (Music) {vlc}
+    [exec] (Run ) {fbrun} 
+    [exec] (Terminal) {xfce4-terminal} 
+    [separator]
+    [submenu] (Appearance)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Settings)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [separator]
+    [submenu] (Out of sight)
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] (Leave)
+        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exit] (Logout  ) 
+        [exec] (Reboot  ) {sudo /sbin/reboot} 
+        [exec] (Shutdown) {sudo /sbin/halt}
+    [end]v
+[end]

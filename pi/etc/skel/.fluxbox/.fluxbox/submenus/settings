@@ -1,0 +1,20 @@
+[begin] (Settings)
+    [exec] (Pi config) {env SUDO_ASKPASS=/usr/lib/rc-gui/pwdrcg.sh sudo -AE rc_gui}
+    [config] (Window config)
+    [submenu] (Main config)
+        [exec] (Apps) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Keys) {exo-open ~/.fluxbox/keys}
+        [submenu] (Menu) 
+                [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+                [exec] (Appearance) {exo-open ~/.fluxbox/submenus/appearance}
+                [exec] (Settings) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
+        [exec] (Startup) {featherpad ~/.fluxbox/startup}
+        [exec] (Styles) {thunar ~/.fluxbox/styles/}
+    [end]
+    [exec] (Backup) {grsync}
+    [exec] (About) {about-mx-fluxbox}
+[end]
