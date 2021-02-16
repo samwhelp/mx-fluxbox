@@ -7,6 +7,63 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         --slave /usr/share/man/man1/x-session-manager.1.gz \
           x-session-manager.1.gz /usr/share/man/man1/startfluxbox.1.gz || :
     fi
+    
+    if [ -e /etc/skel/.config/Thunar/uca.xml ]; then
+		rm /etc/skel/.config/Thunar/uca.xml
+	fi
+
+	if [ -d /etc/skel/.config/Thunar ]; then
+		cp /usr/share/mx-fluxbox-data-pi/Thunar/uca.xml /etc/skel/.config/Thunar/uca.xml
+	else
+		mkdir -p /etc/skel/.config/Thunar
+		cp /usr/share/mx-fluxbox-data-pi/Thunar/uca.xml /etc/skel/.config/Thunar/uca.xml
+	fi
+
+	if [ -e /etc/skel/.config/mimeapps.list ]; then
+		rm /etc/skel/.config/mimeapps.list
+	fi
+
+	if [ -d /etc/skel/.config/ ]; then
+		cp /usr/share/mx-fluxbox-data-pi/mimeapps.list /etc/skel/.config/mimeapps.list
+	else
+		mkdir -p /etc/skel/.config/
+		cp /usr/share/mx-fluxbox-data-pi/mimeapps.list /etc/skel/.config/mimeapps.list
+	fi
+	
+	if [ -e /etc/skel/.config/Trolltech.conf ]; then
+		rm /etc/skel/.config/Trolltech.conf
+	fi
+
+	if [ -d /etc/skel/.config/ ]; then
+		cp /usr/share/mx-fluxbox-data-pi/Trolltech.conf /etc/skel/.config/Trolltech.conf
+	else
+		mkdir -p /etc/skel/.config/
+		cp /usr/share/mx-fluxbox-data-pi/Trolltech.conf /etc/skel/.config/Trolltech.conf
+	fi
+	
+	if [ -e /etc/skel/.config/dconf/user ]; then
+		rm /etc/skel/.config/dconf/user
+	fi
+
+	if [ -d /etc/skel/.config/dconf ]; then
+		cp /usr/share/mx-fluxbox-data-pi/dconf/user /etc/skel/.config/dconf/user
+	else
+		mkdir -p /etc/skel/.config/dconf
+		cp /usr/share/mx-fluxbox-data-pi/dconf/user /etc/skel/.config/dconf/user
+	fi
+	
+	if [ -e /etc/skel/.config/libfm/libfm.conf ]; then
+		rm /etc/skel/.config/libfm/libfm.conf
+	fi
+
+	if [ -d /etc/skel/.config/libfm ]; then
+		cp /usr/share/mx-fluxbox-data-pi/libfm/libfm.conf /etc/skel/.config/libfm/libfm.conf
+	else
+		mkdir -p /etc/skel/.config/dconf
+		cp /usr/share/mx-fluxbox-data-pi/libfm/libfm.conf /etc/skel/.config/libfm/libfm.conf
+
+	fi
+	
 fi
 
 

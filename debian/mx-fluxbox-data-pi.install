@@ -1,4 +1,5 @@
 pi/etc/skel/.[a-zA-Z]* 		etc/skel/
+pi/mx-fluxbox-data-pi/*		usr/share/mx-fluxbox-data-pi/
 components/mxfb_version /etc
 components/*.desktop usr/share/applications
 base-mxfb/gazelle.lnk /usr/local/share/live-files/files/etc/skel/.idesktop/gazelle.lnk

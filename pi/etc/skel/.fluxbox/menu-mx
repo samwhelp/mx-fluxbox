@@ -5,10 +5,10 @@
 	[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (List update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
-    [exec] (Browser) {chromium-browser}
+    [exec] (Browser) {palemoon}
     [exec] (Email) {claws-mail}
     [exec] (File manager ) {thunar $HOME/.fluxbox} 
     [exec] (Help ) {thunar /usr/share/mxflux/help}

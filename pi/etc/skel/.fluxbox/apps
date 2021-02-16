@@ -27,7 +27,7 @@
   [Position]	(UPPERLEFT)	{27% 30%}
 [end]
 [app] (name=mx-tools) (class=mx-tools)
-  [Dimensions]	{50% 72%}
+  [Dimensions]	{50% 67%}
   [Position]	(UPPERLEFT)	{22% 16%}
 [end]
 [app] (name=geany) (class=Geany)
@@ -85,23 +85,4 @@
 [end]
 [app] (name=job-scheduler) (class=job-scheduler)
   [Position]	(UPPERLEFT)	{15% 13%}
-[end]
-[app] (name=arandr) (class=Arandr)
-  [Position]	(UPPERLEFT)	{43% 30%}
-[end]
-[app] (name=xosview) (class=XOsview)
-  [Position]	(UPPERLEFT)	{84% 65%}
-[end]
-[app] (name=lxtask) (class=Lxtask)
-  [Position]	(UPPERLEFT)	{61% 56%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1613057228--4091085)
-  [Position]	(UPPERLEFT)	{19% 22%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1613141014--1303631721)
-  [Position]	(UPPERLEFT)	{19% 21%}
-[end]
-[app] (name=xfce4-terminal) (class=Xfce4-terminal) (role=xfce4-terminal-1613141058-1422248858)
-  [Position]	(UPPERLEFT)	{19% 25%}
-  [Close]	{yes}
 [end]
