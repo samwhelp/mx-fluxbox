@@ -15,10 +15,6 @@
         [exec] (Startup) {featherpad ~/.fluxbox/startup}
         [exec] (Styles) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display)
-    [exec] (Change) {arandr}
-    [exec](Help) {featherpad ~/.fluxbox/components/HELP_Display}
-    [end]
     [exec] (Backup) {grsync}
     [exec] (About) {about-mx-fluxbox}
 [end]

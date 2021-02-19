@@ -1,27 +1,2 @@
 [begin] (Recent files)
-[exec] ([scripts/]   recentfiles-fbmenu) { geany "/home/pi/.fluxbox/scripts/recentfiles-fbmenu" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-shellscript.png>
-[exec] ([scripts/]   toggletoolbar) { geany "/home/pi/.fluxbox/scripts/toggletoolbar" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-shellscript.png>
-[exec] ([scripts/]   toggledock) { geany "/home/pi/.fluxbox/scripts/toggledock" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-shellscript.png>
-[exec] ([applications/]   rpi-imager.desktop) { xdg-open "/usr/share/applications/rpi-imager.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([Samsung USB/]   vid URL.odt) { xdg-open "/media/pi/Samsung USB/vid URL.odt" } </usr/share/icons/Papirus/48x48/mimetypes/application-vnd.oasis.opendocument.text.png>
-[exec] ([Samsung USB/]   SynArc.png) { xdg-open "/media/pi/Samsung USB/SynArc.png" } </usr/share/icons/Papirus/48x48/mimetypes/image-png.png>
-[exec] ([Bookshelf/]   MX-Fluxbox_RPi-HELP.pdf) { xdg-open "/home/pi/Bookshelf/MX-Fluxbox_RPi-HELP.pdf" } </usr/share/icons/Papirus/48x48/mimetypes/application-pdf.png>
-[exec] ([.fluxbox/]   overlay) { xdg-open "/home/pi/.fluxbox/overlay" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([.fluxbox/]   apps) { xdg-open "/home/pi/.fluxbox/apps" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([applications/]   firefox-esr.desktop) { xdg-open "/usr/share/applications/firefox-esr.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([plymouth/]   plymouthd.conf) { xdg-open "/etc/plymouth/plymouthd.conf" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([plymouth/]   plymouthd.defaults) { xdg-open "/usr/share/plymouth/plymouthd.defaults" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([applications/]   libreoffice-writer.desktop) { xdg-open "/usr/share/applications/libreoffice-writer.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([apps/]   qpdfview.svg) { xdg-open "/usr/share/icons/Papirus/48x48/apps/qpdfview.svg" } </usr/share/icons/Papirus/48x48/mimetypes/image-svg+xml.png>
-[exec] ([apps/]   documentation.svg) { xdg-open "/usr/share/icons/Papirus/48x48/apps/documentation.svg" } </usr/share/icons/Papirus/48x48/mimetypes/image-svg+xml.png>
-[exec] ([apps/]   libreoffice4.2-writer.svg) { xdg-open "/usr/share/icons/Papirus/48x48/apps/libreoffice4.2-writer.svg" } </usr/share/icons/Papirus/48x48/mimetypes/image-svg+xml.png>
-[exec] ([tribar/]   tribar.plymouth) { xdg-open "/media/pi/Samsung USB/plymouth_ubu/themes/tribar/tribar.plymouth" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([spinner/]   spinner.plymouth) { geany "/media/pi/Samsung USB/plymouth_ubu/themes/spinner/spinner.plymouth" } </usr/share/icons/Papirus/48x48/mimetypes/application-octet-stream.png>
-[exec] ([ubuntu-text/]   ubuntu-text.plymouth) { xdg-open "/media/pi/Samsung USB/plymouth_ubu/themes/ubuntu-text/ubuntu-text.plymouth" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([pi/]   .xsession-errors) { xdg-open "/home/pi/.xsession-errors" } </usr/share/icons/Papirus/48x48/mimetypes/text-plain.png>
-[exec] ([applications/]   mx-tools.desktop) { xdg-open "/usr/share/applications/mx-tools.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([applications/]   rc_gui.desktop) { xdg-open "/usr/share/applications/rc_gui.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([applications/]   exo-preferred-applications.desktop) { xdg-open "/usr/share/applications/exo-preferred-applications.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([applications/]   rp-prefapps.desktop) { xdg-open "/usr/share/applications/rp-prefapps.desktop" } </usr/share/icons/Papirus/48x48/mimetypes/application-x-desktop.png>
-[exec] ([apps/]   preferences-desktop.svg) { xdg-open "/usr/share/icons/Papirus/48x48/apps/preferences-desktop.svg" } </usr/share/icons/Papirus/48x48/mimetypes/image-svg+xml.png>
 [end]
