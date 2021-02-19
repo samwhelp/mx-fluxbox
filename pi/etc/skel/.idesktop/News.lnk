@@ -1,0 +1,10 @@
+table Icon
+  Caption: News
+  Icon: /usr/share/icons/Moka/48x48/apps/vlc.png
+  X: 590
+  Y: 530
+  Command[0]: ideskrun vlc https://youtu.be/OnHF0mFwFp8
+  Command[1]: mx-idesktool News.lnk
+  Command[2]: ideskmenu
+end
+
