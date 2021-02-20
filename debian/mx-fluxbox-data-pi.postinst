@@ -64,6 +64,18 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
 
 	fi
 	
+	if [ -d /etc/skel/.gkrellm2 ]; then
+		rm -R /etc/skel/.gkrellm2
+	fi
+
+	if [ -d /etc/skel/.gkrellm2 ]; then
+		cp -R /usr/share/mx-fluxbox-data-pi/.gkrellm2/* /etc/skel/.config/.gkrellm2
+	else
+		mkdir -p /etc/skel/.gkrellm2
+		cp -R /usr/share/mx-fluxbox-data-pi/.gkrellm2/* /etc/skel/.config/.gkrellm2
+
+	fi
+	
 fi
 
 

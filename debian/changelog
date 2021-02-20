@@ -1,3 +1,9 @@
+mx-fluxbox (21.02.02) mx; urgency=medium
+
+  * fix gkrellm2  configs
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 20 Feb 2021 16:05:19 -0500
+
 mx-fluxbox (21.02.01) mx; urgency=medium
 
   [ Jerry Bond ]
