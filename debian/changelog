@@ -1,4 +1,4 @@
-mx-fluxbox (21.01.01+nmu5) UNRELEASED; urgency=medium
+mx-fluxbox (21.02.01) mx; urgency=medium
 
   [ Jerry Bond ]
   * added desktop files for dockmaker and idesktool 
@@ -8,10 +8,7 @@ mx-fluxbox (21.01.01+nmu5) UNRELEASED; urgency=medium
   * pi configs (mx-fluxbox-data-pi) 
   * revise a lot of config files, remove duplicates 
 
-  [ Jerry Bond ]
-  * added conky and ideskrc to skel
-
- -- Jerry Bond <jb@X1Cmx>  Sat, 20 Feb 2021 05:35:31 -0500
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 20 Feb 2021 11:54:31 -0500
 
 mx-fluxbox (21.01.01) mx; urgency=medium
 
