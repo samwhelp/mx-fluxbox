@@ -1,3 +1,9 @@
+mx-fluxbox (21.02.04) mx; urgency=medium
+
+  * revised tint2 and gkrellm on pi
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 27 Feb 2021 10:26:50 -0500
+
 mx-fluxbox (21.02.03) mx; urgency=medium
 
   * restructure to deal with pi configs
