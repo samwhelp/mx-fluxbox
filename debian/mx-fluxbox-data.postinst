@@ -18,6 +18,21 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
 		cp -R /usr/share/mxflux/mx/* /
     fi
     
+    #	update root account settings
+    #   if root theme configs exist, then do not update them.
+    
+    if [ ! -e "/root/.config/gtk-3.0/settings.ini" ]; then
+		if [ ! -d "/root/.config/gtk-3.0" ]; then
+			mkdir -p /root/.config/gtk-3.0/
+		fi
+		cp /etc/skel/.config/gtk-3.0/settings.ini /root/.config/gtk-3.0/settings.ini
+		if [ ! -e "/root/.gtkrc-2.0" ]; then
+			cp /etc/skel/.gtkrc-2.0 /root
+		fi
+		if [ ! -e "/root/.gtkrc-2.0-mine" ]; then
+			cp /etc/skel/.gtkrc-2.0-mine /root
+		fi
+    fi
 fi
 
 
