@@ -1,6 +1,6 @@
 table Icon
 Caption: Intro
-  Icon: /usr/share/icons/intro-news.png
+  Icon: /usr/share/icons/mx-intro-news.png
   X: 590
   Y: 430
   Command[0]: ideskrun vlc https://youtu.be/xX8OwVSLNIY
