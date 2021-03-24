@@ -22,4 +22,4 @@ wmalauncher --command thunar /usr/share/mxflux/help/ --icon /usr/share/icons/mxf
 wmalauncher --desktop-file xfce4-terminal.desktop --tooltip-text "Terminal" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file thunderbird.desktop --tooltip-text "Email" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file firefox.desktop --tooltip-text "Browser" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --command exit-options --desktop-file exit-options.desktop --tooltip-text "Exit" $TTIPS --background-color black --border-color black --window-size 48 -x & sleep 0.1
+wmalauncher --desktop-file exit-options.desktop --tooltip-text "Exit" $TTIPS --background-color black --border-color black --window-size 48 -x & sleep 0.1
