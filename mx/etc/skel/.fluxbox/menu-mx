@@ -2,6 +2,12 @@
 
 [begin] (Fluxbox)
 	[exec] (All Apps) {rofi -show drun}
+	[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
     [exec] (Browser) {firefox}
     [exec] (Email) {thunderbird}
     [exec] (File manager ) {thunar $HOME/.fluxbox} 
@@ -16,7 +22,6 @@
     [submenu] (Settings)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [separator]
     [submenu] (Out of sight)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
