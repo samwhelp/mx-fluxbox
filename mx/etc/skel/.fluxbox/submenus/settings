@@ -5,7 +5,7 @@
         [exec] (Apps) {xdg-open ~/.fluxbox/apps}
         [exec] (Init) {xdg-open ~/.fluxbox/init}
         [exec] (Keys) {xdg-open ~/.fluxbox/keys}
-        [submenu] (Menu) 
+        [submenu] (Menus) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Appearance) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Settings) {exo-open ~/.fluxbox/submenus/settings}
@@ -14,7 +14,11 @@
         [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
         [exec] (Startup) {featherpad ~/.fluxbox/startup}
         [exec] (Styles) {thunar ~/.fluxbox/styles/}
-        [config] (Window)
+        [config] (Window)         
+    [end]
+    [submenu] (Display)
+    [exec] (Change) {arandr}
+    [exec](Help) {featherpad ~/.fluxbox/components/HELP_Display}
     [end]
     [submenu] (Keyboard)
         [exec] (DE) {setxkbmap de}
