@@ -1,3 +1,11 @@
+mx-fluxbox (21.02.04+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Starting MX-21 development
+  * revised submenus Settings, Appearance
+
+ -- Jerry Bond <jb@X1Cmx>  Wed, 24 Mar 2021 06:41:30 -0400
+
 mx-fluxbox (21.02.04) mx; urgency=medium
 
   * revised tint2 and gkrellm on pi
