@@ -2,7 +2,7 @@
 
 [begin] (Fluxbox)
 	[exec] (All Apps) {rofi -show drun}
-	[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
+	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
 			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
