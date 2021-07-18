@@ -1,0 +1,17 @@
+The app used for configuring display is arandr. With it you can change resolution, orientation and ratio. Here are the steps to take if you wish to make your changes permanent:
+
+1) Click Layout > Save as
+2) Navigate to ~./fluxbox/scripts
+3) Name the script (for example "default_screen") and save it.
+4) Right-click the desktop > Settings > Configure > Startup
+5) Add the following entry anywhere above the final command ("exec fluxbox")
+
+# use a specific display format
+~/.fluxbox/scripts/default_screen.sh
+
+>> be sure to use your own name for the script
+>> the ending ".sh" is added by the app
+
+6) Save and exit. 
+
+When you log into Fluxbox again your settings should be used.

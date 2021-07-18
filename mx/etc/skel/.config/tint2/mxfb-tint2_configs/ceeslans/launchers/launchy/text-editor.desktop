@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Text Editor
+Comment=Text Editor
+Exec=geany %u
+Icon=/home/one/.config/tint2/icons/launchy/geany.png
+Terminal=false
+StartupNotify=true

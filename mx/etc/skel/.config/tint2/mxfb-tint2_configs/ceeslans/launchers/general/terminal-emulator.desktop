@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminal
+Comment=Terminal Emulator
+Exec=exo-open --launch TerminalEmulator
+Icon=utilities-terminal
+Terminal=false
+StartupNotify=true

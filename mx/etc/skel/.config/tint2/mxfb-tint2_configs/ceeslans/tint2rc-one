@@ -1,0 +1,319 @@
+#--------------------
+# TINT2 - One -------
+#--------------------
+
+# Gradients
+#--------------------
+# Backgrounds
+# Background 1: Separator
+rounded = 0
+border_width = 0
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #252525 67
+border_color = #303030 67
+background_color_hover = #151515 67
+border_color_hover = #303030 67
+background_color_pressed = #151515 67
+border_color_pressed = #303030 67
+
+# Background 2: Default task, Iconified task, Panel
+rounded = 0
+border_width = 1
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #252525 67
+border_color = #151515 67
+background_color_hover = #151515 67
+border_color_hover = #505050 67
+background_color_pressed = #303030 67
+border_color_pressed = #505050 67
+
+# Background 3: Active task, Active taskbar
+rounded = 2
+border_width = 1
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #252525 67
+border_color = #606060 67
+background_color_hover = #252525 67
+border_color_hover = #606060 67
+background_color_pressed = #252525 67
+border_color_pressed = #606060 67
+
+# Background 4: Urgent task
+rounded = 0
+border_width = 0
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #aa4400 67
+border_color = #aa7733 67
+background_color_hover = #aa4400 67
+border_color_hover = #aa7733 67
+background_color_pressed = #aa4400 67
+border_color_pressed = #aa7733 67
+
+# Background 5: Tooltip
+rounded = 0
+border_width = 1
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #252525 67
+border_color = #000000 67
+background_color_hover = #252525 67
+border_color_hover = #000000 67
+background_color_pressed = #252525 67
+border_color_pressed = #606060 67
+
+# Background 6: Inactive desktop name
+rounded = 2
+border_width = 1
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #151515 67
+border_color = #000000 67
+background_color_hover = #101010 67
+border_color_hover = #404040 67
+background_color_pressed = #202020 67
+border_color_pressed = #404040 67
+
+# Background 7: Active desktop name
+rounded = 3
+border_width = 2
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #151515 67
+border_color = #000000 67
+background_color_hover = #101010 67
+border_color_hover = #404040 67
+background_color_pressed = #202020 67
+border_color_pressed = #404040 67
+
+# Background 8: Systemtray (alternative for dark icons)
+rounded = 2
+border_width = 2
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #eeeeee 33
+border_color = #252525 0
+background_color_hover = #303030 0
+border_color_hover = #303030 0
+background_color_pressed = #303030 0
+border_color_pressed = #303030 0
+
+#-------------------------------------
+# Panel
+panel_items = PLE:TSCP
+panel_size = 100% 32
+panel_margin = 0 0
+panel_padding = 4 2 2
+panel_background_id = 2
+wm_menu = 1
+panel_dock = 0
+panel_position = bottom left horizontal
+panel_layer = normal
+panel_monitor = all
+panel_shrink = 0
+autohide = 0
+autohide_show_timeout = 0
+autohide_hide_timeout = 0.5
+autohide_height = 1
+strut_policy = follow_size
+panel_window_name = tint2
+disable_transparency = 0
+mouse_effects = 1
+font_shadow = 0
+mouse_hover_icon_asb = 100 -2 14
+mouse_pressed_icon_asb = 100 0 15
+scale_relative_to_dpi = 0
+scale_relative_to_screen_height = 0
+
+#-------------------------------------
+# Taskbar
+taskbar_mode = multi_desktop
+taskbar_hide_if_empty = 0
+taskbar_padding = 2 2 0
+taskbar_background_id = 0
+taskbar_active_background_id = 0
+taskbar_name = 1
+taskbar_hide_inactive_tasks = 0
+taskbar_hide_different_monitor = 0
+taskbar_hide_different_desktop = 0
+taskbar_always_show_all_desktop_tasks = 1
+taskbar_name_padding = 6 3
+taskbar_name_background_id = 6
+taskbar_name_active_background_id = 7
+taskbar_name_font = Noto Sans 9
+taskbar_name_font_color = #909090 100
+taskbar_name_active_font_color = #cccccc 100
+taskbar_distribute_size = 1
+taskbar_sort_order = none
+task_align = left
+
+#-------------------------------------
+# Task
+task_text = 1
+task_icon = 0
+task_centered = 1
+urgent_nb_of_blink = 0
+task_maximum_size = 1920 48
+task_padding = 5 3 5
+task_font = Noto Sans 9
+task_tooltip = 1
+task_thumbnail = 1
+task_thumbnail_size = 240
+task_font_color = #909090 100
+task_active_font_color = #dddddd 100
+task_urgent_font_color = #ffffff 100
+task_iconified_font_color = #aaaaaa 100
+task_icon_asb = 100 0 0
+task_background_id = 2
+task_active_background_id = 3
+task_urgent_background_id = 4
+task_iconified_background_id = 2
+mouse_left = toggle_iconify
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = none
+mouse_scroll_down = none
+
+#-------------------------------------
+# Tooltip
+tooltip_show_timeout = 0.3
+tooltip_hide_timeout = 0.1
+tooltip_padding = 5 2
+tooltip_background_id = 5
+tooltip_font_color = #cccccc 100
+tooltip_font = Noto Sans 9
+
+#-------------------------------------
+# System tray
+systray_padding = 4 0 0
+systray_background_id = 0
+	#systray_background_id = 8
+systray_sort = ascending
+systray_icon_size = 24
+systray_icon_asb = 100 0 0
+systray_monitor = 1
+systray_name_filter = 
+
+#-------------------------------------
+# Clock
+time1_format = %H:%M 
+time2_format = 
+time1_font = DejaVu Sans Condensed 13
+time1_timezone = 
+time2_timezone = 
+time2_font = Noto Sans 7
+clock_font_color = #dddddd 100
+clock_padding = 4 0
+clock_background_id = 0
+clock_tooltip = %A %d %B %Y
+clock_tooltip_timezone = 
+clock_lclick_command =
+	###clock_lclick_command = gsimplecal
+clock_rclick_command = 
+clock_rclick_command = 
+clock_mclick_command = 
+clock_uwheel_command = 
+clock_dwheel_command = 
+
+#-------------------------------------
+# Launcher
+launcher_padding = 0 1 0
+launcher_background_id = 0
+launcher_icon_background_id = 0
+launcher_icon_size = 0
+startup_notifications = 0
+launcher_tooltip = 1
+launcher_icon_asb = 100 0 0
+
+### Specify icon theme names with launcher_icon_theme.
+### if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
+launcher_icon_theme_override = 1
+
+### Each launcher_item_app must be a full path to a .desktop file
+launcher_item_app = ~/.config/tint2/launchers/launchy/terminal-emulator.desktop
+launcher_item_app = ~/.config/tint2/launchers/launchy/file-manager.desktop
+launcher_item_app = ~/.config/tint2/launchers/launchy/web-browser.desktop
+launcher_item_app = ~/.config/tint2/launchers/launchy/googlemail.desktop
+launcher_item_app = ~/.config/tint2/launchers/launchy/text-editor.desktop
+
+#-------------------------------------
+# Button 1
+button = new
+button_icon = ~/.config/tint2/icons/launchy/start-here.png
+button_text = 
+button_tooltip = Start...
+button_lclick_command = rofi -modi drun,calc,run -show drun -show-icons -location 0 -width 300 -xoffset 0 -yoffset -0
+button_rclick_command = 
+button_mclick_command =
+	###button_mclick_command = ~/.bbtools/bbpager-toggle
+button_uwheel_command = 
+button_dwheel_command = 
+button_font_color = #eeeeee 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Button 2
+button = new
+button_icon = ~/.config/tint2/icons/launchy/shutdown.png
+button_text = 
+button_tooltip = Exit...
+button_lclick_command = ~/bin/fb-exit/fbexit-ico
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font_color = #eeeeee 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Separator 1
+separator = new
+separator_background_id = 0
+separator_color = #eeeeee 72
+separator_style = empty
+separator_size = 1
+separator_padding = 3 4
+###separator_padding = 31 4
+
+#-------------------------------------
+# Executor (Active Workspace)
+execp = new
+execp_command = xprop -root -spy | awk '/^_NET_CURRENT_DESKTOP/ { print "@desk" ($3 + 1) ; fflush(); }'
+execp_interval = 1
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 1
+execp_markup = 1
+execp_lclick_command = fluxbox-remote NextWorkspace
+execp_rclick_command = fluxbox-remote PrevWorkspace
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_mclick_command = fluxbox-remote ShowDesktop
+	###  execp_mclick_command 'Show/HideDesktop' requires below setting in 'apps' file:
+	###	  [app] (name=tint2)
+	###	  [Layer] {12}
+	###	  [end] 
+execp_font = Noto Sans Bold 9
+execp_font_color = #eeeeee 100
+execp_padding = 5 0 2
+execp_background_id = 0
+execp_centered = 1
+execp_icon_w = 0
+execp_icon_h = 0
