@@ -1,19 +1,23 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-	[exec] (All Apps) {rofi -show drun}
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
 			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
-    [exec] (Browser) {firefox}
+    [exec] (Browser) {sensible-browser}
     [exec] (Email) {thunderbird}
-    [exec] (File manager ) {thunar $HOME/.fluxbox} 
-    [exec] (Help ) {thunar /usr/share/mxflux/help}
+    [exec] (File manager ) {xdg-open $HOME/.fluxbox} 
+    [exec] (Help ) {xdg-open /usr/share/mxflux/help}
     [exec] (Music) {clementine}
-    [exec] (Run ) {rofi -show run} 
+    [exec] (Run ) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Appearance)

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Text Editor
+Comment=Text Editor
+Exec=geany %u
+Icon=accessories-text-editor
+Terminal=false
+StartupNotify=true

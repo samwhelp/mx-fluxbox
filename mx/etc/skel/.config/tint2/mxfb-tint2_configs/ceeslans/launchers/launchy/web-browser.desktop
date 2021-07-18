@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Web Browser
+Comment=Web browser
+Exec=exo-open --launch WebBrowser %u
+Icon=/home/one/.config/tint2/icons/launchy/firefox.png
+Terminal=false
+StartupNotify=true

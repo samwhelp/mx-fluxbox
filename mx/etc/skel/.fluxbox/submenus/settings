@@ -1,5 +1,4 @@
 [begin] (Settings)
-    [exec] (About) {about-mx-fluxbox}
     [exec] (Backup) {grsync}
     [submenu] (Configure)
         [exec] (Apps) {xdg-open ~/.fluxbox/apps}
@@ -12,13 +11,13 @@
          [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Startup) {featherpad ~/.fluxbox/startup}
+        [exec] (Startup) {xdg-open ~/.fluxbox/startup}
         [exec] (Styles) {thunar ~/.fluxbox/styles/}
         [config] (Window)         
     [end]
     [submenu] (Display)
     [exec] (Change) {arandr}
-    [exec](Help) {featherpad ~/.fluxbox/components/HELP_Display}
+    [exec](Help) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Keyboard)
         [exec] (DE) {setxkbmap de}

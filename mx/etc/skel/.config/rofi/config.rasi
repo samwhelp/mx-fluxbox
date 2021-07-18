@@ -1,10 +1,10 @@
 configuration {
 
-	modi: "drun,calc:qalc,window,run";
+	modi: "drun,run";
 	width: 25;
 	show-icons: true;
 	icon-theme: "papirus";
-	lines: 10;
+	lines: 20;
 	fake-transparency: true;
 	sidebar-mode: true;
 	
