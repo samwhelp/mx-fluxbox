@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Mail Reader
-Comment=Mail Reader
-Exec=exo-open --launch MailReader %u
-Icon=emblem-mail
-Terminal=false
-StartupNotify=true

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Office Apps
-Comment=Office Apps
-Exec=$HOME/.config/tint2/menus/office-apps
-Icon=/home/one/.config/tint2/icons/launchy/libreoffice.png
-Terminal=false
-StartupNotify=true

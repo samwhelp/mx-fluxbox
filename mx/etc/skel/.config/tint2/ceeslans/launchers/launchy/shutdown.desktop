@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Shutdown
-Comment=Exit options
-Exec=/home/one/bin/fb-exit/fblogout-form-vert
-Icon=/home/one/.config/tint2/icons/launchy/shutdown.png
-Terminal=false
-StartupNotify=true

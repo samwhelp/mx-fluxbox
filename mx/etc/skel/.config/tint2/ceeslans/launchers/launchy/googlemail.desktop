@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Gmail
-Comment=gmail open in webbrowser
-Exec=exo-open --launch WebBrowser https://mail.google.com/mail/u/0/?tab=km1#inbox
-Icon=/home/one/.config/tint2/icons/launchy/googlemail.png
-Terminal=false
-StartupNotify=true
