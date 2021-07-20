@@ -1,6 +1,108 @@
-[app] (name=tint2) (class=Tint2)
-  [Layer] {12}
+########################
+########################
+The following settings--primarily for default applications of MX-Fluxbox--follow thosse recommended by Sébastien Ballet for his OS Flaxx https://sourceforge.net/projects/flaxx/
+
+[app] (class=Blueman-manager)
+  [Position] (CENTER) {0 0}
+  [Sticky] {yes}
 [end]
-[app] (class=Conky)
-  [Layer] {12}
+
+[app] (name=fbrun)
+  [Deco] {0x25} # Title+Border+Close
+  [Layer] {2}
+  [Position] (TOP) {0 0}
 [end]
+
+[app] (class=Firefox)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Galculator)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Geany)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Gimp)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Grsync)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-base)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-calc)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-draw)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-impress)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-math)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-writer)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=libreoffice-startcenter)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Pavucontrol)
+  [Position] (CENTER) {0 0}
+  [Sticky] {yes}
+[end]
+
+[app] (class=Qpdfview)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Thunar)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Thunderbird)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=Tint2conf)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+[app] (class=file-roller)
+  [Position] (CENTER) {0 0}
+  [Close] {yes}
+[end]
+
+#########################
+#########################
+
