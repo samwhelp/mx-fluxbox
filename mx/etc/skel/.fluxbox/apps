@@ -103,6 +103,32 @@ The following settings--primarily for default applications of MX-Fluxbox--follow
   [Close] {yes}
 [end]
 
+app] (name=roxterm) 
+  [Dimensions]	{38% 49%}
+  [Position]	(CENTER)	{0 0}
+[end]
+
+[app] (name=custom-toolbox-mxfb)
+  [Position]	(CENTER)	{0 0}
+  [Close]	{yes}
+[end]
+
+[app] (name=lxappearance)
+  [Position]	(UPPERLEFT)	{33% 28%}
+  [Close]	{yes}
+[end]
+
+[app] (name=yad) (class=Yad)
+  [Dimensions]	{19% 50%}
+  [Position]	(UPPERLEFT)	{41% 25%}
+  [Close]	{yes}
+[end]
+
+[app] (name=featherpad) (class=FeatherPad)
+  [Dimensions]	{33% 100%}
+  [Position]	(UPPERLEFT)	{34% 0%}
+[end]
+
 #########################
 #########################
 

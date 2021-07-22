@@ -1,11 +1,12 @@
-mx-fluxbox (21.02.04+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (21.02.04+nmu3) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * Starting MX-21 development
   * revised submenus Settings, Appearance
   * revised keys file, removing unused entries
+  * changed menu folder to include all 4
 
- -- Jerry Bond <jb@X1Cmx>  Wed, 24 Mar 2021 20:04:51 -0400
+ -- Jerry Bond <jb@X1Cmx>  Thu, 22 Jul 2021 17:13:40 -0400
 
 mx-fluxbox (21.02.04) mx; urgency=medium
 
