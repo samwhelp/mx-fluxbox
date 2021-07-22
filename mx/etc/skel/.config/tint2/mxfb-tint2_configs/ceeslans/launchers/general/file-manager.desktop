@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=File Manager
-Comment=File Manager
-Exec=exo-open --launch FileManager %u
-Icon=file-manager
-Terminal=false
-StartupNotify=true

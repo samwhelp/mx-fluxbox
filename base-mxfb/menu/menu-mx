@@ -1,0 +1,39 @@
+# the submenus can be found in /usr/share/mxflux/menu/
+
+[begin] (Fluxbox)
+	[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Recent files) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Browser) {sensible-browser}
+    [exec] (Email) {xdg-email}
+    [exec] (File manager ) {thunar $HOME/.fluxbox} 
+    [exec] (Help ) {thunar /usr/share/mxflux/help}
+    [exec] (Music) {clementine}
+    [exec] (Run ) {fbrun} 
+    [exec] (Terminal) {xfce4-terminal} 
+    [separator]
+    [submenu] (Appearance)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Settings)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] (Out of sight)
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] (Leave)
+        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspend ) {sudo 'pm-suspend'}
+        [exit] (Logout  ) 
+        [exec] (Reboot  ) {sudo /sbin/reboot} 
+        [exec] (Shutdown) {sudo /sbin/halt}
+    [end]
+[end]

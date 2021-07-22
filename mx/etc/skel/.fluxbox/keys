@@ -1,18 +1,14 @@
-# Special keywords (modified from Sébastien Ballet for Flaxx https://sourceforge.net/projects/flaxx/):
-#
-#   Shift   = Shift                Mouse1  = Left Mouse Button
-#   Control = Control              Mouse2  = Middle Mouse Button
-#   Super_L = Windows Key (Left)   Mouse3  = Right Mouse Button
-#   Mod1    = Alt key              Mouse4  = Mouse Wheel Up
-#   Super_R = Windows Key (Right)  Mouse5  = Mouse Wheel Down
-#                                  Mouse6  = Mouse Button #6
-#                                  Mouse7  = Mouse Button #7
-#
-#   OnToolbar = mouse is on toolbar
-#   OnDesktop = mouse is on desktop
-#   OnTitlebar= mouse is on window's titlebar
+##### Resources #####
+#https://linux.die.net/man/5/fluxbox-keys
+#https://ubuntuforums.org/showthread.php?t=617812
 
-## MXflux additions ##
+############
+#Mod1=Alt key
+#Mod4=Left logo key
+#Menu=Right logo key
+#Mouse1=Left click
+#Mouse3=Right click 
+##########
 
 # take a screen capture
 none Print :Exec xfce4-screenshooter
@@ -80,8 +76,10 @@ OnTitlebar Double Mouse1 :Shade
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
 OnTitlebar Move1  :StartMoving
 
-# right click on the titlebar for a menu of options
+# see a menu of window options
 OnTitlebar Mouse3 :WindowMenu
+   #for apps using CSD try this instead
+   OnWindow Mouse2 :WindowMenu
 
 # alt-tab
 Mod1 Tab :NextWindow {groups} (workspace=[current])

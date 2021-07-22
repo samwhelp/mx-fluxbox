@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Launch
-Comment=Application Launcher
-Exec=rofi -show drun
-Icon=/home/one/.config/tint2/icons/launchy/launch.png
-Terminal=false
-StartupNotify=true
