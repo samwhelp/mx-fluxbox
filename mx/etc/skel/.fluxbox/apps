@@ -109,6 +109,7 @@ app] (name=roxterm)
 [end]
 
 [app] (name=custom-toolbox-mxfb)
+  [Dimensions]	{38% 80%}
   [Position]	(CENTER)	{0 0}
   [Close]	{yes}
 [end]
@@ -127,6 +128,19 @@ app] (name=roxterm)
 [app] (name=featherpad) (class=FeatherPad)
   [Dimensions]	{33% 100%}
   [Position]	(UPPERLEFT)	{34% 0%}
+[end]
+
+[app] (name=feh)
+  [Position]	(UPPERLEFT)	{29% 20%}
+  [Close]	{yes}
+[end]
+
+[app] (name=lxrandr) (class=Lxrandr)
+  [Position]	(CENTER)	{0 0}
+[end]
+
+[app] (name=system-keyboard-qt) (class=system-keyboard-qt)
+  [Position]	(CENTER)	{0 0}
 [end]
 
 #########################

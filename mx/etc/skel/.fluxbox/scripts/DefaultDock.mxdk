@@ -19,8 +19,7 @@ wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color black 
 wmalauncher --desktop-file thunar.desktop --tooltip-text "File manager" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --desktop-file libreoffice-startcenter.desktop --tooltip-text "Office suite" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --command thunar /usr/share/mxflux/help/ --icon /usr/share/icons/Papirus/48x48/apps/help_index.svg --tooltip-text "MX-Fluxbox documentation" --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file roxterm.desktop --background-color black --border-color black --window-size 48& sleep 0.1
-wmalauncher --desktop-file xfce4-terminal.desktop --tooltip-text "Terminal" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
+wmalauncher --desktop-file roxterm.desktop --background-color black --border-color black --window-size 48 --tooltip-text "Terminal" $TTIPS & sleep 0.1
 wmalauncher --command mxfb-quickshot --icon /usr/share/icons/Papirus/48x48/devices/camera-photo.svg --background-color black --border-color black --window-size 48 --tooltip-text "Quickshot (select)" $TTIPS& sleep 0.1
 wmalauncher --desktop-file thunderbird.desktop --tooltip-text "Email" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
 wmalauncher --command sensible-browser --icon /usr/share/icons/Papirus/48x48/apps/browser.svg --tooltip-text "Browser" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1

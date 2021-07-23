@@ -11,7 +11,7 @@
 ##########
 
 # take a screen capture
-none Print :Exec xfce4-screenshooter
+none Print :Exec mxfb-quickshot
 
 # open fluxbox FAQ
 none F1 :Exec thunar /usr/share/mxflux/help
