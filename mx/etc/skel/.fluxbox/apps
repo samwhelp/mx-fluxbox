@@ -109,6 +109,7 @@ app] (name=roxterm)
 [end]
 
 [app] (name=custom-toolbox-mxfb)
+  [Dimensions]	{38% 80%}
   [Position]	(CENTER)	{0 0}
   [Close]	{yes}
 [end]

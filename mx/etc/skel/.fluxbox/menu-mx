@@ -14,11 +14,11 @@
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (Email) {thunderbird}
-    [exec] (File manager ) {xdg-open $HOME/.fluxbox} 
-    [exec] (Help ) {xdg-open /usr/share/mxflux/help}
+    [exec] (File manager ) {exo-open $HOME/.fluxbox} 
+    [exec] (Help ) {exo-open /usr/share/mxflux/help}
     [exec] (Music) {clementine}
     [exec] (Run ) {fbrun} 
-    [exec] (Terminal) {xfce4-terminal} 
+    [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)

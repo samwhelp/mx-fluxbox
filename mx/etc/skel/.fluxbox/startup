@@ -27,9 +27,6 @@ xdg-user-dirs-gtk-update
 # add launcher for legacy toolbar
 #wmalauncher-menu
 
-#start Xfce panel
-#xfce4-panel &
-
 #add system monitors 
 #gkrellm &
 
@@ -42,7 +39,8 @@ export QT_PLATFORMTHEME=gtk2
 export QT_PLATFORM_PLUGIN=gtk2
 
 # add tint2 panel
-# tint2 &
+tint2 &
+tint2session 
 
 # add desktop icons
 idesktoggle idesk on 1>/dev/null 2>&1 &
@@ -69,13 +67,10 @@ sleep 2
 volumeicon -c volumeicon-fluxbox & 
 
 #place clipboard on the toolbar
-clipit &
+clipman &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
-
-#tool to set and preserve screen resolution, if necessary
-#arandr
 
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
