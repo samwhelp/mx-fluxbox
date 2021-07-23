@@ -1,3 +1,9 @@
+mx-fluxbox (21.07.23) mx; urgency=medium
+
+  * toggletint2 : added tint2session
+
+ -- fehlix <fehlix@mxlinux.org>  Fri, 23 Jul 2021 16:57:46 -0400
+
 mx-fluxbox (21.07.22) mx; urgency=medium
 
   * Non-maintainer upload.
