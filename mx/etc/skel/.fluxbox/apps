@@ -130,6 +130,19 @@ app] (name=roxterm)
   [Position]	(UPPERLEFT)	{34% 0%}
 [end]
 
+[app] (name=feh)
+  [Position]	(UPPERLEFT)	{29% 20%}
+  [Close]	{yes}
+[end]
+
+[app] (name=lxrandr) (class=Lxrandr)
+  [Position]	(CENTER)	{0 0}
+[end]
+
+[app] (name=system-keyboard-qt) (class=system-keyboard-qt)
+  [Position]	(CENTER)	{0 0}
+[end]
+
 #########################
 #########################
 
