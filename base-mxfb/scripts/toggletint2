@@ -5,6 +5,7 @@
 # 30. Aug. 2020 - adjusted togglerefresh call
 # 06. Sep. 2020 - adjusted marker line handling
 # 09. Sep. 2020 - adjusted tint2 startup
+# 23. Jul. 2021 - added tint2session
 
 FLBINIT="$HOME/.fluxbox/init"
 REFRESH="togglerefresh"
@@ -27,7 +28,7 @@ if pgrep -x tint2 >/dev/null; then
     # disable tint2 autostart
     if grep -sq -E '^[[:space:]]*(/usr/bin/)?tint2' "$STARTUP"; then
        cp "$STARTUP" "$STRTBAK"
-       sed  -i -r '\!^[[:space:]]*((/usr/bin/)?tint2.*)!s::#\1:' "$STARTUP"
+       sed  -i -r '\!^[[:space:]]*((/usr/bin/)?tint2(session)?\b.*)!s::#\1:' "$STARTUP"
     fi
 
     # toogle fluxbox  toolbar on: enable systray and make visible
@@ -77,8 +78,10 @@ else
     if grep -sq -E '^[[:space:]#]*(/usr/bin/)?tint2' "$STARTUP"; then
        # uncomment tint2 startup line
        #
-       sed -i  -r '  \!^[[:space:]#]*((/usr/bin/)?tint2.*)!s::#\1:;   # comment out all tint2 lines
-                   0,\!^[[:space:]#]*((/usr/bin/)?tint2.*)!s::\1:;    # uncomment first found only
+       sed -i  -r '  \!^[[:space:]#]*((/usr/bin/)?tint2\b.*)!s::#\1:;        # comment out all tint2 lines
+                   0,\!^[[:space:]#]*((/usr/bin/)?tint2\b.*)!s::\1:;         # uncomment first found only
+                     \!^[[:space:]#]*((/usr/bin/)?tint2session\b.*)!s::#\1:; # comment out all tint2session lines
+                   0,\!^[[:space:]#]*((/usr/bin/)?tint2session\b.*)!s::\1:;  # uncomment first found only
                   ' "$STARTUP"
     else
        # inject tint2 startup line after "export QT_PLATFORM_PLUGIN" line
