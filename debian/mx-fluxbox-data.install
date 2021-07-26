@@ -3,7 +3,7 @@ pi/*	/usr/share/mxflux/pi
 base-mxfb/mxfb_version /etc
 base-mxfb/HELP_Display usr/share/mxflux/help
 base-mxfb/*.desktop usr/share/applications
-base-mxfb/gazelle.lnk /usr/local/share/live-files/files/etc/skel/.idesktop/gazelle.lnk
+base-mxfb/gazelle.lnk /usr/local/share/live-files/files/etc/skel/.idesktop/
 base-mxfb/mxfcelogo-rounded_48.png usr/share/mxflux
 base-mxfb/mx-welcome64.png usr/share/mxflux
 base-mxfb/menu/* usr/share/mxflux/menu

@@ -1,3 +1,9 @@
+mx-fluxbox (21.07.25) mx; urgency=medium
+
+  * moving gazelle.lnk file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 25 Jul 2021 15:53:20 -0400
+
 mx-fluxbox (21.07.23) mx; urgency=medium
 
   * toggletint2 : added tint2session
