@@ -51,10 +51,6 @@ idesktoggle idesk on 1>/dev/null 2>&1 &
 #set the default dock
 $HOME/.fluxbox/scripts/DefaultDock.mxdk
 
-# provide a screensaver
-xfce4-screensaver-command &
-xfce4-screensaver &
-
 #conky to follow conky toggle settings
 $HOME/.fluxbox/scripts/conkystart
 

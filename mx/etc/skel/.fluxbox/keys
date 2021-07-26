@@ -79,7 +79,7 @@ OnTitlebar Move1  :StartMoving
 # see a menu of window options
 OnTitlebar Mouse3 :WindowMenu
    #for apps using CSD try this instead
-   OnWindow Mouse2 :WindowMenu
+   #OnWindow Mouse2 :WindowMenu
 
 # alt-tab
 Mod1 Tab :NextWindow {groups} (workspace=[current])
