@@ -277,7 +277,7 @@ button_font_color = #000000 100
 button_padding = 0 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 0
+button_max_icon_size = 32
 
 #-------------------------------------
 # Tooltip

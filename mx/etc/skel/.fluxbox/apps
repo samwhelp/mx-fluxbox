@@ -143,6 +143,11 @@ app] (name=roxterm)
   [Position]	(CENTER)	{0 0}
 [end]
 
+[app] (name=gsimplecal) (class=calendar)
+  [Position]	(CENTER)	{0 0}
+  [Close]	{yes}
+[end]
+
 #########################
 #########################
 
