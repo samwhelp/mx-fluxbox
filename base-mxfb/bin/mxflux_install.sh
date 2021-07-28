@@ -6,8 +6,6 @@
 
 #1) that fluxbox and idesk have been installed
 #2) that this script has been placed in /usr/bin/mxflux/
-#3) that the tarball from https://github.com/jerry3904/mx-fluxbox has been extracted and placed in 
-#/usr/share/mxflux/
 
 TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="mx-fluxbox"
