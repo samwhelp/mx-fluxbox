@@ -24,9 +24,6 @@ xdg-user-dirs-gtk-update
 #start a compositor if using complicated conkies
 #compton &
 
-# add launcher for legacy toolbar
-#wmalauncher-menu
-
 #add system monitors 
 #gkrellm &
 
@@ -38,8 +35,7 @@ export QT_QPA_PLATFORMTHEME=gtk2
 export QT_PLATFORMTHEME=gtk2
 export QT_PLATFORM_PLUGIN=gtk2
 
-# add tint2 panel
-tint2 &
+# add selected tint2 panel
 tint2session 
 
 # add desktop icons
