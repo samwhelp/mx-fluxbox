@@ -80,7 +80,7 @@ panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
 panel_pivot_struts = 0
-panel_position = top center horizontal
+panel_position = bottom center horizontal
 panel_layer = top
 panel_monitor = all
 panel_shrink = 0
@@ -173,7 +173,7 @@ time2_timezone =
 clock_font_color = #ffffff 100
 clock_padding = 1 0
 clock_background_id = 5
-clock_tooltip = Left calendar, right timer
+clock_tooltip = Left: calendar, right: timer
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
 clock_rclick_command = mxfb-timer
@@ -241,9 +241,9 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 3
-button_background_id = 5
+button_background_id = 1
 button_centered = 1
-button_max_icon_size = 24
+button_max_icon_size = 32
 
 #-------------------------------------
 # Button 2
@@ -275,7 +275,7 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 0
-button_background_id = 4
+button_background_id =1
 button_centered = 0
 button_max_icon_size = 28
 
