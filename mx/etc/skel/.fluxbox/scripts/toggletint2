@@ -1,0 +1,12 @@
+#! /bin/bash
+
+
+#this autohide script was created by user Bonaparte: \
+#https://www.reddit.com/r/crunchbangplusplus/comments/3e4i3v/toggle_tint2_taskbar_autohide_from_the_openbox/
+#It has been modified by MX Devs for use with MX Fluxbox
+
+sed -i -r 's/(autohide\ \=\ )0/\11/;t;s/(autohide\ \=\ )1/\10/' ~/.config/tint2/tint2rc
+killall -SIGUSR1 tint2
+
+#restart updater to eliminate artifacts
+/usr/bin/apt-notifier-unhide-Icon
