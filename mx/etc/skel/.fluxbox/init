@@ -7,6 +7,7 @@ session.screen0.tabs.intitlebar:	true
 session.screen0.titlebar.left:	Stick 
 session.screen0.titlebar.right:	Minimize Maximize Close 
 #toggled-off#session.screen0.toolbar.tools:	workspacename, iconbar, systemtray, clock
+session.screen0.toolbar.tools:	workspacename, iconbar, clock
 session.screen0.toolbar.maxOver:	false
 session.screen0.toolbar.alpha:	252
 session.screen0.toolbar.placement:	TopCenter
