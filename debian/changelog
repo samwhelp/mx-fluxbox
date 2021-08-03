@@ -1,11 +1,12 @@
-mx-fluxbox (21.07.30+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (21.07.30+nmu2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * Removed exit-options from default dock 
   * Added toggletint2 to fluxbox/scripts
   * Added a toggle panel entry to Out of sight submenu
+  * added a idesktop folder to mx with Videos.lnk
 
- -- Jerry Bond <jb@X1Cmx>  Sun, 01 Aug 2021 09:03:44 -0400
+ -- Jerry Bond <jb@X1Cmx>  Tue, 03 Aug 2021 06:07:58 -0400
 
 mx-fluxbox (21.07.30) mx; urgency=medium
 
