@@ -59,7 +59,7 @@ sleep 2
 volumeicon -c volumeicon-fluxbox & 
 
 #place clipboard on the toolbar
-clipman &
+xfce4-clipman &
 
 #put brightness controller and battery monitor on toolbar
 xfce4-power-manager &
