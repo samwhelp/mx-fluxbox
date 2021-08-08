@@ -73,7 +73,7 @@ border_color_pressed = #000000 100
 #-------------------------------------
 # Panel
 panel_items = LPP::T:SCP
-panel_size = 80% 40
+panel_size = 80% 45
 panel_margin = 0 0
 panel_padding = 2 0 2
 panel_background_id = 1
@@ -248,6 +248,23 @@ button_max_icon_size = 32
 #-------------------------------------
 # Button 2
 button = new
+button_icon = ~/.config/tint2/icons/filemanager2.png
+button_text = 
+button_tooltip = File manager
+button_lclick_command = thunar
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font_color = #000000 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 32
+
+#-------------------------------------
+# Button 3
+button = new
 button_icon = ~/.config/tint2/icons/internet50.png
 button_text = 
 button_tooltip = Browser
@@ -263,7 +280,7 @@ button_centered = 0
 button_max_icon_size = 24
 
 #-------------------------------------
-# Button 3
+# Button 4
 button = new
 button_icon = /usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 button_text = 
