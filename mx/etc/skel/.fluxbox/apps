@@ -148,6 +148,12 @@ app] (name=roxterm)
   [Close]	{yes}
 [end]
 
+[app] (name=xfce4-appfinder) (class=Xfce4-appfinder)
+  [Dimensions]	{21% 90%}
+  [Position]	(UPPERLEFT)	{10% 10%}
+  [Close]	{yes}
+[end]
+
 #########################
 #########################
 
