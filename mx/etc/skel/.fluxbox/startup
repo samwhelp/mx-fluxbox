@@ -16,6 +16,12 @@
 # logout, then log back in to fluxbox session
 localize_fluxbox_menu-mx
 
+# mx-welcome if configured to autostart
+if [ -e $HOME/.config/autostart/mx-welcome.desktop ]; then
+# launch mx-welcome
+(sleep 5; /usr/bin/mx-welcome) &
+fi
+
 # User folders update
 xdg-user-dirs-update
 # Update common folders names to match current locale
