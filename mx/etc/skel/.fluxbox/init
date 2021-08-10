@@ -1,4 +1,4 @@
-session.screen0.menu.alpha:	160
+Fwisession.screen0.menu.alpha:	160
 session.screen0.tab.placement:	TopLeft
 session.screen0.tab.width:	64
 session.screen0.tabs.usePixmap:	true
@@ -50,7 +50,8 @@ session.screen0.maxDisableResize:	false
 session.screen0.maxDisableMove:	false
 session.screen0.focusModel:	ClickFocus
 session.screen0.fullMaximization:	false
-session.screen0.windowMenu:	~/.fluxbox/windowmenu
+session.screen0.windowMenu:	~/.fluxbox/submenus/
+windowmenu
 session.screen0.tooltipDelay:	500
 session.screen0.opaqueMove:	true
 session.screen0.colPlacementDirection:	TopToBottom
