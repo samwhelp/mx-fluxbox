@@ -189,7 +189,6 @@ launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
 launcher_item_app = /usr/share/mxflux/xfce4-appfinder-mxfb.desktop
-launcher_item_app = tint2conf.desktop
 launcher_item_app = thunar.desktop
 launcher_item_app = xfce4-terminal.desktop
 launcher_item_app = firefox.desktop
@@ -208,8 +207,8 @@ clock_padding = 1 0
 clock_background_id = 0
 clock_tooltip = 
 clock_tooltip_timezone = 
-clock_lclick_command = yad --calendar  --button=gtk-cancel --undecorated
-clock_rclick_command = 
+clock_lclick_command = gsimplecal
+clock_rclick_command = mxfb-timer
 clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
@@ -239,7 +238,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/Moka/32x32/actions/exit.png
+button_icon = /usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 button_text = 
 button_tooltip = Log Out
 button_lclick_command = /usr/bin/exit-options
@@ -251,7 +250,7 @@ button_font_color = #000000 100
 button_padding = 0 0
 button_background_id = 1
 button_centered = 0
-button_max_icon_size = 0
+button_max_icon_size = 32
 
 #-------------------------------------
 # Tooltip

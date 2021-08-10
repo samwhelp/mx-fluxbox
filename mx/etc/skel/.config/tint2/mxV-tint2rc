@@ -19,13 +19,13 @@ background_color_pressed = #111111 100
 border_color_pressed = #333333 100
 
 # Background 2: Default task, Iconified task, Launcher icon, Panel
-rounded = 5
-border_width = 1
+rounded = 0
+border_width = 3
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
 background_color = #111111 100
-border_color = #222222 100
+border_color = #111111 100
 background_color_hover = #111111 100
 border_color_hover = #555555 100
 background_color_pressed = #333333 100
@@ -175,7 +175,7 @@ mouse_scroll_down = next_task
 systray_padding = 0 0 2
 systray_background_id = 0
 systray_sort = ascending
-systray_icon_size = 22
+systray_icon_size = 24
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
@@ -190,24 +190,24 @@ launcher_icon_asb = 100 0 0
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
-launcher_item_app = /usr/share/mxflux/xfce4-appfinder-mxfb.desktop
-launcher_item_app = tint2conf.desktop
+launcher_item_app = /usr/share/applications/xfce4-appfinder-mxfb.desktop
+launcher_item_app = settings-manager-mxfb
 
 #-------------------------------------
 # Clock
 time1_format = %I:%M
 time2_format = 
-time1_font = Sans Bold 10
+time1_font = Noto Sans Bold 10
 time1_timezone = 
 time2_timezone = 
 time2_font = sans 7
-clock_font_color = #eeeeee 100
+clock_font_color = #cccccc 100
 clock_padding = 0 0
 clock_background_id = 0
 clock_tooltip = 
 clock_tooltip_timezone = 
-clock_lclick_command = yad --calendar  --button=gtk-cancel --undecorated
-clock_rclick_command = orage
+clock_lclick_command = gsimplecal
+clock_rclick_command = mxfb-timer
 clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
@@ -237,10 +237,11 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/Moka/48x48/actions/exit.png
+button_icon = /usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 button_text = 
 button_tooltip = Log Out
-button_lclick_command = /usr/bin/exit-options
+###button_lclick_command = exit-options
+button_lclick_command = ~/bin/fb-exit/fbexit-ico
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 

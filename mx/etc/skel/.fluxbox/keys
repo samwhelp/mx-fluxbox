@@ -13,8 +13,8 @@
 # take a screen capture
 none Print :Exec mxfb-quickshot
 
-# open fluxbox FAQ
-none F1 :Exec thunar /usr/share/mxflux/help
+# open fluxbox help
+none F1 :Exec mxfb-help
 
 # open a little run terminal
 none F2 :Exec fbrun
@@ -30,6 +30,9 @@ none F4 :Exec xfce4-terminal --drop-down
 
 # open the MX Tools dashboard
 none F5 :Exec mx-tools
+
+# open Users Manual
+none F6 :Exec mx-manual
 
 # open bluetooth manager
 mod1 b :Exec blueman-manager
