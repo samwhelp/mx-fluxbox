@@ -68,7 +68,7 @@ volumeicon -c volumeicon-fluxbox &
 xfce4-clipman &
 
 #put brightness controller and battery monitor on toolbar
-xfce4-power-manager &
+#xfce4-power-manager &
 
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
