@@ -129,7 +129,7 @@ scale_relative_to_screen_height = 0
 taskbar_mode = multi_desktop
 taskbar_hide_if_empty = 0
 taskbar_padding = 2 2 2
-taskbar_background_id = 1
+taskbar_background_id = 5
 taskbar_active_background_id = 3
 taskbar_name = 1
 taskbar_hide_inactive_tasks = 0
@@ -176,7 +176,7 @@ mouse_scroll_down = none
 #-------------------------------------
 # System tray (notification area)
 systray_padding = 5 0 0
-systray_background_id = 0
+systray_background_id = 5
 systray_sort = ascending
 systray_icon_size = 24
 systray_icon_asb = 100 0 0
@@ -204,12 +204,12 @@ time2_timezone =
 time2_font = Noto Sans 7
 clock_font_color = #ffa500 100
 clock_padding = 8 0
-clock_background_id = 0
+clock_background_id = 5
 clock_tooltip = TIME: calendar | world | timer
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
 clock_rclick_command = mxfb-timer
-clock_mclick_command = mx-datetime
+clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
 
@@ -390,7 +390,7 @@ execp_icon_h = 24
 button = new
 button_icon = ~/.config/tint2/icons/up_white.png
 button_text = 
-button_tooltip = START: appfinder | rofi
+button_tooltip = Appfinder | rofi
 button_lclick_command = xfce4-appfinder
 button_rclick_command = rofi -show drun location 7 -xoffset 0 -yoffset -33
 button_mclick_command = fluxbox-remote rootmenu
@@ -398,33 +398,33 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 1 0
-button_background_id = 0
+button_background_id = 5
 button_centered = 0
-button_max_icon_size = 0
+button_max_icon_size = 32
 
 #-------------------------------------
 # Button 2
 button = new
 button_icon = ~/.config/tint2/icons/wrench1600_white.png
 button_text = 
-button_tooltip = PANEL: config | select
-button_lclick_command = tint2conf
-button_rclick_command = mxfb-tint2-manager
+button_tooltip = Settings manager
+button_lclick_command = custom-toolbox /etc/custom-toolbox/mxfb-settings.list
+button_rclick_command = 
 button_mclick_command = tint2 taskbar autohide = 1
 button_uwheel_command = 
 button_dwheel_command = 
 button_font_color = #808080 100
 button_padding = 0 0
-button_background_id = 0
+button_background_id = 5
 button_centered = 0
-button_max_icon_size = 0
+button_max_icon_size = 32
 
 #-------------------------------------
 # Button 3
 button = new
 button_icon = ~/.config/tint2/icons/internet50.png
 button_text = 
-button_tooltip = BROWSER: Preferred | Search
+button_tooltip = Browser
 button_lclick_command = sensible-browser
 button_rclick_command = mx-viewer
 button_mclick_command = 
@@ -432,9 +432,9 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 1
-button_background_id = 0
+button_background_id = 5
 button_centered = 0
-button_max_icon_size = 24
+button_max_icon_size = 28
 
 #-------------------------------------
 # Button 4
@@ -449,9 +449,9 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 1 0
-button_background_id = 0
+button_background_id = 5
 button_centered = 0
-button_max_icon_size = 0
+button_max_icon_size = 32
 
 #-------------------------------------
 # Tooltip

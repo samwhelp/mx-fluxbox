@@ -355,9 +355,9 @@ execp_icon_h = 20
 #-------------------------------------
 # Button 1
 button = new
-button_icon = ~/.config/tint2/icons/down_white.png
+button_icon = /usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 button_text = 
-button_lclick_command = /home/XXX/.fluxbox/scripts/mxfb-logout
+button_lclick_command = exit-options
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 

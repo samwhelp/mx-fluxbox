@@ -9,7 +9,7 @@
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update list) {mxfb-recent-files}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}

@@ -172,7 +172,7 @@ time1_timezone =
 time2_timezone = 
 clock_font_color = #ffffff 100
 clock_padding = 1 0
-clock_background_id = 5
+clock_background_id = 0
 clock_tooltip = Left calendar, right timer
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
@@ -241,7 +241,7 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 3
-button_background_id = 1
+button_background_id = 0
 button_centered = 1
 button_max_icon_size = 32
 
@@ -258,7 +258,7 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 0
-button_background_id = 1
+button_background_id = 0
 button_centered = 0
 button_max_icon_size = 24
 
@@ -275,7 +275,7 @@ button_uwheel_command =
 button_dwheel_command = 
 button_font_color = #000000 100
 button_padding = 0 0
-button_background_id = 4
+button_background_id = 0
 button_centered = 0
 button_max_icon_size = 28
 
