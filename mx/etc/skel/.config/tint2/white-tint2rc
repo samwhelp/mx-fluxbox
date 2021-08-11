@@ -428,7 +428,7 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 2
 button = new
-button_icon = ~/.config/tint2/icons/wrench1600.png
+button_icon = /usr/share/mxflux/wrench1600.png
 button_text = 
 button_tooltip = SETTINGS: tint2 |  Xfce4 | fluxbox
 button_lclick_command = tint2conf
@@ -445,7 +445,7 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 3
 button = new
-button_icon = ~/.config/tint2/icons/down_black.png
+button_icon = /usr/share/mxflux/down_black.png
 button_text = 
 button_tooltip = EXIT...
 button_lclick_command = exit-options
