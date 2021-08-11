@@ -1,10 +1,11 @@
-mx-fluxbox (21.08.01+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.01+nmu3) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * Edited available tint2 configs
   * Added a battery-tint2rc
+  * Relocated tint2 icons to /usr/share/mxflux
 
- -- Jerry Bond <jb@X1Cmx>  Tue, 10 Aug 2021 12:56:26 -0400
+ -- Jerry Bond <jb@X1Cmx>  Wed, 11 Aug 2021 05:08:51 -0400
 
 mx-fluxbox (21.08.01) mx; urgency=medium
 

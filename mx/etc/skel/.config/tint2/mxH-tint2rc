@@ -388,7 +388,7 @@ execp_icon_h = 24
 #-------------------------------------
 # Button 1
 button = new
-button_icon = ~/.config/tint2/icons/up_white.png
+button_icon = /usr/share/mxflux/up_white.png
 button_text = 
 button_tooltip = Appfinder | rofi
 button_lclick_command = xfce4-appfinder
@@ -405,7 +405,7 @@ button_max_icon_size = 32
 #-------------------------------------
 # Button 2
 button = new
-button_icon = ~/.config/tint2/icons/wrench1600_white.png
+button_icon = /usr/share/mxflux/wrench1600_white.png
 button_text = 
 button_tooltip = Settings manager
 button_lclick_command = custom-toolbox /etc/custom-toolbox/mxfb-settings.list
@@ -422,7 +422,7 @@ button_max_icon_size = 32
 #-------------------------------------
 # Button 3
 button = new
-button_icon = ~/.config/tint2/icons/internet50.png
+button_icon = /usr/share/mxflux/internet50.png
 button_text = 
 button_tooltip = Browser
 button_lclick_command = sensible-browser
@@ -439,7 +439,7 @@ button_max_icon_size = 28
 #-------------------------------------
 # Button 4
 button = new
-button_icon = ~/.config/tint2/icons/down_white.png
+button_icon = /usr/share/mxflux/down_white.png
 button_text = 
 button_tooltip = EXIT...
 button_lclick_command = exit-options

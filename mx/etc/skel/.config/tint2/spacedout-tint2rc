@@ -255,7 +255,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = ~/.config/tint2/icons/wrench1600_white.png
+button_icon = /usr/share/mxflux/wrench1600_white.png
 button_text = 
 button_lclick_command = tint2conf
 button_rclick_command = mxfb-tint2-manager
@@ -271,7 +271,7 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 2
 button = new
-button_icon = ~/.config/tint2//icons/internet250.png
+button_icon = /usr/share/mxflux/internet250.png
 button_text = 
 button_lclick_command = sensible-browser
 button_rclick_command = 

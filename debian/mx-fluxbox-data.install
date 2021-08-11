@@ -10,6 +10,7 @@ base-mxfb/menu/* usr/share/mxflux/menu
 base-mxfb/fluxbox_badge-symbolic.svg usr/share/icons/hicolor/scalable/places
 base-mxfb/xfce4-appfinder-mxfb.desktop usr/share/mxflux/
 base-mxfb/pixmaps/mx*.png  usr/share/icons
+base-mxfb/icons-tint2/*.png usr/share/mxflux
 base-mxfb/pixmaps/system*.png  usr/local/share/icons
 base-mxfb/bin/* usr/bin
 base-mxfb/volumeicon/* /etc/skel/.config/volumeicon
