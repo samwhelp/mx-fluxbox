@@ -74,6 +74,11 @@ xfce4-clipman &
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
 
+#update app  menu if it doesn't exist
+if [ ! -f $HOME/.fluxbox/submenus/full_menu ]; then
+    command -v mxfb-menu-generator && mxfb-menu-generator
+fi
+
 #get last background selected
 #~/.fehbg
 nitrogen --restore
