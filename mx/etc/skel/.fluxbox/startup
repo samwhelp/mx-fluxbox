@@ -74,8 +74,9 @@ xfce4-clipman &
 # start user accessibility bus - if not already running
 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
 
-#start fehbg to get last background selected
-~/.fehbg
+#get last background selected
+#~/.fehbg
+nitrogen --restore
 
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
