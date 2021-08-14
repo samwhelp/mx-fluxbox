@@ -20,9 +20,5 @@
     [submenu] (Wallpaper) 
     [exec] (Rotate) {mxfb-bg-rotate}
     [exec] (Separate) {mxfb-separate-backgrounds}
-    [submenu] (Select)
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-    [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-    [end]
+    [exec] (Select){nitrogen}
 [end]
