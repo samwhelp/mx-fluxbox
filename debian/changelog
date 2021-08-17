@@ -1,3 +1,9 @@
+mx-fluxbox (21.08.15) UNRELEASED; urgency=medium
+
+  * switched out apps file
+
+ -- Jerry Bond <jb@X1Cmx>  Tue, 17 Aug 2021 15:27:17 -0400
+
 mx-fluxbox (21.08.14) mc; urgency=medium
 
   * Non-maintainer upload.
