@@ -13,7 +13,6 @@
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
-    [exec] (Email) {thunderbird}
     [exec] (File manager ) {exo-open $HOME/.fluxbox} 
     [exec] (Help ) {mxfbhelp}
     [exec] (Music) {deadbeef}
