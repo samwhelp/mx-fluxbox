@@ -1,9 +1,10 @@
-mx-fluxbox (21.08.16) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.17) UNRELEASED; urgency=medium
 
   * switched out apps file
   * changed battery widget on tint2s
+  * added desktop icons, adjusted install
 
- -- Jerry Bond <jb@X1Cmx>  Thu, 26 Aug 2021 15:58:17 -0400
+ -- Jerry Bond <jb@X1Cmx>  Thu, 26 Aug 2021 17:32:28 -0400
 
 mx-fluxbox (21.08.14) mc; urgency=medium
 
