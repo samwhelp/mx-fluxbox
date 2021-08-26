@@ -41,6 +41,14 @@ Ctrl F5 :Exec mx-tools
 Control Up :Exec amixer -D pulse sset Master 5%+
 Control Down :Exec amixer -D pulse sset Master 5%-
 
+# exit fluxbox — both work
+Control Mod1 Delete :Exit
+Control Mod1 Bksp :Exit
+
+# change to previous/next workspace
+Control Mod1 Left :PrevWorkspace
+Control Mod1 Right :NextWorkspace
+
 ###WINDOWS###
 
 # close a window
@@ -91,22 +99,6 @@ Mod1 F5 :Kill
 Mod1 F9 :Minimize
 Mod1 F10 :Maximize
 Mod1 F11 :Fullscreen
-
-### MISCELLANEOUS ###
-
-# exit fluxbox — both work
-Control Mod1 Delete :Exit
-Control Mod1 Bksp :Exit
-
-# change to previous/next workspace
-Control Mod1 Left :PrevWorkspace
-Control Mod1 Right :NextWorkspace
-
-# change to a specific workspace
-Mod4 F1 :Workspace 1
-Mod4 F2 :Workspace 2
-Mod4 F3 :Workspace 3
-
 
 ### WINDOW TILING ###
 

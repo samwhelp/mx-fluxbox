@@ -98,7 +98,7 @@ border_color_pressed = #777777 30
 
 #-------------------------------------
 # Panel
-panel_items = PC::T::S:PPPL
+panel_items = PCB::T::S:PPPL
 panel_size = 100% 48
 panel_margin = 0 0
 panel_padding = 7 1 2
@@ -218,12 +218,12 @@ battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = xmessage 'tint2: Battery low!'
 battery_full_cmd = 
-bat1_font = Sans Bold 8
-bat2_font = sans 6
-battery_font_color = #ff0000 100
-bat1_format = 
-bat2_format = 
-battery_padding = 1 0
+bat1_font = Poky 16
+bat2_font = DejaVu Sans 8
+battery_font_color = #df3030 100
+bat1_format = 3
+bat2_format = %p
+battery_padding = 4 5
 battery_background_id = 1
 battery_hide = 30
 battery_lclick_command = 
