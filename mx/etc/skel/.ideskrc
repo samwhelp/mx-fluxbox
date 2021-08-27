@@ -1,0 +1,50 @@
+table Config
+  #####CAPTION#####: 
+  FontName: sans
+  FontSize: 11
+  FontColor: green
+  Bold: false
+  CaptionOnHover: false
+  CaptionPlacement: bottom
+  #####MISC#####: 
+  Locked: false
+  Transparency: 100
+  FillStyle: FillHLine
+  ClickDelay: 700
+  #####BACKGROUND#####: 
+  Background.File: 
+  Background.Delay: 1
+  Background.Source: 
+  Background.Mode: Scale
+  Background.Color: #C2CCFF
+  #####SHADOW#####: 
+  Shadow: true
+  ShadowColor: #000000
+  ShadowX: 1
+  ShadowY: 2
+  #####TOOLTIP#####: 
+  ToolTip.FontSize: 9
+  ToolTip.FontName: gothic
+  ToolTip.ForeColor: #0000FF
+  ToolTip.BackColor: #FFFFFF
+  ToolTip.CaptionOnHover: false
+  ToolTip.CaptionPlacement: right
+  #####SNAP#####: 
+  IconSnap: false
+  SnapWidth: 96
+  SnapHeight: 72
+  SnapOrigin: TopLeft
+  SnapShadow: false
+  SnapShadowTrans: 200
+end
+
+table Actions
+  Lock: control shift middle doubleClk
+  Reload: control left singleClk
+  Drag: left hold
+  EndDrag: left singleClk
+  Execute[0]: left singleClk
+  Execute[1]: middle singleClk
+  Execute[2]: right singleClk
+end
+

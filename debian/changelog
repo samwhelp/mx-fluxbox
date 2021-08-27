@@ -1,10 +1,11 @@
-mx-fluxbox (21.08.17) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.18) UNRELEASED; urgency=medium
 
   * switched out apps file
   * changed battery widget on tint2s
   * added desktop icons, adjusted install
+  * changed gsimplecal config, added ideskrc with captions visible
 
- -- Jerry Bond <jb@X1Cmx>  Thu, 26 Aug 2021 17:32:28 -0400
+ -- Jerry Bond <jb@X1Cmx>  Fri, 27 Aug 2021 06:54:51 -0400
 
 mx-fluxbox (21.08.14) mc; urgency=medium
 

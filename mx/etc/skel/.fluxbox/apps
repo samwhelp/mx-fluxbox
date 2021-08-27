@@ -130,7 +130,6 @@
   [Close]	{yes}
 [end]
 [app] (name=custom-toolbox) (class=custom-toolbox)
-  [Dimensions]	{39% 81%}
   [Position]	(UPPERLEFT)	{33% 10%}
   [Close]	{yes}
 [end]
