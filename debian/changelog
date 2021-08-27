@@ -1,12 +1,13 @@
-mx-fluxbox (21.08.15+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.15+nmu2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * switched out apps file
   * changed battery widget on tint2s
   * added desktop icons, adjusted install
   * chabged gsimplecal config, added ideskrc with captions visible
+  * removed ideskrc to avoid conflict
 
- -- Jerry Bond <jb@X1Cmx>  Fri, 27 Aug 2021 08:15:55 -0400
+ -- Jerry Bond <jb@X1Cmx>  Fri, 27 Aug 2021 08:35:59 -0400
 
 mx-fluxbox (21.08.15) mx; urgency=medium
 
