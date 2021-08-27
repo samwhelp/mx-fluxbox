@@ -8,7 +8,7 @@
   [Layer]	{2}
 [end]
 [app] (class=Firefox)
-  [Position]	(CENTER)	{0 0}
+  [Position]	(UPPERLEFT)	{17% 4%}
   [Close]	{yes}
 [end]
 [app] (class=Galculator)
@@ -64,7 +64,7 @@
   [Close]	{yes}
 [end]
 [app] (class=Thunar)
-  [Position]	(UPPERLEFT)	{28% 16%}
+  [Position]	(UPPERLEFT)	{28% 17%}
   [Close]	{yes}
 [end]
 [app] (class=Thunderbird)
@@ -89,8 +89,8 @@
   [Close]	{yes}
 [end]
 [app] (name=featherpad) (class=FeatherPad)
-  [Dimensions]	{33% 100%}
-  [Position]	(UPPERLEFT)	{34% 0%}
+  [Dimensions]	{60% 80%}
+  [Position]	(UPPERLEFT)	{25% 0%}
 [end]
 [app] (name=feh)
   [Position]	(UPPERLEFT)	{29% 20%}
@@ -120,8 +120,8 @@
   [Close]	{yes}
 [end]
 [app] (name=xfce4-appfinder) (class=Xfce4-appfinder)
-  [Dimensions]	{21% 90%}
-  [Position]	(UPPERLEFT)	{10% 10%}
+  [Dimensions]	{33% 90%}
+  [Position]	(UPPERLEFT)	{5% 3%}
   [Close]	{yes}
 [end]
 [app] (name=mx-tools) (class=mx-tools)
@@ -129,8 +129,12 @@
   [Position]	(UPPERLEFT)	{32% 7%}
   [Close]	{yes}
 [end]
-[app] (name=custom-toolbox-mxfb)
-  [Dimensions]	{38% 80%}
-  [Position]	(CENTER)	{0 0}
+[app] (name=custom-toolbox) (class=custom-toolbox)
+  [Position]	(UPPERLEFT)	{33% 10%}
+  [Close]	{yes}
+[end]
+[app] (name=qpdfview) (class=qpdfview)
+  [Dimensions]	{66% 93%}
+  [Position]	(UPPERLEFT)	{20% 3%}
   [Close]	{yes}
 [end]

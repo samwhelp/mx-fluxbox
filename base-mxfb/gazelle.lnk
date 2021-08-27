@@ -1,8 +1,8 @@
 table Icon
   Caption: Install
   Icon: /usr/share/mxflux/mxfcelogo-rounded_48.png
-  X: 200
-  Y: 200
+  X: 300
+  Y: 300
   Command[0]: ideskrun minstall-pkexec
   Command[1]: mx-idesktool gazelle.lnk
   Command[2]: mx-manual

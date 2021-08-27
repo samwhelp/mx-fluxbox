@@ -1,0 +1,10 @@
+table Icon
+  Caption: Software
+  Icon: /usr/share/icons/mxfb-packageinstaller.png
+  X: 200
+  Y: 200
+  Command[0]: ideskrun su-to-root -X -c mx-packageinstaller
+  Command[1]: mx-idesktool Software.lnk
+  Command[2]: ideskmenu
+end
+
