@@ -183,6 +183,7 @@ clock_dwheel_command =
 
 #-------------------------------------
 # Battery
+## If you don't want a battery monitor, change to: battery_hide = 0
 battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = xmessage 'tint2: Battery low!'
