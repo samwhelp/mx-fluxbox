@@ -1,4 +1,4 @@
-mx-fluxbox (21.08.15+nmu4) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.15+nmu5) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * switched out apps file
@@ -8,8 +8,10 @@ mx-fluxbox (21.08.15+nmu4) UNRELEASED; urgency=medium
   * removed ideskrc to avoid conflict
   * added a basic dock
   * revised mimeapps.list
+  * added menu entry for tint2 dock
+  * created final tint2 collection
 
- -- Jerry Bond <jb@X1Cmx>  Sat, 28 Aug 2021 18:31:05 -0400
+ -- Jerry Bond <jb@X1Cmx>  Sun, 29 Aug 2021 12:07:36 -0400
 
 mx-fluxbox (21.08.15) mx; urgency=medium
 
