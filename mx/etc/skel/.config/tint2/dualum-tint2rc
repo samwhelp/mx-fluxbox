@@ -11,7 +11,7 @@ end_color = #9d9d9d 55
 #-------------------------------------
 # Backgrounds
 # Background 1: Inactive desktop name, Panel, Systray
-rounded = 5
+rounded = 3
 border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -24,7 +24,7 @@ background_color_pressed = #eeeeee 100
 border_color_pressed = #bbbbbb 100
 
 # Background 2: Active desktop name, Tooltip
-rounded = 5
+rounded = 3
 border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -37,7 +37,7 @@ background_color_pressed = #cccccc 100
 border_color_pressed = #cccccc 100
 
 # Background 3: Active task
-rounded = 5
+rounded = 3
 border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -50,7 +50,7 @@ background_color_pressed = #cccccc 100
 border_color_pressed = #999999 100
 
 # Background 4: Urgent task
-rounded = 5
+rounded = 3
 border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -101,22 +101,22 @@ border_color_hover = #999999 100
 background_color_pressed = #dddddd 100
 border_color_pressed = #999999 100
 
-# Background 8: 
+# Background 8: Systemtray (for white/black/colored icons)
 rounded = 3
-border_width = 0
+border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #dddddd 100
-border_color = #cccccc 100
+background_color = #424242 60
+border_color = #bbbbbb 100
 background_color_hover = #dddddd 100
-border_color_hover = #cccccc 100
+border_color_hover = #bbbbbb 100
 background_color_pressed = #dddddd 100
-border_color_pressed = #cccccc 100
+border_color_pressed = #bbbbbb 100
 
 #-------------------------------------
 # Panel
-panel_items = PTCSP
+panel_items = PTCSBP
 panel_size = 100% 25
 panel_margin = 0 0
 panel_padding = 4 2 4
@@ -190,10 +190,10 @@ mouse_scroll_down = next_task
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 4 0 2
-systray_background_id = 1
+systray_padding = 4 0 1
+systray_background_id = 8
 systray_sort = ascending
-systray_icon_size = 22
+systray_icon_size = 16
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
@@ -222,7 +222,7 @@ time2_font = sans 7
 clock_font_color = #222222 100
 clock_padding = 1 0
 clock_background_id = 0
-clock_tooltip = %A %d %B %H:%M
+clock_tooltip = Calendar | Timer
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
 clock_rclick_command = mxfb-timer
@@ -236,14 +236,14 @@ battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = xmessage 'tint2: Battery low!'
 battery_full_cmd = 
-bat1_font = sans 8
-bat2_font = sans 6
-battery_font_color = #222222 100
-bat1_format = 
+bat1_font = Poky 15
+bat2_font = 
+battery_font_color = #df0000 100
+bat1_format = 2
 bat2_format = 
 battery_padding = 1 0
 battery_background_id = 0
-battery_hide = 101
+battery_hide = 30
 battery_lclick_command = 
 battery_rclick_command = 
 battery_mclick_command = 
@@ -257,7 +257,7 @@ ac_disconnected_cmd =
 button = new
 button_icon = /usr/share/mxflux/tint2/down_black.png
 button_text = 
-button_tooltip = < FB Root-Menu | FB Window-Menu >
+button_tooltip = FB Root-Menu | FB Window-Menu
 button_lclick_command = fluxbox-remote RootMenu
 button_rclick_command = fluxbox-remote WindowMenu
 button_mclick_command = 
@@ -293,5 +293,5 @@ tooltip_hide_timeout = 0.1
 tooltip_padding = 2 2
 tooltip_background_id = 2
 tooltip_font_color = #222222 100
-tooltip_font = sans 9
+tooltip_font = sans 8
 
