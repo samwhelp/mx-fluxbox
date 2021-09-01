@@ -1,4 +1,4 @@
-mx-fluxbox (21.08.15+nmu6) UNRELEASED; urgency=medium
+mx-fluxbox (21.08.15+nmu7) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * switched out apps file
@@ -11,8 +11,9 @@ mx-fluxbox (21.08.15+nmu6) UNRELEASED; urgency=medium
   * added menu entry for tint2 dock
   * created final tint2 collection
   * added dock and panel pair
+  * added attribution and release to tint2 configs
 
- -- Jerry Bond <jb@X1Cmx>  Mon, 30 Aug 2021 05:25:59 -0400
+ -- Jerry Bond <jb@X1Cmx>  Wed, 01 Sep 2021 06:16:31 -0400
 
 mx-fluxbox (21.08.15) mx; urgency=medium
 
