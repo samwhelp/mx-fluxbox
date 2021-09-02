@@ -2,6 +2,6 @@
 
 #disable the default dock
 
-sed -i 's/$HOME/#$HOME/' $HOME/.fluxbox/startup
+sed  -i '/^[^#]/ s/\(^.*DefaultDock.*$\)/#\1/' $HOME/.fluxbox/startup
 
 exit
