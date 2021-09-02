@@ -15,7 +15,7 @@ base-mxfb/pixmaps/system*.png  usr/local/share/icons
 base-mxfb/bin/* usr/bin
 base-mxfb/volumeicon/* /etc/skel/.config/volumeicon
 base-mxfb/scripts/*   usr/bin
-base-mxfb/backgrounds/* usr/share/backgrounds
+#base-mxfb/backgrounds/* usr/share/backgrounds
 
 translations_script/mo/am/mx-fluxbox.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-fluxbox.mo     /usr/share/locale/ar/LC_MESSAGES
