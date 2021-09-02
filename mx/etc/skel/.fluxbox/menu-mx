@@ -9,14 +9,15 @@
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update list) {mxfb-recent-files}
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
-    [exec] (File manager ) {exo-open $HOME/.fluxbox} 
-    [exec] (Help ) {mxfbhelp}
+    [exec] (File manager) {exo-open $HOME/.fluxbox} 
+    [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}
-    [exec] (Run ) {fbrun} 
+    [exec] (Run) {fbrun}
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Appearance)
@@ -30,9 +31,9 @@
     [end]
     [submenu] (Leave)
         [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Suspend ) {sudo 'pm-suspend'}
-        [exit] (Logout  ) 
-        [exec] (Reboot  ) {sudo /sbin/reboot} 
+        [exec] (Suspend) {sudo 'pm-suspend'}
+        [exit] (Logout) 
+        [exec] (Reboot) {sudo /sbin/reboot} 
         [exec] (Shutdown) {sudo /sbin/halt}
     [end]
 [end]
