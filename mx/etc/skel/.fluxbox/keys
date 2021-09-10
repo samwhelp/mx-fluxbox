@@ -37,6 +37,9 @@ Ctrl F4 :Exec xfce4-terminal --drop-down
 # open the MX Tools dashboard
 Ctrl F5 :Exec mx-tools
 
+# open roxterm
+Ctrl Mod1 t :Exec roxterm
+
 # change volume with keys
 Control Up :Exec amixer -D pulse sset Master 5%+
 Control Down :Exec amixer -D pulse sset Master 5%-

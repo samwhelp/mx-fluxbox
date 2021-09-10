@@ -3,6 +3,7 @@ mx-fluxbox (21.09.02+nmu1) UNRELEASED; urgency=medium
   * Non-maintainer upload.
   * added Vertical-up, renamed existing to Vertical-down
   * removed duplicated from mimeapps
+  * added launchy-tint2 and icons"
 
  -- Jerry Bond <jb@X1Cmx>  Wed, 08 Sep 2021 14:30:44 -0400
 

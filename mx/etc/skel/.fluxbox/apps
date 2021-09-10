@@ -138,3 +138,8 @@
   [Position]	(UPPERLEFT)	{20% 3%}
   [Close]	{yes}
 [end]
+[app] (name=gthumb)
+  [Dimensions]	{70% 75%}
+  [Position]	(UPPERLEFT)	{13% 13%}
+  [Close]	{no}
+[end]
