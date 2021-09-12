@@ -130,7 +130,7 @@
   [Close]	{yes}
 [end]
 [app] (name=custom-toolbox) (class=custom-toolbox)
-  [Position]	(UPPERLEFT)	{33% 10%}
+  [Position]	(CENTER)	{0 0}
   [Close]	{yes}
 [end]
 [app] (name=qpdfview) (class=qpdfview)
