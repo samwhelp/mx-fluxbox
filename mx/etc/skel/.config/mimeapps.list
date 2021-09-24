@@ -23,3 +23,5 @@ application/xhtml+xml=firefox.desktop
 text/html=firefox.desktop
 application/x-java-archive=Java.desktop
 text/x-python=Py-Loader.desktop
+video/mov=firefox.desktop;
+video/quicktime=firefox.desktop;
