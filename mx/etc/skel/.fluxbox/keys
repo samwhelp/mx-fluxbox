@@ -19,8 +19,9 @@
 # take a screen capture
 none Print :Exec mxfb-quickshot
 
-# open fluxbox help
+# open help
 Ctrl F1 :Exec mxfb-help
+Shift F1 :Exec mx-manual
 
 # open a little run terminal
 Ctrl F2 :Exec fbrun
