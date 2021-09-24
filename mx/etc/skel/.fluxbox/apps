@@ -130,11 +130,16 @@
   [Close]	{yes}
 [end]
 [app] (name=custom-toolbox) (class=custom-toolbox)
-  [Position]	(UPPERLEFT)	{33% 10%}
+  [Position]	(CENTER)	{0 0}
   [Close]	{yes}
 [end]
 [app] (name=qpdfview) (class=qpdfview)
   [Dimensions]	{66% 93%}
   [Position]	(UPPERLEFT)	{20% 3%}
   [Close]	{yes}
+[end]
+[app] (name=gthumb)
+  [Dimensions]	{70% 75%}
+  [Position]	(UPPERLEFT)	{13% 13%}
+  [Close]	{no}
 [end]

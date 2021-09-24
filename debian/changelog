@@ -1,3 +1,13 @@
+mx-fluxbox (21.09.24) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * added Vertical-up, renamed existing to Vertical-down
+  * removed duplicated from mimeapps
+  * added launchy-tint2 and icons
+  * minor change to default tint2, rofi
+
+ -- Jerry Bond <jb@X1Cmx>  Fri, 24 Sep 2021 15:22:13 -0400
+
 mx-fluxbox (21.09.02) mx; urgency=medium
 
   * update menu-mx, submenus, per mxfb-docs 

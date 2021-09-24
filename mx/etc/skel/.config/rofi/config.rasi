@@ -1,6 +1,6 @@
 configuration {
 
-	modi: "drun,run";
+	modi: "drun";
 	width: 25;
 	show-icons: true;
 	icon-theme: "papirus";

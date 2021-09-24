@@ -62,7 +62,7 @@ border_color_pressed = #999999 100
 #-------------------------------------
 # Panel
 panel_items = L
-panel_size = 40% 44
+panel_size = 60% 44
 panel_margin = 0 0
 panel_padding = 7 1 2
 panel_background_id = 3
@@ -119,13 +119,13 @@ launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
 launcher_item_app = /usr/share/applications/xfce4-appfinder-mxfb.desktop
+launcher_item_app = /usr/share/applications/mx-tools.desktop
+launcher_item_app = /usr/share/applications/custom-toolbox-mxfb.desktop
 launcher_item_app = /usr/share/applications/thunar.desktop
+launcher_item_app = /usr/share/applications/roxterm.desktop
+launcher_item_app = /usr/share/applications/deadbeef.desktop
 launcher_item_app = /usr/share/applications/firefox.desktop
-launcher_item_app = /usr/share/applications/galculator.desktop
-launcher_item_app = /usr/share/applications/xfce4-terminal.desktop
-launcher_item_app = /usr/share/applications/xfce4-taskmanager.desktop
-launcher_item_app = /usr/share/applications/libreoffice-startcenter.desktop
-launcher_item_app = /usr/share/applications/exit-options.desktop
+#launcher_item_app = /usr/share/applications/exit-options.desktop
 
 
 #-------------------------------------
