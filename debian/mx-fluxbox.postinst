@@ -14,7 +14,6 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         rofi \
         rofi-calc \
         mx-fluxbox-about \
-        menumaker \
         tint2 || :
 fi
 
