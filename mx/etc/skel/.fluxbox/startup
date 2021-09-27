@@ -27,11 +27,6 @@ xdg-user-dirs-update
 # Update common folders names to match current locale
 xdg-user-dirs-gtk-update
 
-# add ~/.fluxbox to Thunar sidepane
-if [ -f  ~/.config/gtk-3.0/bookmarks ] && ! grep  -sq '.fluxbox'  ~/.config/gtk-3.0/bookmarks; then
-   sed -i "1ifile://$HOME/.fluxbox"  ~/.config/gtk-3.0/bookmarks
-fi
-
 #start a compositor if using complicated conkies
 #compton &
 
@@ -98,6 +93,11 @@ fi
 
 # put apt-notifier on the toolbar
 (sleep 6; /usr/bin/apt-notifier) &
+
+# start spice-vdagent in KVM/Qemu 
+if [ -x /usr/bin/spice-vdagent ]; then
+   pidof -q spice-vdagentd && /usr/bin/spice-vdagent
+fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
