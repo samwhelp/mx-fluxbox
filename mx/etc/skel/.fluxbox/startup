@@ -27,6 +27,11 @@ xdg-user-dirs-update
 # Update common folders names to match current locale
 xdg-user-dirs-gtk-update
 
+# add ~/.fluxbox to Thunar sidepane
+if [ -f  ~/.config/gtk-3.0/bookmarks ] && ! grep  -sq '.fluxbox'  ~/.config/gtk-3.0/bookmarks; then
+   sed -i "1ifile://$HOME/.fluxbox"  ~/.config/gtk-3.0/bookmarks
+fi
+
 #start a compositor if using complicated conkies
 #compton &
 
