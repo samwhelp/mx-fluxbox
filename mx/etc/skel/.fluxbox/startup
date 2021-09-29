@@ -77,7 +77,7 @@ xfce4-clipman &
 #xfce4-power-manager &
 
 # start user accessibility bus - if not already running
-/usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
+/usr/libexec/at-spi-bus-launcher --launch-immediately  &
 
 #update app  menu if it doesn't exist
 if [ ! -f $HOME/.fluxbox/submenus/full_menu ]; then
