@@ -1,9 +1,14 @@
-mx-fluxbox (21.09.30) mx; urgency=medium
+mx-fluxbox (21.09.29) mx; urgency=medium
 
-  * added bookmarks to Gtk 3.0 file to get Fluxbox entry in Thunar side pane
-  * added menu font to style entry in appearance submenu
+  * adjust at-spi-bus-launcher path in startup
 
- -- Jerry Bond <jb@X1Cmx>  Thu, 30 Sep 2021 05:49:24 -0400
+ -- fehlix <fehlix@mxlinux.org>  Wed, 29 Sep 2021 13:01:29 +0000
+
+mx-fluxbox (21.09.27) mx; urgency=medium
+
+  * start spice-vdagent in KVM/Qemu
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 27 Sep 2021 18:48:08 +0000
 
 mx-fluxbox (21.09.24) mx; urgency=medium
 
