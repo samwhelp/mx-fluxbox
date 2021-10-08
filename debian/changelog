@@ -1,3 +1,9 @@
+mx-fluxbox (21.10.08) mx; urgency=medium
+
+  * added change to custom-toolbox.conf and changed apps file
+
+ -- Jerry Bond <jb@X1Cmx>  Fri, 08 Oct 2021 15:53:54 -0400
+
 mx-fluxbox (21.10.02) mx; urgency=medium
 
   * removed bookmarks from Gtk-3.0 folder
