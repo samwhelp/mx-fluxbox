@@ -1,3 +1,9 @@
+mx-fluxbox (21.10.14) mx; urgency=medium
+
+  * replaced Appfinder with rofi on dock
+
+ -- Jerry Bond <jb@X1Cmx>  Thu, 14 Oct 2021 06:17:18 -0400
+
 mx-fluxbox (21.10.08) mx; urgency=medium
 
   * added change to custom-toolbox.conf and changed apps file
