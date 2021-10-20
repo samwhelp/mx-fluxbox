@@ -1,3 +1,10 @@
+mx-fluxbox (21.10.20) mx; urgency=medium
+
+  * changed custom-toolbox.conf to force geometry
+  * 
+
+ -- Jerry Bond <jb@X1Cmx>  Wed, 20 Oct 2021 12:29:23 -0400
+
 mx-fluxbox (21.10.14) mx; urgency=medium
 
   * replaced Appfinder with rofi on dock
