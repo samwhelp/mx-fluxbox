@@ -1,3 +1,9 @@
+mx-fluxbox (22.03.01) mx; urgency=medium
+
+  * update comfort styles 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 28 Mar 2022 18:48:10 -0400
+
 mx-fluxbox (21.10.20) mx; urgency=medium
 
   * changed custom-toolbox.conf to force geometry
