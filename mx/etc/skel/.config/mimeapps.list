@@ -1,18 +1,18 @@
 [Added Associations]
-application/vnd.ms-htmlhelp=xfce4-web-browser.desktop;
-application/xhtml+xml=xfce4-web-browser.desktop;
-inode/directory=xfce4-file-manager.desktop;
-text/html=xfce4-web-browser.desktop;
-x-scheme-handler/trash=xfce4-file-manager.desktop;
-x-scheme-handler/mailto=xfce4-mail-reader.desktop;
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
+application/vnd.ms-htmlhelp=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+inode/directory=thunar.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/trash=thunar.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
 text/plain=featherpad.desktop
 audio/mpeg=deadbeef.desktop
-application/x-deb=gdebi.desktop;
+application/x-deb=gdebi.desktop
 application/pdf=qpdfview.desktop
+inode/directory=thunar.desktop
 image/png=org.gnome.gThumb.desktop
 image/jpg=org.gnome.gThumb.desktop
 image/jpeg=org.gnome.gThumb.desktop
@@ -23,5 +23,5 @@ application/xhtml+xml=firefox.desktop
 text/html=firefox.desktop
 application/x-java-archive=Java.desktop
 text/x-python=Py-Loader.desktop
-video/mov=firefox.desktop;
-video/quicktime=firefox.desktop;
+video/mov=firefox.desktop
+video/quicktime=firefox.desktop
