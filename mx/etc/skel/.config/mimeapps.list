@@ -25,3 +25,6 @@ application/x-java-archive=Java.desktop
 text/x-python=Py-Loader.desktop
 video/mov=firefox.desktop
 video/quicktime=firefox.desktop
+x-scheme-handler/trash=thunar.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
