@@ -216,7 +216,7 @@ clock_dwheel_command =
 # Battery
 battery_tooltip = 1
 battery_low_status = 10
-battery_low_cmd = bash -c "[[ -z $(acpi 2>/dev/null) ]] && { ;} || { notify-send 'battery low'; }"
+battery_low_cmd = bash -c '[[ -z $(acpi 2>/dev/null) ]] && { ;} || { notify-send "battery low"; }'
 battery_full_cmd = 
 bat1_font = Poky 16
 bat2_font = DejaVu Sans 8
