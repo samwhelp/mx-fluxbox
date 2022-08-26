@@ -33,6 +33,10 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
 			cp /etc/skel/.gtkrc-2.0-mine /root
 		fi
     fi
+    # remove bad apt-notifier.conf
+    if [ -e "/etc/skel/.config/MX-Linux/apt-notifier.conf" ]; then
+    	rm "/etc/skel/.config/MX-Linux/apt-notifier.conf"
+    fi
 fi
 
 
