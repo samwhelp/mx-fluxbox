@@ -10,7 +10,7 @@ x-scheme-handler/https=firefox.desktop;
 [Default Applications]
 text/plain=featherpad.desktop
 audio/mpeg=deadbeef.desktop
-application/x-deb=gdebi.desktop
+application/x-deb=deb-installer.desktop;gdebi.desktop
 application/pdf=qpdfview.desktop
 inode/directory=thunar.desktop
 image/png=org.gnome.gThumb.desktop
