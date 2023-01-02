@@ -16,7 +16,6 @@ Description: mx apps and configuration defaults for fluxbox
 Package: mx-fluxbox
 Breaks: mx-fluxbox (<< 20.06.02)
 Conflicts: mx-fluxbox (<< 20.06.02)
-Depends: mx-fluxbox-data (= ${source:Version}), fluxbox, mx-idesktool, wmalauncher, lxappearance, gkrellm, mx-dockmaker, mxfb-docs, rofi, rofi-calc, tint2, grsync, exit-options, mxfb-accessories
-Recommends: mxfb-art
+Depends: mx-fluxbox-data (= ${source:Version}), fluxbox, mx-idesktool, wmalauncher, lxappearance, gkrellm, mx-dockmaker, mxfb-docs, rofi, rofi-calc, tint2, grsync, exit-options, mxfb-accessories, mx-rofi-manager
 Architecture: all
 Description: mx apps and configuration defaults for fluxbox (metapackage)
