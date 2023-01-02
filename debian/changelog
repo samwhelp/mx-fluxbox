@@ -1,3 +1,9 @@
+mx-fluxbox (23.01.01mx22) mx; urgency=medium
+
+  * add rofi-manager 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 02 Jan 2023 16:35:51 -0500
+
 mx-fluxbox (22.12.01mx21) mx; urgency=medium
 
   * update default wallpaper 
