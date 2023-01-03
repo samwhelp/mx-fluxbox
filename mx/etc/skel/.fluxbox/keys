@@ -16,9 +16,11 @@
 
 ###########
 
-# take a screen capture
+# take a screen capture, interactive by default
 none Print :Exec mxfb-quickshot
+## whole screen capture
 Shift Print :Exec mxfb-quickshot -r -png
+## active window capture
 Mod1 Print :Exec mxfb-quickshot -u -png
 
 # open help
