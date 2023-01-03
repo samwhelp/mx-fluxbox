@@ -18,6 +18,8 @@
 
 # take a screen capture
 none Print :Exec mxfb-quickshot
+Shift Print :Exec mxfb-quickshot -r -png
+Mod1 Print :Exec mxfb-quickshot -u -png
 
 # open help
 Ctrl F1 :Exec mxfb-help
