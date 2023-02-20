@@ -1,0 +1,78 @@
+# copy mx xfce defaults if xfce settings don't exist
+# /etc/X11/Xsession.d/21fluxbox-defaults-mx
+
+# only copy defaults if fluxbox is installed
+# even then, don't copy if previous settings exist
+# only do once, set a check file in .fluxbox when run
+
+if [ -x /usr/bin/fluxbox ]; then
+	if [ ! -e "$HOME/.fluxbox/fluxbox-mx-defaults" ]; then
+		test -d "$HOME/.fluxbox" || mkdir -p "$HOME/.fluxbox"
+		for i in $(ls --format single-column /etc/skel/.fluxbox/); do
+	        	if [ ! -e "$HOME/.fluxbox/$i" ]; then
+      				cp -R /etc/skel/.fluxbox/$i "$HOME/.fluxbox/"
+      			fi
+        done
+          	
+          	#set up idesk
+          	if [ ! -e "$HOME/.ideskrc" ]; then
+				cp /etc/skel/.ideskrc "$HOME/.ideskrc"
+			fi
+          	test -d "$HOME/.idesktop" || mkdir -p "$HOME/.idesktop"
+      		for i in $(ls --format single-column /etc/skel/.idesktop/); do
+        		if [ ! -e "$HOME/.idesktop/$i" ]; then
+      				cp /etc/skel/.idesktop/$i "$HOME/.desktop/$i"
+      			fi
+      		done
+      		
+      		#install volumeicon file
+			#only replace if it doesn't exist
+			if [ ! -e "$HOME/.config/volumeicon/volumeicon-fluxbox" ]; then
+			    test -d "$HOME/.config/volumeicon/" || mkdir -p "$HOME/.config/volumeicon/"
+			   	cp /etc/skel/.config/volumeicon/volumeicon-fluxbox "$HOME/.config/volumeicon/"
+			fi
+			
+			#setup fluxbox backgrounds
+			if [ ! -e "$HOME/.fehbg" ]; then
+				cp /etc/skel/.fehbg "$HOME"/.fehbg
+			fi
+			
+      		#custome gtk files if they don't exist
+			if [ ! -e "$HOME/.gtkrc-2.0-mine" ]; then
+				cp /etc/skel/.gtkrc-2.0-mine "$HOME/.gtkrc-2.0-mine"
+			fi
+			
+      		if [ ! -e "$HOME/.gtkrc-2.0" ]; then
+				cp /etc/skel/.gtkrc-2.0 "$HOME/.gtkrc-2.0"
+			fi
+			
+			if [ ! -e "$HOME/.config/gtk-3.0/settings.ini" ]; then
+				test -d "$HOME/.config/gtk-3.0" || mkdir -p "$HOME/.config/gtk-3.0"
+				cp /etc/skel/.config/gtk-3.0/settings.ini "$HOME/.config/gtk-3.0/settings.ini"
+			fi
+			
+			#set up rofi configs
+			if [ ! -d "$HOME/.config/rofi" ]; then
+				cp -r /etc/skel/.config/rofi "$HOME/.config"
+			fi
+
+			#set up tint2 configs
+			if [ ! -d "$HOME/.config/tint2" ]; then
+				cp -r /etc/skel/.config/tint2 "$HOME/.config"
+			fi
+			
+      		#set up the system monitors
+
+			if [ !-d "$HOME/.gkrellm2" ]; then
+				cp -r /etc/skel/.gkrellm2 "$HOME"
+			fi
+			
+			#setup nitrogen
+			if [ ! -d "$HOME/.config/nitrogen" ]; then
+				cp -r /etc/skel/.config/nitrogen "$HOME/.config"
+			fi
+			
+		echo "to reset MX defaults, remove all files in these directories \n ~/.fluxbox \n ~/.idesktop directory \n ~/.ideskrc \n ~/.config/nitrogen \n ~/.config/gtk-3.0 \n ~/.gtkrc* files" >>"$HOME/.fluxbox/fluxbox-mx-defaults"
+		echo "to use flubox/debian defaults instead of MX defaults, remove all files in ~/.fluxbox directory except fluxbox-mx-defaults" >>"$HOME/.fluxbox/fluxbox-mx-defaults"
+	fi
+fi
