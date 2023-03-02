@@ -9,4 +9,10 @@ if [ -e   /usr/share/mxflux/menu/out-of-sight/out-of-sight ]; then
     rmdir /usr/share/mxflux/menu/out-of-sight.moved || :
 fi
 
+# remove incorrect /etc/X11/Xsession.d/21fluxbox-defaults-mx folder
+
+if [ -d /etc/X11/Xsession.d/21fluxbox-defaults-mx ]; then
+	rm -r /etc/X11/Xsession.d/21fluxbox-defaults-mx
+fi
+
 
