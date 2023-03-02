@@ -1,7 +1,14 @@
+mx-fluxbox (23.03.01mx23) mx; urgency=medium
+
+  * update 21fluxbox-defaults-mx location 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 02 Mar 2023 06:51:46 -0500
+
 mx-fluxbox (23.02.03mx23) mx; urgency=medium
 
   * update nitrogen entry 
   * add defaults loading
+  * hide mxflux-install from menu
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 19 Feb 2023 22:29:57 -0500
 
