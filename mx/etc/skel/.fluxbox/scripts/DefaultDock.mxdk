@@ -1,26 +1,27 @@
 #!/bin/bash
 
+pkill wmalauncher
+
 #set up slit location
-sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: TopLeft/' $HOME/.fluxbox/init
 
 fluxbox-remote restart; sleep 1
 
 # TOOLTIPS
 TTIPS+=" --tooltip-show-delay       250"
 TTIPS+=" --tooltip-text-padding     3"
-TTIPS+=" --tooltip-border-size		3"
-TTIPS+=" --tooltip-foreground-color black"
-TTIPS+=" --tooltip-background-color #d3d3d3"
+TTIPS+=" --tooltip-border-size		0"
+TTIPS+=" --tooltip-foreground-color #ffffff"
+TTIPS+=" --tooltip-background-color #1d2324"
+
+BACK="#1d2324"
+BORDER="#1d2324"
+HILITE="#0f56d9"
 
 #commands for dock launchers
-wmalauncher --command  rofi -show drun --icon /usr/share/icons/Papirus/48x48/apps/applications-all.svg --tooltip-text "All applications" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file mx-tools.desktop --tooltip-text "MX Tools" $TTIPS  --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color black --border-color black --window-size 48 --tooltip-text "Settings manager" $TTIPS& sleep 0.1
-wmalauncher --desktop-file thunar.desktop --tooltip-text "File manager" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file libreoffice-startcenter.desktop --tooltip-text "Office suite" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file mxfb-help.desktop --tooltip-text "Help" --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --desktop-file roxterm.desktop --background-color black --border-color black --window-size 48 --tooltip-text "Terminal" $TTIPS & sleep 0.1
-wmalauncher --command mxfb-quickshot --icon /usr/share/icons/Papirus/48x48/devices/camera-photo.svg --background-color black --border-color black --window-size 48 --tooltip-text "Quickshot (select)" $TTIPS& sleep 0.1
-wmalauncher --desktop-file deadbeef.desktop --background-color black --border-color black --window-size 48 --tooltip-text "Music" $TTIPS& sleep 0.1
-wmalauncher --desktop-file thunderbird.desktop --tooltip-text "Email" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
-wmalauncher --command sensible-browser --icon /usr/share/icons/Papirus/48x48/categories/internet-archive.svg --tooltip-text "Browser" $TTIPS --background-color black --border-color black --window-size 48 & sleep 0.1
+
+wmalauncher --command mx-tools --icon /usr/share/icons/hicolor/scalable/apps/mx-tools.svg --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "MX Tools" $TTIPS & sleep 0.1
+
+wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Settings manager" $TTIPS & sleep 0.1
+
+wmalauncher --desktop-file mxfb-help.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Help" $TTIPS & sleep 0.1
