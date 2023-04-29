@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[Exec] (All Apps) {rofi NEED REST}
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -15,10 +11,14 @@
     [exec] (Browser) {sensible-browser}
     [exec] (Email) {thunderbird}
     [exec] (File manager ) {exo-open $HOME/.fluxbox} 
+    [submenu] (Goodies)
+    	[exec] (Weather) {weather_cli}
+    	[exec] (Xkcd) {bl-xkcd}
+    [end]
     [exec] (Help ) {mxfbhelp}
     [exec] (Music) {deadbeef}
-    [exec] (Run ) {fbrun} 
-    [exec] (Terminal) {roxterm} 
+    [exec] (Run ) {rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'} 
+    [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)

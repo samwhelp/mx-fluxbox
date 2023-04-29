@@ -4,21 +4,25 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
    [end]
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (File manager) {exo-open $HOME/.fluxbox} 
+    [submenu] (Goodies)
+    	[exec] (Weather) {weather_cli}
+    	[exec] (Xkcd) {bl-xkcd}
+    [end]
     [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}
-    [exec] (Run) {fbrun}
+    [exec] (Run) {rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'}
     [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {roxterm} 
+    [exec] (Terminal) {x-terminal-emulator} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)
