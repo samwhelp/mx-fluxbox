@@ -15,8 +15,11 @@
     	[Exec] (Top) {mxfb-top}
     	[Exec] (— TOOLBAR, MENU —)
          	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
+        	[submenu] (Legacy Styles)
+			[stylesdir] (mx-tweak --theme)
+			[end]
     [end]
+
     [exec] (Theme) {lxappearance}
     [submenu] (Toolbar)
         [exec] (Fluxbox) {toggletint2}
