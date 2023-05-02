@@ -10,13 +10,16 @@
     [exec] (Monitors) {gkrellm}
     [submenu] (Style)
     	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
+ 		[Exec] (Border) {mxfb-borders}
     	[Exec] (Menu font) {mxfb-menufont}
     	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
+    	[Exec] (— TOOLBAR, MENU —)  
+        [submenu] (User)	
          	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
+         [end]
+       	[Exec] (Legacy) {mx-tweak --theme}
     [end]
+
     [exec] (Theme) {lxappearance}
     [submenu] (Toolbar)
         [exec] (Fluxbox) {toggletint2}

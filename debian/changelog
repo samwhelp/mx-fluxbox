@@ -1,11 +1,13 @@
-mx-fluxbox (23.03.01mx23+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (23.03.01mx23+nmu2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * many style changes by Melber
   * moved some scripts to usr/bin
   * revised menu 
+  * corrected rofi menu script 
+  * changed style menu to use mx-tweak
 
- -- Jerry <jb@mx>  Sat, 29 Apr 2023 09:33:36 -0400
+ -- Jerry <jb@mx>  Mon, 01 May 2023 08:43:23 -0400
 
 mx-fluxbox (23.03.01mx23) mx; urgency=medium
 
