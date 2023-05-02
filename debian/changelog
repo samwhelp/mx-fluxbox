@@ -1,5 +1,6 @@
-mx-fluxbox (23.03.01mx23+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.01mx23) mx; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * many style changes by Melber
   * moved some scripts to usr/bin
@@ -7,7 +8,10 @@ mx-fluxbox (23.03.01mx23+nmu2) UNRELEASED; urgency=medium
   * corrected rofi menu script 
   * changed style menu to use mx-tweak
 
- -- Jerry <jb@mx>  Mon, 01 May 2023 08:43:23 -0400
+  [ Dolphin Oracle ]
+  * new build
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 01 May 2023 22:25:50 -0400
 
 mx-fluxbox (23.03.01mx23) mx; urgency=medium
 
