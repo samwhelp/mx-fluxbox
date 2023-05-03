@@ -1,3 +1,12 @@
+mx-fluxbox (23.05.01mx23+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * corrected error in default tint2
+  * removed config script 
+  * added quickshot icon to default dock
+
+ -- Jerry <jb@mx>  Wed, 03 May 2023 13:55:26 -0400
+
 mx-fluxbox (23.05.01mx23) mx; urgency=medium
 
   [ Jerry ]

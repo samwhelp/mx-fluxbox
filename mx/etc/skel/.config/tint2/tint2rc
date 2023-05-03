@@ -332,7 +332,7 @@ button_max_icon_size = 20
 #-------------------------------------
 # Button 5
 button = new
-button_icon = /usr/share/mxflux/tint2/logout.svg
+button_icon = /usr/share/mxflux/tint2/logout.png
 button_text = 
 button_tooltip = Exit options
 button_lclick_command = exit-options
