@@ -24,4 +24,6 @@ wmalauncher --command mx-tools --icon /usr/share/icons/hicolor/scalable/apps/mx-
 
 wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Settings manager" $TTIPS & sleep 0.1
 
+wmalauncher --desktop-file mxfb-quickshot.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Screen capture" $TTIPS & sleep 0.1
+
 wmalauncher --desktop-file mxfb-help.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Help" $TTIPS & sleep 0.1
