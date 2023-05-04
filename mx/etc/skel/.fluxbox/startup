@@ -60,7 +60,7 @@ conkystart
 nm-applet &
 
 #start pulseaudio before volumeicon so unmute works
-start-pulseaudio-x11 &
+pipewire-start
 sleep 2
 volumeicon -c volumeicon-fluxbox & 
 
