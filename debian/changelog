@@ -8,6 +8,7 @@ mx-fluxbox (23.05.02mx23) mx; urgency=medium
 
   [ Dolphin Oracle ]
   * update install file
+  * pipewire-start instead of pulseaudio
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 03 May 2023 20:10:54 -0400
 
