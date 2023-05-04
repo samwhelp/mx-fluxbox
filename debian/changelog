@@ -1,3 +1,11 @@
+mx-fluxbox (23.05.03mx23) mx; urgency=medium
+
+  * add missing app-categories 
+  * cleanup up install file
+  * combine scripts and bin into just bin
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 04 May 2023 07:03:32 -0400
+
 mx-fluxbox (23.05.02mx23) mx; urgency=medium
 
   [ Jerry ]
