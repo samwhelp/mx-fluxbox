@@ -1,11 +1,15 @@
-mx-fluxbox (23.05.01mx23+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.02mx23) mx; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * corrected error in default tint2
   * removed config script 
   * added quickshot icon to default dock
 
- -- Jerry <jb@mx>  Wed, 03 May 2023 13:55:26 -0400
+  [ Dolphin Oracle ]
+  * update install file
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 03 May 2023 20:10:54 -0400
 
 mx-fluxbox (23.05.01mx23) mx; urgency=medium
 
