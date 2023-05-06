@@ -2,7 +2,7 @@
 ### Version 2.3.10 ###
 enable_hostname 0
 hostname_short 0
-enable_sysname 1
+enable_sysname 0
 mbmon_port 0
 sticky_state 1
 dock_type 0
@@ -27,9 +27,9 @@ clock_cal hour_chime_command
 clock_cal quarter_chime_command 
 clock_cal loop_chime_enable 0
 clock_cal clock_options 1
-clock_cal cal_options 1
-clock_cal cal_format %a <span foreground="cyan2"><span font_desc="16.5"><i>%e</i></span></span> %b
-clock_cal clock_format %l:%M <span foreground="$A"><small>%S</small></span>
+clock_cal cal_options 0
+clock_cal cal_format %a <span foreground="$A"><big><big>%e</big></big></span> %b
+clock_cal clock_format %H:%M   %a %e %b
 cpu enable 0
 cpu smp_mode 0
 cpu enabled cpu 1
