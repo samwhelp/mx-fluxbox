@@ -1,5 +1,5 @@
 configuration {
-modi: ":/usr/bin/app-categories,drun,window,help:/usr/share/rofi/rofi-help";
+modi: "drun,:/usr/bin/app-categories,window,help:/usr/share/rofi/rofi-help";
 }
-
+@import "/mxrm-settings/display0.rasi"
 @theme "~/.config/rofi/themes/appfinder/mxfb-appfinder-config.rasi"
