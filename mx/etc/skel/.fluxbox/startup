@@ -59,7 +59,7 @@ conkystart
 #place network manager on the toolbar
 nm-applet &
 
-#start pulseaudio before volumeicon so unmute works
+#start pipewire before volumeicon so unmute works
 pipewire-start
 sleep 2
 volumeicon -c volumeicon-fluxbox & 

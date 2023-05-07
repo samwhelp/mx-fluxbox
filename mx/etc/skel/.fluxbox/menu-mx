@@ -22,7 +22,7 @@
     [exec] (Music) {deadbeef}
     [exec] (Run) {rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'}
     [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {x-terminal-emulator} 
+    [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)
