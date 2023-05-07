@@ -22,6 +22,8 @@ none Print :Exec mxfb-quickshot
 Shift Print :Exec mxfb-quickshot -r -png
 ## active window capture
 Mod1 Print :Exec mxfb-quickshot -u -png
+## launch quickshot
+Ctrl q :Exec quickshot
 
 # open help
 Ctrl F1 :Exec mxfb-help
@@ -41,6 +43,9 @@ Ctrl F4 :Exec xfce4-terminal --drop-down
 
 # open the MX Tools dashboard
 Ctrl F5 :Exec mx-tools
+
+# turn off monitor
+Ctrl F12 :Exec sleep 1 ; xset dpms force off
 
 # open roxterm
 Ctrl Mod1 t :Exec roxterm
@@ -168,20 +173,4 @@ Mod1 KP_9 :MacroCmd {ResizeTo  50%  50%} {MoveTo 00 00 TopRight}
 Mod1 KP_5 :MacroCmd {ResizeTo 70% 70% } {MoveTo 00 00 Center}
 # toggle full screen / restore
 Mod1 KP_0 :ToggleCmd {Maximize} {Restore}
-
-#---------------------------------------------------------------
-# Alt and numpad keys : NumLock on
-#---------------------------------------------------------------
-Mod1 KP_End    :MacroCmd {ResizeTo 50% 50% } {MoveTo 00 00 BottomLeft}
-Mod1 KP_Down   :MacroCmd {ResizeTo 100% 50%} {MoveTo 00 00 Bottom}
-Mod1 KP_Next   :MacroCmd {ResizeTo 50% 50% } {MoveTo 00 00 BottomRight}
-Mod1 KP_Left   :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Left}
-Mod1 KP_Right  :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Right}
-Mod1 KP_Home   :MacroCmd {ResizeTo 50% 50% } {MoveTo 00 00 TopLeft}
-Mod1 KP_Up     :MacroCmd {ResizeTo 100% 50%} {MoveTo 00 00 Up}
-Mod1 KP_Prior  :MacroCmd {ResizeTo 50% 50% } {MoveTo 00 00 TopRight}
-# center and resize 70%
-Mod1 KP_Begin  :MacroCmd {ResizeTo 70% 70% } {MoveTo 00 00 Center}
-# toggle full screen / restore
-Mod1 KP_Insert :ToggleCmd {Maximize} {Restore}
 #---------------------------------------------------------------
