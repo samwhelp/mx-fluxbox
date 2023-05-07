@@ -101,7 +101,7 @@ border_color_pressed = #404040 67
 # Panel
 panel_items = LTSCBP
 panel_size = 100% 42
-panel_margin = 0 0
+panel_margin = 1 0
 panel_padding = 7 1 2
 panel_background_id = 2
 wm_menu = 1
