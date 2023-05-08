@@ -96,11 +96,24 @@ border_color_hover = #db0085 100
 background_color_pressed = #0f56d9 60
 border_color_pressed = #0f56d9 30
 
+# Background 8: Systray
+rounded = 0
+border_width = 2
+border_sides = TB
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #1d2324 100
+border_color = #1d2324 100
+background_color_hover = #aaaaaa 22
+border_color_hover = #aaaaaa 22
+background_color_pressed = #0f56d9 60
+border_color_pressed = #0f56d9 30
+
 #-------------------------------------
 # Panel
 panel_items = PPPP::T:SCP
 panel_size = 100% 45
-panel_margin = 0 0
+panel_margin = 1 0
 panel_padding = 2 0 2
 panel_background_id = 1
 wm_menu = 1
@@ -174,10 +187,10 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 6 3 2
-systray_background_id = 7
+systray_padding = 0 0 0
+systray_background_id = 8
 systray_sort = ascending
-systray_icon_size = 28
+systray_icon_size = 0
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
@@ -344,7 +357,7 @@ button_font_color = #000000 100
 button_padding = 6 0
 button_background_id = 5
 button_centered = 0
-button_max_icon_size = 18
+button_max_icon_size = 28
 
 #-------------------------------------
 # Tooltip

@@ -16,7 +16,6 @@
     [exec] (File manager) {exo-open $HOME/.fluxbox} 
     [submenu] (Goodies)
     	[exec] (Weather) {mxfb-simple-weather}
-    	[exec] (Xkcd) {bl-xkcd}
     [end]
     [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}

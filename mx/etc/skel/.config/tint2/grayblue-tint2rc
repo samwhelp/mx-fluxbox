@@ -102,7 +102,7 @@ border_color_pressed = #606060 67
 # Panel
 panel_items = PCEEE:T:L:SB:P
 panel_size = 100% 54
-panel_margin = 0 0
+panel_margin = 0 1
 panel_padding = 0 0 0
 panel_background_id = 1
 wm_menu = 1
