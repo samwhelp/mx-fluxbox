@@ -100,7 +100,7 @@ border_color_pressed = #777777 30
 # Panel
 panel_items = PCBTSPPPL
 panel_size = 100% 48
-panel_margin = 0 0
+panel_margin = 0 1
 panel_padding = 7 1 2
 panel_background_id = 2
 wm_menu = 1
