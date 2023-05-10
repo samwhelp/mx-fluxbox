@@ -19,7 +19,7 @@
     [end]
     [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}
-    [exec] (Run) {rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'}
+    [exec] (Run) {mxfb-rofirun}
     [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
