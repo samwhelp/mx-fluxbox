@@ -1,9 +1,10 @@
-mx-fluxbox (23.05.03mx23+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.03mx23+nmu2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * added mxfb-rofirun to make menu "run" entry function correctly
+  * updated mxfb_version file for MX Welcome"
 
- -- Jerry <jb@mx>  Wed, 10 May 2023 16:25:09 -0400
+ -- Jerry <jb@mx>  Thu, 11 May 2023 05:46:31 -0400
 
 mx-fluxbox (23.05.03mx23) mx; urgency=medium
 
