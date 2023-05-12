@@ -30,7 +30,7 @@ Ctrl F1 :Exec mxfb-help
 Shift F1 :Exec mx-manual
 
 # open a little run terminal
-Ctrl F2 :Exec rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'
+Ctrl F2 :Exec mxfb-rofirun 
 
 # use logo key for rofi
 Super_L :Exec rofi -show drun
