@@ -1,6 +1,6 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
+[begin] (MX Fluxbox)
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
@@ -14,8 +14,12 @@
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (File manager) {exo-open $HOME/.fluxbox} 
-    [submenu] (Goodies)
-    	[exec] (Weather) {mxfb-simple-weather}
+    [submenu] (Extras)
+    	[exec] (Weather) {weather_cli}
+    	[submenu] (Window options)
+    	   	[Exec] (Border size and color) {mxfb-borders}
+    		[Exec] (Titlebar mode) {mxfb-top}
+        [end]
     [end]
     [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}
