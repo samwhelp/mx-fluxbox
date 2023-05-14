@@ -7,6 +7,7 @@
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Desktop icons) {mx-idesktool}
+    [Exec] (Font) {mxfb-menufont} 
     [exec] (Monitors) {gkrellm}
     [submenu] (Style)
     	[Exec] (— OVERLAY —)
@@ -20,10 +21,10 @@
        	[Exec] (Legacy) {mx-tweak --theme}
     [end]
 
-    [exec] (Theme) {lxappearance}
-    [submenu] (Toolbar)
-        [exec] (Fluxbox) {toggletint2}
-        [exec] (Traditional) {toggletint2}
+   	[Exec] (Theme) {mx-tweak --theme}
+    [submenu] (Toolbars)
+        [exec] (Fluxbox toolbar) {toggletint2}
+        [exec] (tint2 panel) {toggletint2}
     [end]
     [submenu] (Wallpaper) 
     [exec] (Rotate) {mxfb-bg-rotate}
