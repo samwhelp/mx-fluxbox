@@ -7,21 +7,9 @@
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Desktop icons) {mx-idesktool}
-    [Exec] (Font) {mxfb-menufont} 
+    [exec] (Font) {mxfb-menufont} 
     [exec] (Monitors) {gkrellm}
-    [submenu] (Style)
-    	[Exec] (— OVERLAY —)
- 		[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)  
-        [submenu] (User)	
-         	[stylesdir] (~/.fluxbox/styles)
-         [end]
-       	[Exec] (Legacy) {mx-tweak --theme}
-    [end]
-
-   	[Exec] (Theme) {mx-tweak --theme}
+   	[exec] (Theme) {mx-tweak --theme}
     [submenu] (Toolbars)
         [exec] (Fluxbox toolbar) {toggletint2}
         [exec] (tint2 panel) {toggletint2}
