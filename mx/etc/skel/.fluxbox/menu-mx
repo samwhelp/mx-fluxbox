@@ -17,8 +17,8 @@
     [submenu] (Extras)
     	[exec] (Weather) {weather_cli}
     	[submenu] (Window options)
-    	   	[Exec] (Border size and color) {mxfb-borders}
-    		[Exec] (Titlebar mode) {mxfb-top}
+    	   	[Exec] (Border) {mxfb-borders}
+    		[Exec] (Titlebar) {mxfb-top}
         [end]
     [end]
     [exec] (Help) {mxfb-help}

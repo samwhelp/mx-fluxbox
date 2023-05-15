@@ -1,27 +1,19 @@
 #!/bin/bash
 
-pkill wmalauncher
-
 #set up slit location
-sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: TopCenter/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/' $HOME/.fluxbox/init
 
 fluxbox-remote restart; sleep 1
 
 # TOOLTIPS
 TTIPS+=" --tooltip-show-delay       250"
 TTIPS+=" --tooltip-text-padding     3"
-TTIPS+=" --tooltip-border-size		0"
-TTIPS+=" --tooltip-foreground-color #ffffff"
-TTIPS+=" --tooltip-background-color #1d2324"
-
-BACK="#1d2324"
-BORDER="#1d2324"
-HILITE="#0f56d9"
+TTIPS+=" --tooltip-border-size		3"
+TTIPS+=" --tooltip-foreground-color black"
+TTIPS+=" --tooltip-background-color #d3d3d3"
 
 #commands for dock launchers
 
-wmalauncher --command mx-tools --icon /usr/share/icons/hicolor/scalable/apps/mx-tools.svg --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "MX Tools" $TTIPS & sleep 0.1
-
-wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Settings manager" $TTIPS & sleep 0.1
-
-wmalauncher --desktop-file mxfb-help.desktop --background-color $BACK --border-color $BORDER --hover-border-color $HILITE --hover-background-color $HILITE --window-size 48 --tooltip-text "Help" $TTIPS & sleep 0.1
+wmalauncher --desktop-file mx-tools.desktop --tooltip-text "MX Tools" $TTIPS  --background-color black --border-color black --window-size 48 & sleep 0.1
+wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color black --border-color black --window-size 48 --tooltip-text "Settings manager" $TTIPS& sleep 0.1
+wmalauncher --desktop-file mxfb-help.desktop --tooltip-text "Help" --background-color black --border-color black --window-size 48 & sleep 0.1
