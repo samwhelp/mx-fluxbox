@@ -8,6 +8,7 @@ mx-fluxbox (23.05.03mx23+nmu6) UNRELEASED; urgency=medium
   * reverting to former default dock so will work
   * corrected out-of-sight commands to usr/bin
   * inserted new refresh code
+  * revised refresh code per ceeslans
 
  -- Jerry <jb@mx>  Mon, 15 May 2023 19:25:41 -0400
 
