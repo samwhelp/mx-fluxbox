@@ -37,7 +37,7 @@
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh) { fluxbox-remote reconfigure; fluxbox-remote reloadstyle; idesktoggle idesk refresh }
+        [exec] (Refresh) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Suspend) {sudo 'pm-suspend'}
         [exit] (Logout) 
         [exec] (Reboot) {sudo /sbin/reboot} 
