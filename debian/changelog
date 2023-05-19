@@ -1,9 +1,10 @@
-mx-fluxbox (23.05.03mx23+nmu7) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.03mx23+nmu8) UNRELEASED; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * added mxfb-rofirun to make menu "run" entry function correctly
   * updated mxfb_version file for MX Welcome"
-  * added mxfb-rofirum to keys file
+  * added mxfb-rofirun to keys file
   * modified menus, main and appearance
   * reverting to former default dock so will work
   * corrected out-of-sight commands to usr/bin
@@ -11,7 +12,11 @@ mx-fluxbox (23.05.03mx23+nmu7) UNRELEASED; urgency=medium
   * revised refresh code per ceeslans
   * updated menus
 
- -- Jerry <jb@mx>  Fri, 19 May 2023 06:25:22 -0400
+  [ Dolphin Oracle ]
+  * new builds
+  * fix typo in changelog
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 19 May 2023 19:38:03 -0400
 
 mx-fluxbox (23.05.03mx23) mx; urgency=medium
 
