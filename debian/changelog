@@ -1,4 +1,4 @@
-mx-fluxbox (23.05.03mx23+nmu6) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.03mx23+nmu7) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * added mxfb-rofirun to make menu "run" entry function correctly
@@ -9,8 +9,9 @@ mx-fluxbox (23.05.03mx23+nmu6) UNRELEASED; urgency=medium
   * corrected out-of-sight commands to usr/bin
   * inserted new refresh code
   * revised refresh code per ceeslans
+  * updated menus
 
- -- Jerry <jb@mx>  Mon, 15 May 2023 19:25:41 -0400
+ -- Jerry <jb@mx>  Fri, 19 May 2023 06:25:22 -0400
 
 mx-fluxbox (23.05.03mx23) mx; urgency=medium
 
