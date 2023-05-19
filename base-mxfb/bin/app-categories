@@ -28,77 +28,77 @@ if [ x"$@" = x"$ALLAPPS" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "" -display-drun  "$ALLAPPSi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "" -display-drun  "$ALLAPPSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$ACCESS" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Utility,Accessories" -display-drun "$ACCESSi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Utility,Accessories" -display-drun "$ACCESSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$OFFICE" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Office,TextEditor" -display-drun "$OFFICEi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Office,TextEditor" -display-drun "$OFFICEi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$GRAPH" ];
 then
 killall rofi
 sleep 0.25 
-rofi -show drun -drun-categories "Graphics,Image,Photo" -display-drun "$GRAPHi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun -drun-categories "Graphics,Image,Photo" -display-drun "$GRAPHi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$GAMES" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Game" -display-drun "$GAMESi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Game" -display-drun "$GAMESi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$INET" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Network,WebBrowser" -display-drun "$INETi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Network,WebBrowser" -display-drun "$INETi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$MMEDIA" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Music,Sound,Video,Audio,AudioVideo,Multimedia" -display-drun "$MMEDIAi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Music,Sound,Video,Audio,AudioVideo,Multimedia" -display-drun "$MMEDIAi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$MXTOOLS" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live" -display-drun "$MXTOOLSi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live" -display-drun "$MXTOOLSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$SETTGS" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories  "Settings" -display-drun "$SETTGSi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories  "Settings" -display-drun "$SETTGSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$DEVPMNT" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "Development,TerminalEmulator"  -display-drun "$DEVPMNTi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "Development,TerminalEmulator"  -display-drun "$DEVPMNTi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 if [ x"$@" = x"$SYSTM" ];
 then
 killall rofi
 sleep 0.25
-rofi -show drun  -drun-categories "System" -display-drun "$SYSTMi" -theme ~/.config/rofi/themes/mxfb-appfinder/mxfb-appfinder.rasi
+rofi -show drun  -drun-categories "System" -display-drun "$SYSTMi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 fi
 
 echo -e "$ALLAPPS\0icon\x1fapplications-all"
