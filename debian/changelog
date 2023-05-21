@@ -1,3 +1,9 @@
+mx-fluxbox (23.05.06mx23) mx; urgency=medium
+
+  * remove lxappearance depend
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 21 May 2023 17:43:25 -0400
+
 mx-fluxbox (23.05.05mx23) mx; urgency=medium
 
   [ Jerry ]
