@@ -1,11 +1,15 @@
-mx-fluxbox (23.05.06mx23+nmu3) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.07mx23) mx; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * Corrected weather command
   * multiple small changes: font, defaultdock, etc.
   * more small changes: appfinder rofi, etc.
 
- -- Jerry <jb@mx>  Tue, 23 May 2023 20:55:35 -0400
+  [ Dolphin Oracle ]
+  * new build 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 23 May 2023 23:34:43 -0400
 
 mx-fluxbox (23.05.06mx23) mx; urgency=medium
 
