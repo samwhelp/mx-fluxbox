@@ -120,7 +120,7 @@ border_color_pressed = #bbbbbb 100
 # Panel
 panel_items = PTCSBP
 panel_size = 100% 25
-panel_margin = 0 0
+panel_margin = 1 0
 panel_padding = 4 2 4
 panel_background_id = 1
 wm_menu = 1
@@ -296,4 +296,3 @@ tooltip_padding = 2 2
 tooltip_background_id = 2
 tooltip_font_color = #222222 100
 tooltip_font = sans 8
-

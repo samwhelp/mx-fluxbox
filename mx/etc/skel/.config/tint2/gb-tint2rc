@@ -74,7 +74,7 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = LPPP::T:SBCP
+panel_items = PLPPP::T:SBCP
 panel_size = 80% 45
 panel_margin = 1 0
 panel_padding = 2 0 2
@@ -233,6 +233,24 @@ separator_padding = 1 0
 #-------------------------------------
 # Button 1
 button = new
+button_icon = /usr/local/share/icons/mxfcelogo-rounded.png
+button_text = 
+button_tooltip = App Finder
+button_lclick_command = rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
+button_rclick_command =
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font_color = #000000 100
+button_padding = 6 0
+button_background_id = 1
+button_centered = 1
+button_max_icon_size = 32
+
+#-------------------------------------
+
+# Button 2
+button = new
 button_icon = /usr/share/mxflux/tint2/wrench1600_white.png
 button_text = 
 button_tooltip = Settings manager
@@ -248,7 +266,7 @@ button_centered = 1
 button_max_icon_size = 32
 
 #-------------------------------------
-# Button 2
+# Button 3
 button = new
 button_icon = /usr/share/mxflux/tint2/filemanager2.png
 button_text = 
@@ -265,7 +283,7 @@ button_centered = 0
 button_max_icon_size = 32
 
 #-------------------------------------
-# Button 3
+# Button 4
 button = new
 button_icon = /usr/share/mxflux/tint2/internet50.png
 button_text = 
@@ -282,7 +300,7 @@ button_centered = 0
 button_max_icon_size = 28
 
 #-------------------------------------
-# Button 4
+# Button 5
 button = new
 button_icon = /usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 button_text = 
@@ -305,4 +323,3 @@ tooltip_hide_timeout = 0.1
 tooltip_padding = 4 4
 tooltip_background_id = 5
 tooltip_font_color = #dddddd 100
-

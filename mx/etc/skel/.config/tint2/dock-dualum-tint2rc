@@ -287,8 +287,8 @@ execp_icon_h = 0
 button = new
 button_icon = /usr/local/share/icons/mxfcelogo-rounded.png
 button_text = 
-button_tooltip = Application finder | Rofi
-button_lclick_command = xfce4-appfinder
+button_tooltip = Appfinder | Rofi
+button_lclick_command = rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 button_rclick_command = rofi -show drun
 button_mclick_command = rofi-theme-selector
 button_uwheel_command = 
@@ -358,4 +358,3 @@ tooltip_padding = 2 2
 tooltip_background_id = 3
 tooltip_font_color = #222222 100
 tooltip_font = sans 9
-
