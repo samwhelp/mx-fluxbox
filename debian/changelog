@@ -1,10 +1,14 @@
-mx-fluxbox (23.05.09mx23+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.10mx23) mx; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * adjusted appfinder theme for new help file
   * removed window from appfinder config file
 
- -- Jerry <jb@mx>  Fri, 26 May 2023 09:46:09 -0400
+  [ Dolphin Oracle ]
+  * new build
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 26 May 2023 17:16:29 -0400
 
 mx-fluxbox (23.05.09mx23) mx; urgency=medium
 
