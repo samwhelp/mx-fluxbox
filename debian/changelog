@@ -1,9 +1,10 @@
-mx-fluxbox (23.05.09mx23+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.09mx23+nmu2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * adjusted appfinder theme for new help file
+  * removed window from appfinder config file
 
- -- Jerry <jb@mx>  Fri, 26 May 2023 08:05:59 -0400
+ -- Jerry <jb@mx>  Fri, 26 May 2023 09:46:09 -0400
 
 mx-fluxbox (23.05.09mx23) mx; urgency=medium
 
