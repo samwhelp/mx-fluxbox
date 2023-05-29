@@ -56,7 +56,7 @@ Control Down :Exec amixer -D pulse sset Master 5%-
 
 # exit fluxbox — both work
 Control Mod1 Delete :Exit
-Control Mod1 Bksp :Exit
+Control Mod1 BackSpace :Exit
 
 # change to previous/next workspace
 Control Mod1 Left :PrevWorkspace
