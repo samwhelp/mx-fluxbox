@@ -1,0 +1,440 @@
+#!/bin/bash
+#Appfinder Settings
+#Tool to manage appfinder settings
+#Version 230604-01
+#License: GPL-3.0+
+
+#Changelog 
+
+#set up translation
+
+source gettext.sh
+
+export TEXTDOMAINDIR=/usr/share/locale 
+export TEXTDOMAIN="mxfb-appfinder-settings"
+
+
+#define some variables
+APPFINDER_PATH="$HOME/.config/rofi/themes/appfinder/mxfb-appfinder.rasi"
+APPFINDER_CONFIG_PATH="$HOME/.config/rofi/themes/appfinder/mxfb-appfinder-config.rasi"
+
+
+#######################################
+####update check
+
+TARGET_PATH="$HOME/.config/rofi/themes/appfinder"
+USRSHARE_PATH="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
+
+if [ ! -f $TARGET_PATH/updatecheck ]; then
+    touch $TARGET_PATH/updatecheck 
+fi
+
+CHECKDATE=230604
+UPDATE_CHECK=$( grep "$CHECKDATE" $TARGET_PATH/updatecheck )
+
+if [ "$UPDATE_CHECK" != "$CHECKDATE" ]; then
+    
+    mkdir $HOME/.restore/rofi
+    cp $APPFINDER_PATH $HOME/.restore/rofi/"$CHECKDATE"-mxfb-appfinder.rasi
+    cp $APPFINDER_CONFIG_PATH $HOME/.restore/rofi/"$CHECKDATE"-mxfb-appfinder-config.rasi
+    cp -f $USRSHARE_PATH/*.rasi $TARGET_PATH/
+
+    echo $CHECKDATE >> $TARGET_PATH/updatecheck
+
+fi
+
+#######################################
+####function
+
+#color_picker function
+
+color_picker() {
+	source gettext.sh
+    local N=$1 C="$2"
+	local YAD=(
+            yad
+            --title="$(gettext 'color-selector')"
+            --class=color-select
+            --window-icon=color-select
+            --posx=200
+            --posy=200
+            --color
+            --init-color="${C:=white}"
+            )
+	C=$("${YAD[@]}")
+	(($?==0)) && echo "$N:$C"
+	
+}
+
+export -f color_picker
+
+#######################################
+####function
+
+appfinder_settings() {
+
+
+#######################################
+####theme
+
+AF_THEME="$(grep 'import' $APPFINDER_CONFIG_PATH)"
+
+AF_THEMENAME="$(echo $AF_THEME | sed -e "s/\@import//" | sed -e "s/\"//g" | sed -e "s/.rasi//" | sed -e "s/ //g")"
+AF_THEMENAME="$(basename $AF_THEMENAME)"
+
+    if [ "$AF_THEMENAME" = "Comfort-dark" ]; then
+        AF_THEME_OTHER='Comfort-light!Nordic-dark!Southern-dark!Very-light'
+    elif [ "$AF_THEMENAME" = "Comfort-light" ]; then
+        AF_THEME_OTHER='Comfort-dark!Nordic-dark!Southern-dark!Very-light'
+    elif [ "$AF_THEMENAME" = "Nordic-dark" ]; then
+        AF_THEME_OTHER='Comfort-dark!Comfort-light!Southern-dark!Very-light'
+    elif [ "$AF_THEMENAME" = "Southern-dark" ]; then
+        AF_THEME_OTHER='Comfort-dark!Comfort-light!Nordic-dark!Very-light'
+    elif [ "$AF_THEMENAME" = "Very-light" ]; then
+        AF_THEME_OTHER='Comfort-dark!Comfort-light!Nordic-dark!Southern-dark'
+    fi
+
+#######################################
+####highlight color
+
+AF_HILITE="$(grep 'color09:' $APPFINDER_CONFIG_PATH | sed -e "s/color09\: //" | sed -e "s/\;//" | sed -e "s/ //g")"
+
+#######################################
+#### tabs
+CURRENTTABS="$(grep 'modi:' $APPFINDER_PATH)"
+
+CURRENTTABS1=$(echo $CURRENTTABS | sed -e "s/help:\/usr\/share\/rofi\/rofi-help_appfinder/help/g" )
+CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e "s/\\:\/usr\/bin\/app-categories/categories/g" )
+CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e 's/modi: //g' | sed -e 's/;//g' | sed -e 's/,/ /g' | sed -e 's/"//g')
+
+
+tab_array=($CURRENTTABS1)
+
+#TAB_NUMBER=${#tab_array[@]}
+
+CURTAB_1="${tab_array[0]}"
+
+CURTAB_2="${tab_array[1]}"
+    if [ -z "$CURTAB_2" ]; then
+        CURTAB_2=none
+    fi
+
+CURTAB_3="${tab_array[2]}"
+    if [ -z "$CURTAB_3" ]; then
+        CURTAB_3=none
+    fi
+
+CURTAB_4="${tab_array[3]}"
+    if [ -z "$CURTAB_4" ]; then
+        CURTAB_4=none
+    fi
+
+CURTAB_5="${tab_array[4]}"
+    if [ -z "$CURTAB_5" ]; then
+        CURTAB_5=none
+    fi
+
+CURTAB_6="${tab_array[5]}"
+    if [ -z "$CURTAB_6" ]; then
+        CURTAB_6=none
+    fi
+
+
+#######################################
+#### rofi_position
+
+#get current position
+
+ROFILOCATIONOLD="$(grep "location" $APPFINDER_CONFIG_PATH)"
+
+	if [ "$ROFILOCATIONOLD" = "" ]; then
+
+		ROFILOCATIONOLD='     location: center;'
+		sed -ie "/^window/a $ROFILOCATIONOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+	
+LOCVALUE=$(echo "${ROFILOCATIONOLD}" | sed -e 's/location\://g' | sed -e 's/\;//g' | sed -e 's/ //g')
+
+ROFILOCATIONOLD=$(echo "${ROFILOCATIONOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+######
+
+ROFIANCHOROLD="$(grep "anchor" $APPFINDER_CONFIG_PATH)"
+
+	if [ "$ROFIANCHOROLD" = "" ]; then
+
+		ROFIANCHOROLD='     anchor: center;'
+		sed -ie "/^window/a $ROFIANCHOROLD" $APPFINDER_CONFIG_PATH
+
+	fi
+	
+ANCVALUE=$(echo "${ROFIANCHOROLD}" | sed -e 's/anchor\://g' | sed -e 's/\;//g' | sed -e 's/ //g' )
+
+ROFIANCHOROLD=$(echo "${ROFIANCHOROLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+#####
+
+ROFIXOFFSETOLD="$(grep "x-offset" $APPFINDER_CONFIG_PATH)"
+
+	if [ "$ROFIXOFFSETOLD" = "" ]; then
+
+		ROFIXOFFSETOLD='     x-offset: 0;'
+		sed -ie "/^window/a $ROFIXOFFSETOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+
+XOFFVALUE=$(echo "${ROFIXOFFSETOLD}" | sed -e 's/x-offset\://g' | sed -e 's/\;//g' )
+
+ROFIXOFFSETOLD=$(echo "${ROFIXOFFSETOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+#####
+
+ROFIYOFFSETOLD="$(grep "y-offset" $APPFINDER_CONFIG_PATH)"
+
+	if [ "$ROFIYOFFSETOLD" = "" ]; then
+
+		ROFIYOFFSETOLD='     y-offset: 0;'
+		sed -ie "/^window/a $ROFIYOFFSETOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+	
+YOFFVALUE=$(echo "${ROFIYOFFSETOLD}" | sed -e 's/y-offset\://g' | sed -e 's/\;//g' )
+	
+ROFIYOFFSETOLD=$(echo "${ROFIYOFFSETOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+#####
+
+ROFIWIDTHOLD="$(grep -m 1 "width" $APPFINDER_CONFIG_PATH)"
+
+	if [ "$ROFIWIDTHOLD" = "" ]; then
+
+		ROFIWIDTHOLD='     width: 30%;'
+		sed -ie "/^window/a $ROFIWIDTHOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+	
+WIDVALUE=$(echo "${ROFIWIDTHOLD}" | sed -e 's/width\://g' | sed -e 's/\;//g' | sed -e 's/\%//g' )
+
+ROFIWIDTHOLD=$(echo "${ROFIWIDTHOLD}" | sed -e 's/[]$\/*[\^]/\\&%/g' )
+
+#####
+
+ROFIHEIGHTOLD="$(grep -m 1 "height" $APPFINDER_CONFIG_PATH)"
+
+	if [ -z "$ROFIHEIGHTOLD" ]; then
+
+		ROFIHEIGHTOLD='     lines: 12;'
+		sed -ie "/^listview/a $ROFIHEIGHTOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+
+
+LINVALUE=$(echo "${ROFIHEIGHTOLD}" | sed -e 's/height\://g' | sed -e 's/\;//g' )
+
+ROFIHEIGHTOLD=$(echo "${ROFIHEIGHTOLD}" | sed -e 's/[]$\/*[\^]/\\&%/g' )
+
+
+###################################################################
+#font
+
+ROFIFONTOLD="$(grep "font:" $APPFINDER_CONFIG_PATH | head -1 )"
+
+	if [ "$ROFIFONTOLD" = "" ]; then
+
+		ROFIFONTOLD='    font: "Noto Sans 12";'
+		sed -ie "/^listview/a $ROFIFONTOLD" $APPFINDER_CONFIG_PATH
+
+	fi
+
+FONVALUE=$(echo "${ROFIFONTOLD}" | sed -e 's/font\://g' | sed -e 's/\;//g'| sed -e 's/\"//g' | sed -e 's/\/\///' )
+
+ROFIFONTOLD=$(echo "${ROFIFONTOLD}" | sed -e 's/[]$\/*"[\^]/\\&/g' )
+
+
+#######################################
+#######################################
+#YAD WINDOW
+#######################################
+#######################################
+
+
+
+# buttons
+export BTN_CLOSE=$(gettext "Close") ; BTN_CLOSE+='!window-close'
+export BTN_APPLY=$(gettext "Apply") ; BTN_OK+='!object-select'
+
+#
+
+TITLE="$(gettext 'Appfinder Settings')"
+CLASS="appfinder-settings"
+ICONPATH="/usr/share/pixmaps/appfinder-settings.svg"
+
+TABLIST=drun!categories!filebrowser!window!help!none
+
+SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
+--text-align=left --height=350 --width=600 --borders=20 \
+--center --align=right --separator="|" --form --columns=3 --output-by-row \
+--button="${BTN_CLOSE}":7 --button="${BTN_APPLY}":6 \
+--field="$(gettext 'Theme ')":CB "$AF_THEMENAME!$AF_THEME_OTHER" \
+--field=" ":LBL "|" \
+--field="Tab 1 ":RO "All Apps" \
+--field="Tab 2 ":CB "$CURTAB_2!$TABLIST" \
+--field="Tab 3 ":CB "$CURTAB_3!$TABLIST" \
+--field="Tab 4 ":CB "$CURTAB_4!$TABLIST" \
+--field="Tab 5 ":CB "$CURTAB_5!$TABLIST" \
+--field="Tab 6 ":CB "$CURTAB_6!$TABLIST" \
+--field="$(gettext '   Highlight Color ')":CLR "$AF_HILITE" \
+--field=" ":LBL "|" \
+--field="$(gettext 'Location ')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
+--field="$(gettext 'X-Offset ')":NUM  "$XOFFVALUE\!-500..500\!1\!0" \
+--field="$(gettext 'Y-Offset ')":NUM "$YOFFVALUE\!-500..500\!1\!0" \
+--field="$(gettext 'Width ')":NUM "$WIDVALUE\!1..100\!1\!0" \
+--field="$(gettext 'Height ')":NUM "$LINVALUE\!1..100\!1\!0" \
+--field="$(gettext 'Font ')":FN "$FONVALUE" \
+--field='!color-select':BTN '@bash -c "color_picker 9 %9;"' \
+--field=" ":LBL "|" \
+--field=" ":LBL "|" \
+--field="px  ":LBL "|" \
+--field="px  ":LBL "|" \
+--field="%   ":LBL "|" \
+--field="%   ":LBL "|" \
+--field=" ":LBL "|"
+)
+
+ret=$?
+
+case $ret in
+    7 | 252 )
+        ENDLOOP=getouttahere
+    ;;
+
+    6 )
+    
+    RES=$(echo "$SETTINGS" | sed -e "s/ /-/g" | sed -e "s/|/ /g" | sed -e "s/__/ /g" | sed -e "s/___/ /g" | sed -e "s/____/ /g")
+
+    af_settings=($RES)
+    
+
+###################################################################
+###################################################################
+#apply theme
+    AF_THEMENAME_NEW="${af_settings[0]}"
+
+    if [ "$AF_THEMENAME_NEW" != "$AF_THEMENAME" ]; then
+
+        AF_THEME_NEW="@import \"~/.config/rofi/themes/appfinder/"$AF_THEMENAME_NEW".rasi\""
+
+        AF_THEME=$(echo "${AF_THEME}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+        AF_THEME_NEW=$(echo "${AF_THEME_NEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+        sed -i -e "s/${AF_THEME}/${AF_THEME_NEW}/g" $APPFINDER_CONFIG_PATH
+
+    fi
+
+###################################################################
+#apply highlight color
+
+    AF_HILITE_NEW="${af_settings[1]}"
+
+    if [ "$AF_HILITE_NEW" != "$AF_HILITE" ]; then
+        sed -i "s/color09\: $AF_HILITE/color09\: $AF_HILITE_NEW/" $APPFINDER_CONFIG_PATH
+    fi
+
+###################################################################
+#apply tabs
+
+    NEWTABS="modi: \"drun,"${af_settings[4]}","${af_settings[6]}","${af_settings[8]}","${af_settings[10]}","${af_settings[12]}"\";"
+
+    NEWTABS=$(echo "${NEWTABS}" | sed -e "s/categories/\\:\/usr\/bin\/app-categories/g" )
+    NEWTABS=$(echo "${NEWTABS}" | sed -e "s/help/help\:\/usr\/share\/rofi\/rofi-help_appfinder/g" )
+    NEWTABS=$(echo "${NEWTABS}" | sed -e "s/,none//g" )
+
+    if [ "$NEWTABS" != "$CURRENTTABS" ]; then
+        NEWTABS=$(echo "${NEWTABS}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+        CURRENTTABS=$(echo "${CURRENTTABS}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+        sed -i "s/${CURRENTTABS}/${NEWTABS}/" $APPFINDER_PATH
+    fi
+
+###################################################################
+#apply new position
+
+    LOCNEW="${af_settings[3]}"
+    XOFNEW="${af_settings[5]}"
+    YOFNEW="${af_settings[7]}"
+    WIDNEW="${af_settings[9]}"
+    HIGNEW="${af_settings[11]}"
+
+    ROFILOCATIONNEW="location: "$LOCNEW";"
+    ROFILOCATIONNEW=$(echo "${ROFILOCATIONNEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+    ROFIANCHORNEW="anchor: "$LOCNEW";"
+    ROFIANCHORNEW=$(echo "${ROFIANCHORNEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+    ROFIXOFFSETNEW="x-offset: "$XOFNEW";"
+    ROFIXOFFSETNEW=$(echo "${ROFIXOFFSETNEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+    ROFIYOFFSETNEW="y-offset: "$YOFNEW";"
+    ROFIYOFFSETNEW=$(echo "${ROFIYOFFSETNEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+    ROFIWIDTHNEW="width: "$WIDNEW"%;"
+    ROFIWIDTHNEW=$(echo "${ROFIWIDTHNEW}" | sed -e 's/[]$\/*[\^]/\\&%/g')
+
+    ROFIHEIGHTNEW="height: "$HIGNEW"%;"
+    ROFIHEIGHTNEW=$(echo "${ROFIHEIGHTNEW}" | sed -e 's/[]$\/*[\^]/\\&%/g')
+
+#check change
+
+    if [ "$ROFILOCATIONNEW" != "$ROFILOCATIONOLD" ]; then
+        sed -i -e "s/${ROFILOCATIONOLD}/${ROFILOCATIONNEW}/g" $APPFINDER_CONFIG_PATH
+    fi
+
+    if [ "$ROFIANCHORNEW" != "$ROFIANCHOROLD" ]; then
+        sed -i -e "s/${ROFIANCHOROLD}/${ROFIANCHORNEW}/g" $APPFINDER_CONFIG_PATH
+    fi
+
+    if [ "$ROFIXOFFSETNEW" != "$ROFIXOFFSETOLD" ]; then  
+        sed -i -e "s/${ROFIXOFFSETOLD}/${ROFIXOFFSETNEW}/g" $APPFINDER_CONFIG_PATH
+    fi   
+
+    if [ "$ROFIYOFFSETNEW" != "$ROFIYOFFSETOLD" ]; then    
+        sed -i -e "s/${ROFIYOFFSETOLD}/${ROFIYOFFSETNEW}/g" $APPFINDER_CONFIG_PATH
+    fi  
+
+    if [ "$ROFIWIDTHNEW" != "$ROFIWIDTHOLD" ]; then
+        sed -i -e "s/${ROFIWIDTHOLD}/${ROFIWIDTHNEW}/g" $APPFINDER_CONFIG_PATH
+    fi   
+
+    if [ "$ROFIHEIGHTNEW" != "$ROFIHEIGHTOLD" ]; then
+        sed -i -e "s/${ROFIHEIGHTOLD}/${ROFIHEIGHTNEW}/g" $APPFINDER_CONFIG_PATH
+    fi
+
+
+###################################################################
+#apply font
+
+    FONT_NEW=$(echo "${af_settings[@]:13}" | sed -e "s/-/ /g")
+    ROFIFONTNEW="font: \""$FONT_NEW"\";"
+    ROFIFONTNEW=$(echo "${ROFIFONTNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
+
+    if [ "$ROFIFONTNEW" != "$ROFIFONTOLD" ]; then
+        sed -i -e "s/${ROFIFONTOLD}/${ROFIFONTNEW}/g" $APPFINDER_CONFIG_PATH
+    fi
+
+    ;;
+esac
+
+}
+
+export appfinder_settings
+
+
+################################################
+####
+
+until [ "$ENDLOOP" = "getouttahere" ]; do
+    appfinder_settings
+done
+
+
+exit
