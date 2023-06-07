@@ -141,3 +141,7 @@
   [Position]	(UPPERLEFT)	{13% 13%}
   [Close]	{no}
 [end]
+[app] (name=arandr) (class=Arandr)
+  [Position]	(UPPERLEFT)	{42% 34%}
+  [Close]	{yes}
+[end]

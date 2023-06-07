@@ -10,3 +10,7 @@ background: none
 #window.font: Sans-11:bold
 #menu.title.font: Sans-11:regular
 #menu.frame.font: Sans-11:italic
+
+# force slit to un-autohide (left and top sides) on MX-23
+slit.borderWidth: 0
+slit.bevelWidth: 2
