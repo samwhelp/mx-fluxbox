@@ -2,7 +2,7 @@
 pkill wmalauncher
 
 #set up slit location
-sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: CenterLeft/' $HOME/.fluxbox/init
+sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: LeftCenter/' $HOME/.fluxbox/init
 
 fluxbox-remote reconfigure; sleep 1
 

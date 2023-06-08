@@ -1,3 +1,10 @@
+mx-fluxbox (23.06.01mx23+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Fixed error in dock location
+
+ -- Jerry <jb@mx>  Thu, 08 Jun 2023 05:05:40 -0400
+
 mx-fluxbox (23.06.01mx23) mx; urgency=medium
 
   [ Jerry ]
