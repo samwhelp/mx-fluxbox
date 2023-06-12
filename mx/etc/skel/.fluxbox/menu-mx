@@ -5,6 +5,7 @@
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
             [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Disable) {/usr/bin/disable-update}
    [end]
 	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
