@@ -22,7 +22,7 @@ session.screen0.slit.maxOver:	true
 session.screen0.slit.acceptKdeDockapps:	true
 session.screen0.slit.onhead:	0
 session.screen0.slit.alpha:	255
-session.screen0.slit.placement:	TopLeft
+session.screen0.slit.placement:	LeftCenter
 session.screen0.slit.layer:	Desktop
 session.screen0.slit.autoHide:	false
 session.screen0.window.focus.alpha:	255
@@ -58,7 +58,24 @@ session.screen0.tabFocusModel:	ClickToTabFocus
 session.screen0.noFocusWhileTypingDelay:	0
 session.screen0.strftimeFormat:	%I:%M  %b %d
 session.screen0.workspaces:	2
-#session.screen0.rootCommand:	~/.fehbg -l
+session.screen0.rootCommand:	~/.fehbg -l
+##new additions 06/2023
+session.screen0.pinLeft: E, F
+session.screen0.pinRight: A, B
+session.screen0.struts.1:	0,0,0,0
+session.screen0.struts:	0,0,0,0
+session.menuSearch:	itemstart
+session.screen0.opaqueResize:	false
+session.screen0.workspacewarpinghorizontal:	true
+session.screen0.workspacewarpingvertical:	false
+session.screen0.workspacewarpinghorizontaloffset:	1
+session.screen0.workspacewarpingverticaloffset:	1
+session.screen0.edgeResizeSnapThreshold:	0
+session.screen0.opaqueResizeDelay:	50
+session.screen0.slit.autoRaise:	true
+session.screen0.toolbar.autoRaise:	false
+session.screen0.iconbar.iconifiedPattern:	Left
+##end new additions
 session.forcePseudoTransparency:	true
 session.keyFile:	~/.fluxbox/keys
 session.ignoreBorder:	false
