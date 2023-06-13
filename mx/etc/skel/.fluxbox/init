@@ -60,8 +60,6 @@ session.screen0.strftimeFormat:	%I:%M  %b %d
 session.screen0.workspaces:	2
 session.screen0.rootCommand:	~/.fehbg -l
 ##new additions 06/2023
-session.screen0.pinLeft: E, F
-session.screen0.pinRight: A, B
 session.screen0.struts.1:	0,0,0,0
 session.screen0.struts:	0,0,0,0
 session.menuSearch:	itemstart
