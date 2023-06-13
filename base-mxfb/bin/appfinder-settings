@@ -270,7 +270,7 @@ TITLE="$(gettext 'Appfinder Settings')"
 CLASS="appfinder-settings"
 ICONPATH="/usr/share/pixmaps/appfinder-settings.svg"
 
-TABLIST=drun!categories!filebrowser!window!help!none
+TABLIST=categories!filebrowser!window!help!none
 
 SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --text-align=left --height=350 --width=600 --borders=20 \
