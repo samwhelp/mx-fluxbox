@@ -21,7 +21,7 @@ if [ -x /usr/bin/fluxbox ]; then
           	test -d "$HOME/.idesktop" || mkdir -p "$HOME/.idesktop"
       		for i in $(ls --format single-column /etc/skel/.idesktop/); do
         		if [ ! -e "$HOME/.idesktop/$i" ]; then
-      				cp /etc/skel/.idesktop/$i "$HOME/.desktop/$i"
+      				cp /etc/skel/.idesktop/$i "$HOME/.idesktop/$i"
       			fi
       		done
       		
