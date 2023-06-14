@@ -1,6 +1,6 @@
 table Icon
   Caption: Software
-  Icon: /usr/share/icons/Papirus/48x48/apps/mx-packageinstaller.svg
+  Icon: /usr/share/mxflux/idesk-icons/mx-packageinstaller.png
   X: 200
   Y: 100
   Command[0]: ideskrun mxpi-launcher

@@ -15,6 +15,7 @@ base-mxfb/icons-tint2/*.svg usr/share/mxflux/tint2
 base-mxfb/pixmaps/system*.png  usr/local/share/icons
 base-mxfb/bin/* usr/bin
 base-mxfb/volumeicon/* /etc/skel/.config/volumeicon
+idesk-icons/* usr/share/mxflux/idesk-icons
 21fluxbox-defaults-mx etc/X11/Xsession.d
 
 #base-mxfb/backgrounds/* usr/share/backgrounds

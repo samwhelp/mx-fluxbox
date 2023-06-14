@@ -1,6 +1,6 @@
 table Icon
   Caption: Videos
-  Icon: /usr/share/icons/Papirus/48x48/apps/video-player.svg
+  Icon: /usr/share/mxflux/idesk-icons/video-player.png
   X: 100
   Y: 100
   Command[0]: ideskrun sensible-browser https://bit.ly/2Sm1PJl
