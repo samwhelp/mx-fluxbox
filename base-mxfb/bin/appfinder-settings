@@ -83,14 +83,14 @@ AF_THEMENAME="$(echo $AF_THEME | sed -e "s/\@import//" | sed -e "s/\"//g" | sed 
 AF_THEMENAME="$(basename $AF_THEMENAME)"
 
     if [ "$AF_THEMENAME" = "Comfort-dark" ]; then
-        AF_THEME_OTHER='Comfort-light!Nordic-dark!Southern-dark!Very-light'
+        AF_THEME_OTHER='Comfort-light!Nordic-dark!Southern-dark!Ultra-light'
     elif [ "$AF_THEMENAME" = "Comfort-light" ]; then
-        AF_THEME_OTHER='Comfort-dark!Nordic-dark!Southern-dark!Very-light'
+        AF_THEME_OTHER='Comfort-dark!Nordic-dark!Southern-dark!Ultra-light'
     elif [ "$AF_THEMENAME" = "Nordic-dark" ]; then
-        AF_THEME_OTHER='Comfort-dark!Comfort-light!Southern-dark!Very-light'
+        AF_THEME_OTHER='Comfort-dark!Comfort-light!Southern-dark!Ultra-light'
     elif [ "$AF_THEMENAME" = "Southern-dark" ]; then
-        AF_THEME_OTHER='Comfort-dark!Comfort-light!Nordic-dark!Very-light'
-    elif [ "$AF_THEMENAME" = "Very-light" ]; then
+        AF_THEME_OTHER='Comfort-dark!Comfort-light!Nordic-dark!Ultra-light'
+    elif [ "$AF_THEMENAME" = "Ultra-light" ]; then
         AF_THEME_OTHER='Comfort-dark!Comfort-light!Nordic-dark!Southern-dark'
     fi
 
