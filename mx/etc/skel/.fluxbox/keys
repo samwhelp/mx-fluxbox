@@ -23,7 +23,7 @@ Shift Print :Exec mxfb-quickshot -r -png
 ## active window capture
 Mod1 Print :Exec mxfb-quickshot -u -png
 ## launch quickshot
-Ctrl q :Exec mxfb-quickshot
+Alt q :Exec mxfb-quickshot
 
 # open help
 Ctrl F1 :Exec mxfb-help

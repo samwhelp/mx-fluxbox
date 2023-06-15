@@ -1,3 +1,9 @@
+mx-fluxbox (23.06.04mx24) UNRELEASED; urgency=medium
+
+  * changed quickshot key to atl+q 
+
+ -- Jerry <jb@mx>  Thu, 15 Jun 2023 19:49:09 -0400
+
 mx-fluxbox (23.06.04mx23) mx; urgency=medium
 
   * fixed theme name Ultra-light
