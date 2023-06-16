@@ -1,3 +1,10 @@
+mx-fluxbox (23.06.05mx23+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * increased screensaver time in startup to 600 secs
+
+ -- Jerry <jb@mx>  Fri, 16 Jun 2023 09:08:48 -0400
+
 mx-fluxbox (23.06.05mx23) mx; urgency=medium
 
   * changed quickshot key to alt+q 
