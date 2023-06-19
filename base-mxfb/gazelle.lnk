@@ -3,7 +3,7 @@ table Icon
   Icon: /usr/local/share/icons/black-eclipse-no-border.png
   X: 300
   Y: 200
-  Command[0]: ideskrun minstall-pkexec
+  Command[0]: ideskrun minstall-launcher
   Command[1]: mx-idesktool gazelle.lnk
   Command[2]: mx-manual
 end
