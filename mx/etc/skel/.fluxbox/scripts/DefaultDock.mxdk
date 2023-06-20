@@ -9,9 +9,9 @@ fluxbox-remote reconfigure; sleep 1
 # TOOLTIPS
 TTIPS+=" --tooltip-show-delay       250"
 TTIPS+=" --tooltip-text-padding     3"
-TTIPS+=" --tooltip-border-size		3"
-TTIPS+=" --tooltip-foreground-color #ffffff"
-TTIPS+=" --tooltip-background-color #1d2324"
+TTIPS+=" --tooltip-border-size		1"
+TTIPS+=" --tooltip-foreground-color #1d2324"
+TTIPS+=" --tooltip-background-color #cacdd0"
 
 #commands for dock launchers
 
