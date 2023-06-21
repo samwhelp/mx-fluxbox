@@ -1,16 +1,19 @@
 #! /bin/bash
 
-ACCESS="Accessories"
-OFFICE="Office"
-GRAPH="Graphics"
-GAMES="Games"
-INET="Internet"
-MMEDIA="Multimedia"
-MXTOOLS="MX-Tools"
-SETTGS="Settings"
-DEVPMNT="Development"
-SYSTM="System"
-ALLAPPS="ALL APPS"
+TEXTDOMAINDIR=/usr/share/locale 
+export TEXTDOMAIN="mx-desktop-menu-l10n"
+
+ACCESS="$(gettext 'Accessories')"
+OFFICE="$(gettext 'Office')"
+GRAPH="$(gettext 'Graphics')"
+GAMES="$(gettext 'Games')"
+INET="$(gettext 'Internet')"
+MMEDIA="$(gettext 'Multimedia')"
+MXTOOLS="$(gettext 'MX-Tools')"
+SETTGS="$(gettext 'Settings')"
+DEVPMNT="$(gettext 'Development')"
+SYSTM="$(gettext 'System')"
+ALLAPPS="$(gettext 'ALL APPS')"
 
 ACCESSi=""
 OFFICEi=""
