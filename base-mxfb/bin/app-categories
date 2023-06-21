@@ -1,107 +1,40 @@
 #! /bin/bash
 
-TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="mx-desktop-menu-l10n"
+export TEXTDOMAINDIR="/usr/share/locale"
 
-ACCESS="$(gettext 'Accessories')"
-OFFICE="$(gettext 'Office')"
-GRAPH="$(gettext 'Graphics')"
-GAMES="$(gettext 'Games')"
-INET="$(gettext 'Internet')"
-MMEDIA="$(gettext 'Multimedia')"
-MXTOOLS="$(gettext 'MX-Tools')"
-SETTGS="$(gettext 'Settings')"
-DEVPMNT="$(gettext 'Development')"
-SYSTM="$(gettext 'System')"
-ALLAPPS="$(gettext 'ALL APPS')"
+ACCESS=$(gettext  "Accessories");        ACCESSi=""
+OFFICE=$(gettext  "Office");             OFFICEi=""
+GRAPH=$(gettext   "Graphics");            GRAPHi=""
+GAMES=$(gettext   "Games");               GAMESi=""
+INET=$(gettext    "Internet");             INETi=""
+MMEDIA=$(gettext  "Multimedia");         MMEDIAi=""
+MXTOOLS=$(gettext "MX Tools");          MXTOOLSi=""
+SETTGS=$(gettext  "Settings");           SETTGSi=""
+DEVPMNT=$(gettext "Development");       DEVPMNTi=""
+SYSTM=$(gettext   "System");              SYSTMi=""
+ALLAPPS=$(gettext "All Applications");  ALLAPPSi=""
+[ "$ALLAPPS" = "All Applications"  ] && ALLAPPS="ALL APPS"
 
-ACCESSi=""
-OFFICEi=""
-GRAPHi=""
-GAMESi=""
-INETi=""
-MMEDIAi=""
-MXTOOLSi=""
-SETTGSi=""
-DEVPMNTi=""
-SYSTMi=""
-ALLAPPSi=""
+case "$1" in
+"$ALLAPPS")  CATS="";                     ICON="$ALLAPPSi"  ;;
+ "$ACCESS")  CATS="Utility,Accessories";  ICON="$ACCESSi"   ;;
+ "$OFFICE")  CATS="Office,TextEditor";    ICON="$OFFICEi"   ;;
+  "$GRAPH")  CATS="Graphics,Image,Photo"; ICON="$GRAPHi"    ;;
+  "$GAMES")  CATS="Game";                 ICON="$GAMESi"    ;;
+ "$SETTGS")  CATS="Settings";             ICON="$SETTGSi"   ;;
+  "$SYSTM")  CATS="System";               ICON="$SYSTMi"    ;;
+   "$INET")  CATS="Network,WebBrowser";   ICON="$INETi"     ;;
+"$DEVPMNT")  CATS="Development,TerminalEmulator" ; ICON="$DEVPMNTi" ;;
+ "$MMEDIA")  CATS="Music,Sound,Video,Audio,AudioVideo,Multimedia"; ICON="$MMEDIAi" ;;
+"$MXTOOLS")  CATS="MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live"; ICON="$MXTOOLSi" ;;
+         *)  CATS="none" ;;
+esac
 
-if [ x"$@" = x"$ALLAPPS" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "" -display-drun  "$ALLAPPSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$ACCESS" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Utility,Accessories" -display-drun "$ACCESSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$OFFICE" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Office,TextEditor" -display-drun "$OFFICEi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$GRAPH" ];
-then
-killall rofi
-sleep 0.25 
-rofi -show drun -drun-categories "Graphics,Image,Photo" -display-drun "$GRAPHi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$GAMES" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Game" -display-drun "$GAMESi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$INET" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Network,WebBrowser" -display-drun "$INETi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$MMEDIA" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Music,Sound,Video,Audio,AudioVideo,Multimedia" -display-drun "$MMEDIAi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$MXTOOLS" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live" -display-drun "$MXTOOLSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$SETTGS" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories  "Settings" -display-drun "$SETTGSi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$DEVPMNT" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "Development,TerminalEmulator"  -display-drun "$DEVPMNTi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
-fi
-
-if [ x"$@" = x"$SYSTM" ];
-then
-killall rofi
-sleep 0.25
-rofi -show drun  -drun-categories "System" -display-drun "$SYSTMi" -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
+THEME="$HOME/.config/rofi/themes/appfinder/mxfb-appfinder.rasi" 
+if [ x"$CATS" != x"none" ]; then
+    killall -u $(id -un) rofi 2>/dev/null && sleep 0.25
+    rofi -show drun  -drun-categories "$CATS" -display-drun "$ICON" -theme "$THEME"
 fi
 
 echo -e "$ALLAPPS\0icon\x1fapplications-all"
