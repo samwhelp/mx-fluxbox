@@ -227,7 +227,7 @@ launcher_tooltip = 1
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M
+time1_format = %H:%M | %b %d
 time2_format = 
 time1_font = Sans Bold 10
 time1_timezone = 
