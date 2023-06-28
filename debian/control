@@ -8,6 +8,7 @@ Homepage: https://mxlinux.org
 
 Package: mx-fluxbox-data
 Conflicts: mx-fluxbox-data
+Depends: mx-desktop-menu-l10n
 Provides: mx-fluxbox-data
 Replaces: mx-fluxbox (<< 20.06.02)
 Architecture: all
