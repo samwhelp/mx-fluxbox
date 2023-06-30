@@ -1,6 +1,5 @@
-mx-fluxbox (23.06.29) mx; urgency=medium
+mx-fluxbox (23.06.29mx23) mx; urgency=medium
 
-  * Non-maintainer upload.
   * increased screensaver time in startup to 600 secs
   * added magnus key binding
   * reacy for RC
