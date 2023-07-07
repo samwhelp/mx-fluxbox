@@ -48,7 +48,7 @@ Ctrl F5 :Exec mx-tools
 Ctrl F12 :Exec sleep 1 ; xset dpms force off
 
 # screen magnifier on|off
-Ctrl m :Exec toggle-mx magnus
+Ctrl Mod1 m :Exec toggle-mx magnus
 
 # open roxterm
 Ctrl Mod1 t :Exec roxterm

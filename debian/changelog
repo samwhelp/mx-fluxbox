@@ -1,3 +1,9 @@
+mx-fluxbox (23.06.29mx24) UNRELEASED; urgency=medium
+
+  * changed non-working key for Magnus
+
+ -- Jerry <jb@mx>  Fri, 07 Jul 2023 14:43:23 -0400
+
 mx-fluxbox (23.06.29mx23) mx; urgency=medium
 
   * increased screensaver time in startup to 600 secs
