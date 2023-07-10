@@ -1,3 +1,9 @@
+mx-fluxbox (23.07.02mx23) mx; urgency=medium
+
+  * apt-notifier adjustments, new icons
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 10 Jul 2023 11:59:40 -0400
+
 mx-fluxbox (23.07.01mx23) mx; urgency=medium
 
   * changed non-working key for Magnus

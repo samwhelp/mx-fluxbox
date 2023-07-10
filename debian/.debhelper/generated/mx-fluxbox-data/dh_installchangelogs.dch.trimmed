@@ -1,3 +1,10 @@
+mx-fluxbox (23.06.05mx23) mx; urgency=medium
+
+  * changed quickshot key to alt+q 
+  * remove xfce4-appfinder desktop file
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 16 Jun 2023 07:48:45 -0400
+
 mx-fluxbox (23.06.04mx23) mx; urgency=medium
 
   * fixed theme name Ultra-light

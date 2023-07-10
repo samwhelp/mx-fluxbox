@@ -4,7 +4,6 @@
 ./base-mxfb/HELP_Display
 ./base-mxfb/exit-options.desktop
 ./base-mxfb/mxflux.desktop
-./base-mxfb/xfce4-appfinder-mxfb.desktop
 ./base-mxfb/gazelle.lnk
 ./base-mxfb/mxfcelogo-rounded_48.png
 ./base-mxfb/mx-welcome64.png
@@ -14,7 +13,6 @@
 ./base-mxfb/menu/settings
 ./base-mxfb/menu/windowmenu
 ./base-mxfb/fluxbox_badge-symbolic.svg
-./base-mxfb/xfce4-appfinder-mxfb.desktop
 ./base-mxfb/pixmaps/mxfb-packageinstaller.png
 ./base-mxfb/pixmaps/mxfb-video-player.png
 ./base-mxfb/pixmaps/mxflux.png
