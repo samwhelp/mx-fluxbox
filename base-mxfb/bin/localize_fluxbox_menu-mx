@@ -39,4 +39,17 @@ if ! grep -sq -E "^session.menuFile:[[:space:]]*(~|$HOME)/$MENU[[:space:]]*$" "$
    sed -i -r "/^(session.menuFile:).*/s::\1    ~/$MENU:"  "$INIT"
 fi
 
+# fix to localize "All Apps" string
+
+
+export TEXTDOMAIN=mx-desktop-menu-l10n
+export TEXTDOMAINDIR="/usr/share/locale"
+ALLAPPS=$(gettext "All Applications")
+[ "$ALLAPPS" = "All Applications"  ] && ALLAPPS="All Apps"
+if [ -w ~/$MENU ]; then 
+    sed -i "/submenu/s/All Apps/$ALLAPPS/"  ~/$MENU
+fi
+if [ -x /usr/bin/mxfb-menu-generator ]; then 
+        /usr/bin/mxfb-menu-generator
+fi
 exit 0
