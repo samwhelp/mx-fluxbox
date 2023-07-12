@@ -1,3 +1,9 @@
+mx-fluxbox (23.07.03mx23) mx; urgency=medium
+
+  * improve menu localization (fehlix) 
+
+ -- Dolphin Oracle <dolphin@mx23beta>  Wed, 12 Jul 2023 15:51:33 -0400
+
 mx-fluxbox (23.07.02mx23) mx; urgency=medium
 
   * apt-notifier adjustments, new icons
