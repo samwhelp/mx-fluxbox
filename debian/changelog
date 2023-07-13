@@ -1,3 +1,10 @@
+mx-fluxbox (23.07.13mx23) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * changed appfinder to single-click
+
+ -- Jerry <jb@mx>  Thu, 13 Jul 2023 09:06:33 -0400
+
 mx-fluxbox (23.07.03mx23) mx; urgency=medium
 
   * improve menu localization (fehlix) 
