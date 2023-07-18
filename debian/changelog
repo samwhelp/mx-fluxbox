@@ -1,3 +1,9 @@
+mx-fluxbox (23.07.13mx23) UNRELEASED; urgency=medium
+
+  * removed fluxbox/backgrounds from Nitrogen config
+
+ -- Jerry <jb@mx>  Tue, 18 Jul 2023 11:01:29 -0400
+
 mx-fluxbox (23.07.13mx23) mx; urgency=medium
 
   * Non-maintainer upload.
