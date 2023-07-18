@@ -1,4 +1,4 @@
-mx-fluxbox (23.07.13mx24) UNRELEASED; urgency=medium
+mx-fluxbox (23.07.13mx23) UNRELEASED; urgency=medium
 
   * removed fluxbox/backgrounds from Nitrogen config
   * commented out hover-select in appfinder rasi
