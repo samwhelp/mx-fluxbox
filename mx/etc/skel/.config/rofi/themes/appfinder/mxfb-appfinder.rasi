@@ -2,7 +2,7 @@ configuration {
 modi: "drun,:/usr/bin/app-categories,help:/usr/share/rofi/rofi-help_appfinder";
     me-select-entry:	"MouseSecondary";
     me-accept-entry:	"MousePrimary";
-    hover-select: 	true;
+    //hover-select: 	true;
 }
 
 @import "/mxrm-settings/display0.rasi"
