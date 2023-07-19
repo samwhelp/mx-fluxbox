@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../base-mxfb/bin/appfinder-settings:56
 msgid "color-selector"
-msgstr ""
+msgstr "selector de color"
 
 #. ######################################
 #. ######################################
@@ -41,36 +41,36 @@ msgstr "Aplica"
 
 #: ../base-mxfb/bin/appfinder-settings:269
 msgid "Appfinder Settings"
-msgstr ""
+msgstr "Paràmetres d'Appfinder"
 
 #: ../base-mxfb/bin/appfinder-settings:279
 msgid "Theme "
-msgstr ""
+msgstr "Tema"
 
 #: ../base-mxfb/bin/appfinder-settings:287
 msgid "   Highlight Color "
-msgstr ""
+msgstr "Color Realçat"
 
 #: ../base-mxfb/bin/appfinder-settings:289
 msgid "Location "
-msgstr ""
+msgstr "Ubicació"
 
 #: ../base-mxfb/bin/appfinder-settings:290
 msgid "X-Offset "
-msgstr ""
+msgstr "Òfset X"
 
 #: ../base-mxfb/bin/appfinder-settings:291
 msgid "Y-Offset "
-msgstr ""
+msgstr "Òfset Y"
 
 #: ../base-mxfb/bin/appfinder-settings:292
 msgid "Width "
-msgstr ""
+msgstr "Amplada"
 
 #: ../base-mxfb/bin/appfinder-settings:293
 msgid "Height "
-msgstr ""
+msgstr "Altura"
 
 #: ../base-mxfb/bin/appfinder-settings:294
 msgid "Font "
-msgstr ""
+msgstr "Lletra"

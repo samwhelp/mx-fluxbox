@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../base-mxfb/bin/appfinder-settings:56
 msgid "color-selector"
-msgstr ""
+msgstr "Selecionar a Cor"
 
 #. ######################################
 #. ######################################
@@ -42,36 +42,36 @@ msgstr "Aplicar"
 
 #: ../base-mxfb/bin/appfinder-settings:269
 msgid "Appfinder Settings"
-msgstr ""
+msgstr "Configurações do App Finder"
 
 #: ../base-mxfb/bin/appfinder-settings:279
 msgid "Theme "
-msgstr ""
+msgstr "Tema "
 
 #: ../base-mxfb/bin/appfinder-settings:287
 msgid "   Highlight Color "
-msgstr ""
+msgstr "   Cor da Seleção "
 
 #: ../base-mxfb/bin/appfinder-settings:289
 msgid "Location "
-msgstr ""
+msgstr "Localização"
 
 #: ../base-mxfb/bin/appfinder-settings:290
 msgid "X-Offset "
-msgstr ""
+msgstr "Deslocamento da Coordenada X"
 
 #: ../base-mxfb/bin/appfinder-settings:291
 msgid "Y-Offset "
-msgstr ""
+msgstr "Deslocamento da Coordenada Y"
 
 #: ../base-mxfb/bin/appfinder-settings:292
 msgid "Width "
-msgstr ""
+msgstr "Largura "
 
 #: ../base-mxfb/bin/appfinder-settings:293
 msgid "Height "
-msgstr ""
+msgstr "Altura "
 
 #: ../base-mxfb/bin/appfinder-settings:294
 msgid "Font "
-msgstr ""
+msgstr "Tipo de Letra"
