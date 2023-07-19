@@ -4,7 +4,7 @@
 
 RESOURCE="appfinder-settings"
 
-lang="am ar bg ca cs da de el es et eu fa fi fr fr_BE he_IL hi hr hu id is it ja kk ko lt mk mr nb nl pl pt pt_BR ro ru sk sl sq sr sv tr uk zh_CN zh_TW"
+lang="am ar bg bn ca cs da de el es et eu fa fi fr fr_BE he_IL hi hr hu id is it ja kk ko lt mk mr nb nl pl pt pt_BR ro ru sk sl sq sr sv tr uk vi zh_CN zh_TW"
 
 make_po()
 {
@@ -33,7 +33,7 @@ make_mo()
         if [ ! -e "mo/$val/$RESOURCE.mo" ]; then
         	if [ -e po/"${RESOURCE}_${val}.po" ]; then
             	mkdir -p mo/$val
-            	msgfmt --output-file=mo/$val/"$RESOURCE".mo po/"${RESOURCE}_${val}.po"
+            	msgfmt --output-file=mo/$val/mxfb-"$RESOURCE".mo po/"${RESOURCE}_${val}.po"
             fi
         fi
     done
