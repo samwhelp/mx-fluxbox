@@ -2,8 +2,9 @@ mx-fluxbox (23.07.13mx23) UNRELEASED; urgency=medium
 
   * removed fluxbox/backgrounds from Nitrogen config
   * commented out hover-select in appfinder rasi
+  * added double menu width to overlay
 
- -- Jerry <jb@mx>  Tue, 18 Jul 2023 12:37:15 -0400
+ -- Jerry <jb@mx>  Fri, 21 Jul 2023 06:45:56 -0400
 
 mx-fluxbox (23.07.13mx23) mx; urgency=medium
 

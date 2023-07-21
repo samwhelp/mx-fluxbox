@@ -11,6 +11,9 @@ background: none
 #menu.title.font: Sans-11:regular
 #menu.frame.font: Sans-11:italic
 
+# double menu width
+menu.bevelWidth: 2
+
 # force slit to un-autohide (left and top sides) on MX-23
 slit.borderWidth: 0
 slit.bevelWidth: 2
