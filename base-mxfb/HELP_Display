@@ -1,17 +1,231 @@
-The app used for configuring display is arandr. With it you can change resolution, orientation and ratio. Here are the steps to take if you wish to make your changes permanent:
+The app used for configuring display is "arandr". With it you can change resolution, orientation and ratio. Here are the steps to take if you wish to make your changes permanent:
 
 1) Click Layout > Save as
 2) Navigate to ~./fluxbox/scripts
-3) Name the script (for example "default_screen") and save it.
+3) Name the script (for example "default_screen") and save it
 4) Right-click the desktop > Settings > Configure > Startup
 5) Add the following entry anywhere above the final command ("exec fluxbox")
 
+----------
 # use a specific display format
 ~/.fluxbox/scripts/default_screen.sh
-
->> be sure to use your own name for the script
->> the ending ".sh" is added by the app
+----------
 
 6) Save and exit. 
 
 When you log into Fluxbox again your settings should be used.
+
+########## DE ##########
+Die App für die Konfiguration des Displays heißt "arandr". Mit ihr können Sie die Auflösung, die Ausrichtung und das Verhältnis ändern. Hier sind die Schritte, die Sie ausführen müssen, wenn Sie Ihre Änderungen dauerhaft machen möchten:
+
+1) Klicken Sie auf Layout > Speichern unter
+2) Navigieren Sie zu ~./fluxbox/scripts
+3) Benennen Sie das Skript (zum Beispiel "default_screen") und speichern Sie es
+4) Klicken Sie mit der rechten Maustaste auf den Desktop > Einstellungen > Konfigurieren > Starten ("startup")
+5) Fügen Sie den folgenden Eintrag irgendwo oberhalb des letzten Befehls ("exec fluxbox") ein
+
+----------
+# ein bestimmtes Anzeigeformat verwenden
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Speichern Sie und beenden Sie das Programm. 
+
+Wenn Sie sich erneut bei Fluxbox anmelden, sollten Ihre Einstellungen verwendet werden.
+
+########## EL ##########
+Η εφαρμογή που χρησιμοποιείται για τη διαμόρφωση της οθόνης είναι η "arandr". Με αυτήν μπορείτε να αλλάξετε την ανάλυση, τον προσανατολισμό και την αναλογία. Ακολουθούν τα βήματα που πρέπει να ακολουθήσετε αν θέλετε να κάνετε τις αλλαγές σας μόνιμες:
+
+1) Κάντε κλικ στην επιλογή Διάταξη > Αποθήκευση ως
+2) Πλοηγηθείτε στη διεύθυνση ~./fluxbox/scripts
+3) Ονομάστε το σενάριο (για παράδειγμα "default_screen") και αποθηκεύστε το
+4) Κάντε δεξί κλικ στην επιφάνεια εργασίας > Ρυθμίσεις > Διαμόρφωση > Εκκίνηση (startup")
+5) Προσθέστε την ακόλουθη καταχώρηση οπουδήποτε πάνω από την τελική εντολή ("exec fluxbox")
+
+----------
+# χρήση συγκεκριμένης μορφής οθόνης
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Αποθηκεύστε και βγείτε. 
+
+Όταν συνδεθείτε ξανά στο Fluxbox θα πρέπει να χρησιμοποιηθούν οι ρυθμίσεις σας.
+
+########## ES ##########
+La aplicación utilizada para configurar la pantalla es "arandr". Con ella puede cambiar la resolución, la orientación y el ratio. Estos son los pasos a seguir si desea que los cambios sean permanentes:
+
+1) Haga clic en Diseño > Guardar como
+2) Navegue hasta ~./fluxbox/scripts
+3) Nombre el script (por ejemplo "default_screen") y guárdelo
+4) Haga clic con el botón derecho en el escritorio > Configuración > Configurar > Inicio ("startup")
+5) Añada la siguiente entrada en cualquier lugar por encima del comando final ("exec fluxbox")
+
+----------
+# utilizar un formato de pantalla específico
+~/.fluxbox/scripts/pantalla_por_defecto.sh
+----------
+
+6) Guarde y salga. 
+
+Cuando se conecte de nuevo a Fluxbox se debería utilizar su configuración.
+
+########## FR ##########
+L’application utilisée pour configurer l’affichage s’appelle « arandr ». Elle permet de modifier la résolution, l’orientation et le ratio. Voici les étapes à suivre si vous souhaitez rendre vos modifications permanentes :
+
+1) Cliquez sur « Disposition » > Enregistrer sous
+
+2) Accédez à ~./fluxbox/scripts
+
+3) Nommez le script (par ex. « default_screen ») et enregistrez-le.
+
+4) Cliquez avec le bouton droit de la souris sur le Bureau > Paramètres > Configurer > Démarrage
+   Le fichier « startup » s’ouvre.
+
+5) Ajoutez les deux entrées suivantes n’importe où et au-dessus de la commande finale (« exec fluxbox »)
+
+----------
+   # utilisation d’un format d’affichage spécifique
+   ~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Enregistrer et quitter.
+
+Lorsque vous vous connecterez à nouveau à Fluxbox, vos paramètres devraient être utilisés.
+
+
+########## FR_BE ##########
+L’application utilisée pour configurer l’affichage s’appelle « arandr ». Elle permet de modifier la résolution, l’orientation et le ratio. Voici les étapes à suivre si vous souhaitez rendre vos modifications permanentes:
+
+1) Cliquez sur « Disposition » > Enregistrer sous
+
+2) Accédez à ~./fluxbox/scripts
+
+3) Nommez le script (par ex. « default_screen ») et enregistrez-le.
+
+4) Cliquez avec le bouton droit de la souris sur le Bureau > Paramètres > Configurer > Démarrage
+   Le fichier « startup » s’ouvre.
+
+5) Ajoutez les deux entrées suivantes n’importe où et au-dessus de la commande finale (« exec fluxbox »)
+
+----------
+   # utilisation d’un format d’affichage spécifique
+   ~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Enregistrer et quitter.
+
+Lorsque vous vous connecterez à nouveau à Fluxbox, vos paramètres devraient être utilisés.
+
+
+########## IT ##########
+L'applicazione utilizzata per configurare il display è "arandr". Con essa può modificare la risoluzione, l'orientamento e il rapporto. Ecco i passi da seguire se desidera rendere permanenti le modifiche:
+
+1) Clicchi su Layout > Salva con nome
+2) Si rechi in ~./fluxbox/scripts
+3) Dare un nome allo script (ad esempio "default_screen") e salvarlo.
+4) Clicchi con il tasto destro del mouse sul desktop > Impostazioni > Configura > Avvio ("startup")
+5) Aggiunga la seguente voce in un punto qualsiasi sopra il comando finale ("exec fluxbox")
+
+----------
+# utilizzare un formato di visualizzazione specifico
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Salvi e esca. 
+
+Quando accede nuovamente a Fluxbox, le sue impostazioni dovrebbero essere utilizzate.
+
+########## JA ##########
+ディスプレイの設定に使うアプリは「arandr」です。このアプリで解像度、向き、比率を変更できます。以下は、変更を恒久化したい場合の手順です：
+
+1) [レイアウト] > [名前を付けて保存]をクリックします。
+2) ~./fluxbox/scripts に移動します。
+3) スクリプトに名前を付けて保存します（例："default_screen"）。
+4) デスクトップを右クリック > 設定 > 構成 > 起動 ("startup")
+5) 最後のコマンド（"exec fluxbox"）の上のどこかに以下のエントリを追加します。
+
+----------
+# 特定の表示形式を使う
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) 保存して終了します。
+
+再度Fluxboxにログインすると、設定した内容が使用されているはずです。
+
+########## PL ##########
+Aplikacja używana do konfiguracji wyświetlacza to "arandr". Za jej pomocą można zmienić rozdzielczość, orientację i proporcje. Oto kroki, które należy wykonać, jeśli chcą Państwo wprowadzić zmiany na stałe:
+
+1) Proszę kliknąć Layout > Save as
+2) Proszę przejść do ~./fluxbox/scripts
+3) Proszę nazwać skrypt (na przykład "default_screen") i zapisać go.
+4) Proszę kliknąć prawym przyciskiem myszy na pulpicie > Ustawienia > Konfiguracja > Uruchamianie ("startiup")
+5) Proszę dodać następujący wpis w dowolnym miejscu powyżej ostatniego polecenia ("exec fluxbox")
+
+----------
+# proszę użyć określonego formatu wyświetlania
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Proszę zapisać i wyjść. 
+
+Po ponownym zalogowaniu się do Fluxbox ustawienia powinny zostać użyte.
+
+########## PT ##########  
+A aplicação utilizada para configurar o ecrã é a "arandr". Com ela, pode alterar a resolução, a orientação e o rácio. Eis os passos a seguir se pretender tornar as suas alterações permanentes:
+
+1) Clique em Layout > Guardar como
+2) Navegue até ~./fluxbox/scripts
+3) Dê um nome ao script (por exemplo, "default_screen") e guarde-o
+4) Clique com o botão direito do rato no ambiente de trabalho > Definições > Configurar > Arranque ("startup")
+5) Adicione a seguinte entrada em qualquer lugar acima do comando final ("exec fluxbox")
+
+----------
+# utilize um formato de ecrã específico
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Guarde e saia. 
+
+Quando voltar a entrar no Fluxbox, as suas definições devem ser usadas.
+
+########## RU ##########
+Приложение, используемое для настройки дисплея, - "arandr". С его помощью Вы можете изменить разрешение, ориентацию и соотношение сторон. Ниже приведены шаги, которые необходимо выполнить, если Вы хотите сделать изменения постоянными:
+
+1) Нажмите Макет > Сохранить как
+2) Перейдите в папку ~./fluxbox/scripts
+3) Назовите скрипт (например, "default_screen") и сохраните его
+4) Щелкните правой кнопкой мыши на рабочем столе > Настройки > Конфигурация > Запуск ("startup")
+5) Добавьте следующую запись в любом месте над последней командой ("exec fluxbox")
+
+----------
+# использовать определенный формат отображения
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Сохраните и выйдите. 
+
+Когда Вы снова войдете в Fluxbox, Ваши настройки должны быть использованы.
+
+########## ZH ##########
+用于配置显示屏的应用程序是 "arandr"。使用它可以更改分辨率、方向和比例。如果希望永久更改，请按以下步骤操作：
+
+1) 单击布局 > 另存为
+2) 导航至 ~./fluxbox/scripts
+3) 给脚本命名（例如 "default_screen"）并保存
+4) 右键单击桌面 > 设置 > 配置 > 启动 ("startup")
+5) 在最后一条命令（"exec fluxbox"）上方添加以下条目
+
+----------
+# 使用特定的显示格式
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) 保存并退出。
+
+再次登录 Fluxbox 时，将使用您的设置。
+
+
+********** Some translations by DeepL.com **********
+
+
