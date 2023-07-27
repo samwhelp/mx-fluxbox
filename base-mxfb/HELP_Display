@@ -153,6 +153,24 @@ Quando accede nuovamente a Fluxbox, le sue impostazioni dovrebbero essere utiliz
 
 再度Fluxboxにログインすると、設定した内容が使用されているはずです。
 
+########## NL ##########
+De app die wordt gebruikt voor het configureren van het beeldscherm is "arandr". Hiermee kunt u de resolutie, oriëntatie en verhouding wijzigen. Hier zijn de stappen die u moet nemen als u uw wijzigingen permanent wilt maken:
+
+1) Klik op Layout > Opslaan als
+2) Navigeer naar ~./fluxbox/scripts
+3) Geef het script een naam (bijvoorbeeld "default_screen") en sla het op
+4) Klik met de rechtermuisknop op het bureaublad > Instellingen > Configuratie > Opstarten
+5) Voeg de volgende regel toe ergens boven het laatste commando ("exec fluxbox")
+
+----------
+# een specifiek weergaveformaat gebruiken
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Sla op en sluit af. 
+
+Wanneer u weer inlogt bij Fluxbox zouden uw instellingen gebruikt moeten worden.
+
 ########## PL ##########
 Aplikacja używana do konfiguracji wyświetlacza to "arandr". Za jej pomocą można zmienić rozdzielczość, orientację i proporcje. Oto kroki, które należy wykonać, jeśli chcą Państwo wprowadzić zmiany na stałe:
 
@@ -207,6 +225,24 @@ Quando voltar a entrar no Fluxbox, as suas definições devem ser usadas.
 
 Когда Вы снова войдете в Fluxbox, Ваши настройки должны быть использованы.
 
+########## SV ##########
+Appen som används för inställning av skärmen är "arandr". Med den kan du ändra upplösning, orientering och proportioner. Här är åtgärderna du ska vidta om du vill göra dina ändringar permanenta:
+
+1) Klicka på Layout > Spara som
+2) Navigera till ~./fluxbox/scripts
+3) Ge skriptet ett namn (till exempel "default_screen") och spara det
+4) Höger-klicka på skrivbordet > Inställningar > Konfigurera > Start
+5) Lägg till följande post var som helst ovanför slutkommandot ("exec fluxbox")
+
+----------
+# använd ett speciellt skärmformat
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Spara och avsluta. 
+
+När du loggar in till Fluxbox igen kommer dina inställningar att användas.
+
 ########## ZH ##########
 用于配置显示屏的应用程序是 "arandr"。使用它可以更改分辨率、方向和比例。如果希望永久更改，请按以下步骤操作：
 
@@ -227,5 +263,3 @@ Quando voltar a entrar no Fluxbox, as suas definições devem ser usadas.
 
 
 ********** Some translations by DeepL.com **********
-
-
