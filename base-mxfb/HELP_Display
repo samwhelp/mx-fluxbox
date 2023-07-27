@@ -1,3 +1,4 @@
+########## EN ##########
 The app used for configuring display is "arandr". With it you can change resolution, orientation and ratio. Here are the steps to take if you wish to make your changes permanent:
 
 1) Click Layout > Save as
@@ -14,6 +15,7 @@ The app used for configuring display is "arandr". With it you can change resolut
 6) Save and exit. 
 
 When you log into Fluxbox again your settings should be used.
+
 
 ########## DE ##########
 Die App für die Konfiguration des Displays heißt "arandr". Mit ihr können Sie die Auflösung, die Ausrichtung und das Verhältnis ändern. Hier sind die Schritte, die Sie ausführen müssen, wenn Sie Ihre Änderungen dauerhaft machen möchten:
@@ -33,6 +35,7 @@ Die App für die Konfiguration des Displays heißt "arandr". Mit ihr können Sie
 
 Wenn Sie sich erneut bei Fluxbox anmelden, sollten Ihre Einstellungen verwendet werden.
 
+
 ########## EL ##########
 Η εφαρμογή που χρησιμοποιείται για τη διαμόρφωση της οθόνης είναι η "arandr". Με αυτήν μπορείτε να αλλάξετε την ανάλυση, τον προσανατολισμό και την αναλογία. Ακολουθούν τα βήματα που πρέπει να ακολουθήσετε αν θέλετε να κάνετε τις αλλαγές σας μόνιμες:
 
@@ -51,6 +54,7 @@ Wenn Sie sich erneut bei Fluxbox anmelden, sollten Ihre Einstellungen verwendet 
 
 Όταν συνδεθείτε ξανά στο Fluxbox θα πρέπει να χρησιμοποιηθούν οι ρυθμίσεις σας.
 
+
 ########## ES ##########
 La aplicación utilizada para configurar la pantalla es "arandr". Con ella puede cambiar la resolución, la orientación y el ratio. Estos son los pasos a seguir si desea que los cambios sean permanentes:
 
@@ -68,6 +72,7 @@ La aplicación utilizada para configurar la pantalla es "arandr". Con ella puede
 6) Guarde y salga. 
 
 Cuando se conecte de nuevo a Fluxbox se debería utilizar su configuración.
+
 
 ########## FR ##########
 L’application utilisée pour configurer l’affichage s’appelle « arandr ». Elle permet de modifier la résolution, l’orientation et le ratio. Voici les étapes à suivre si vous souhaitez rendre vos modifications permanentes :
@@ -135,6 +140,7 @@ L'applicazione utilizzata per configurare il display è "arandr". Con essa può 
 
 Quando accede nuovamente a Fluxbox, le sue impostazioni dovrebbero essere utilizzate.
 
+
 ########## JA ##########
 ディスプレイの設定に使うアプリは「arandr」です。このアプリで解像度、向き、比率を変更できます。以下は、変更を恒久化したい場合の手順です：
 
@@ -152,6 +158,7 @@ Quando accede nuovamente a Fluxbox, le sue impostazioni dovrebbero essere utiliz
 6) 保存して終了します。
 
 再度Fluxboxにログインすると、設定した内容が使用されているはずです。
+
 
 ########## NL ##########
 De app die wordt gebruikt voor het configureren van het beeldscherm is "arandr". Hiermee kunt u de resolutie, oriëntatie en verhouding wijzigen. Hier zijn de stappen die u moet nemen als u uw wijzigingen permanent wilt maken:
@@ -171,6 +178,7 @@ De app die wordt gebruikt voor het configureren van het beeldscherm is "arandr".
 
 Wanneer u weer inlogt bij Fluxbox zouden uw instellingen gebruikt moeten worden.
 
+
 ########## PL ##########
 Aplikacja używana do konfiguracji wyświetlacza to "arandr". Za jej pomocą można zmienić rozdzielczość, orientację i proporcje. Oto kroki, które należy wykonać, jeśli chcą Państwo wprowadzić zmiany na stałe:
 
@@ -189,6 +197,7 @@ Aplikacja używana do konfiguracji wyświetlacza to "arandr". Za jej pomocą mo�
 
 Po ponownym zalogowaniu się do Fluxbox ustawienia powinny zostać użyte.
 
+
 ########## PT ##########  
 A aplicação utilizada para configurar o ecrã é a "arandr". Com ela, pode alterar a resolução, a orientação e o rácio. Eis os passos a seguir se pretender tornar as suas alterações permanentes:
 
@@ -200,12 +209,32 @@ A aplicação utilizada para configurar o ecrã é a "arandr". Com ela, pode alt
 
 ----------
 # utilize um formato de ecrã específico
-~/.fluxbox/scripts/default_screen.sh
+~/.fluxbox/scripts/default_screen.shdesktop
 ----------
 
 6) Guarde e saia. 
 
 Quando voltar a entrar no Fluxbox, as suas definições devem ser usadas.
+
+
+########## PT_BR ##########  
+O "ARandr" é o aplicativo utilizado para configurar e alterar a resolução, orientação e a proporção da tela/ecrã. A seguir estão as etapas para tornar as suas configurações permanentes:
+
+1) Clique no menu Leiaute > Salvar como
+2) Navegue até o caminho ~./fluxbox/scripts
+3) Dê um nome ao conjunto de instruções (por exemplo, "default_screen") e salve-o
+4) Clique com o botão direito do rato/mouse na Área de Trabalho > Configurações > Configurações > Inicialização ("startup")
+5) Adicione a seguinte entrada em qualquer lugar acima do comando final ("exec fluxbox")
+
+----------
+# Utilize um formato específico da tela/ecrã
+~/.fluxbox/scripts/default_screen.sh
+----------
+
+6) Salve e saia. 
+
+Quando você entrar no Fluxbox novamente, as suas configurações serão utilizadas.
+
 
 ########## RU ##########
 Приложение, используемое для настройки дисплея, - "arandr". С его помощью Вы можете изменить разрешение, ориентацию и соотношение сторон. Ниже приведены шаги, которые необходимо выполнить, если Вы хотите сделать изменения постоянными:
@@ -225,6 +254,7 @@ Quando voltar a entrar no Fluxbox, as suas definições devem ser usadas.
 
 Когда Вы снова войдете в Fluxbox, Ваши настройки должны быть использованы.
 
+
 ########## SV ##########
 Appen som används för inställning av skärmen är "arandr". Med den kan du ändra upplösning, orientering och proportioner. Här är åtgärderna du ska vidta om du vill göra dina ändringar permanenta:
 
@@ -243,6 +273,7 @@ Appen som används för inställning av skärmen är "arandr". Med den kan du ä
 
 När du loggar in till Fluxbox igen kommer dina inställningar att användas.
 
+
 ########## ZH ##########
 用于配置显示屏的应用程序是 "arandr"。使用它可以更改分辨率、方向和比例。如果希望永久更改，请按以下步骤操作：
 
@@ -260,6 +291,3 @@ När du loggar in till Fluxbox igen kommer dina inställningar att användas.
 6) 保存并退出。
 
 再次登录 Fluxbox 时，将使用您的设置。
-
-
-********** Some translations by DeepL.com **********
