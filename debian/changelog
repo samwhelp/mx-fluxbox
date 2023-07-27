@@ -1,3 +1,9 @@
+mx-fluxbox (23.07.29) mx; urgency=medium
+
+  * tint2: fix xmessage error + fix and localize "battery low" notifications
+
+ -- fehlix <fehlix@mxlinux.org>  Thu, 27 Jul 2023 14:45:34 -0500
+
 mx-fluxbox (23.07.28) mx; urgency=medium
 
   * added PT_BR tranlation into HELP_Display
