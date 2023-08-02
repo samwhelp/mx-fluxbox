@@ -225,7 +225,7 @@ clock_dwheel_command =
 # Battery
 battery_tooltip = 0
 battery_low_status = 5
-battery_low_cmd = bash -c 'BL=$(gettext -d mxfb-accessories "Battery low:"); BP=$(acpi 2>/dev/null | grep -m1 -o '[0-9]*%') && notify-send -u critical "$BL $BP"'
+battery_low_cmd = bash -c 'BL=$(gettext -d mxfb-accessories "Battery low:"); BP=$(acpi 2>/dev/null | grep -m1 -o '[0-9]*[0-9]%' | grep -vx 0%); [ -n "$BP" ] && notify-send -u critical "$BL $BP"'
 battery_full_cmd = 
 bat1_font = Poky 16
 bat2_font = DejaVu Sans 8
