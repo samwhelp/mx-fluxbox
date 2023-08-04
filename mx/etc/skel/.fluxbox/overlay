@@ -14,6 +14,8 @@ background: none
 # double menu width
 menu.bevelWidth: 2
 
-# force slit to un-autohide (left and top sides) on MX-23
+# force elements to un-autohide correctly on MX-23
 slit.borderWidth: 0
 slit.bevelWidth: 2
+toolbar.borderWidth: 0
+

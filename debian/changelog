@@ -1,3 +1,11 @@
+mx-fluxbox (23.08.04) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * corrected out-of-sight command
+  * adjusted toolbar panel border width
+
+ -- Jerry <jb@mx>  Fri, 04 Aug 2023 06:43:55 -0400
+
 mx-fluxbox (23.07.29) mx; urgency=medium
 
   * tint2: fix xmessage error + fix and localize "battery low" notifications
