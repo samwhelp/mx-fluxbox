@@ -75,4 +75,8 @@ if [ -x /usr/bin/fluxbox ]; then
 		echo "to reset MX defaults, remove all files in these directories \n ~/.fluxbox \n ~/.idesktop directory \n ~/.ideskrc \n ~/.config/nitrogen \n ~/.config/gtk-3.0 \n ~/.gtkrc* files" >>"$HOME/.fluxbox/fluxbox-mx-defaults"
 		echo "to use flubox/debian defaults instead of MX defaults, remove all files in ~/.fluxbox directory except fluxbox-mx-defaults" >>"$HOME/.fluxbox/fluxbox-mx-defaults"
 	fi
+	#fix out-of-sight menu
+	sed -i s/"(Toggle autohide panel) { toggletint2}"/"(Toggle autohide panel) {togglepanel}"/ $HOME/.fluxbox/submenus/out-of-sight 
+
+	
 fi
