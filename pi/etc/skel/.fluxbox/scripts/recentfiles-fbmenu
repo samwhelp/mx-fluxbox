@@ -69,7 +69,7 @@ To use this script, you could :
 		[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (List update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 
 	3.a Add this script to your fluxbox startup file, for your recent files menu to be updated at the session beginning. Just add the line : ~/.fluxbox/scripts/recentfiles-fbmenu (with needed options)

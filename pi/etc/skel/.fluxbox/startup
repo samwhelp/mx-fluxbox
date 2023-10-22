@@ -16,17 +16,22 @@
 # logout, then log back in to fluxbox session
 localize_fluxbox_menu-mx
 
+# mx-welcome if configured to autostart
+if [ -e $HOME/.config/autostart/mx-welcome.desktop ]; then
+# launch mx-welcome
+(sleep 5; /usr/bin/mx-welcome) &
+fi
+
 # User folders update
 xdg-user-dirs-update
-
 # Update common folders names to match current locale
 xdg-user-dirs-gtk-update
 
 #start a compositor if using complicated conkies
 #compton &
 
-#start Xfce panel
-#xfce4-panel &
+#set number of seconds before inactive screen turns off
+xset -dpms && xset s 600
 
 #add system monitors 
 #gkrellm &
@@ -39,8 +44,8 @@ export QT_QPA_PLATFORMTHEME=gtk2
 export QT_PLATFORMTHEME=gtk2
 export QT_PLATFORM_PLUGIN=gtk2
 
-# add tint2 panel
-tint2 &
+# add selected tint2 panel
+tint2session 
 
 # add desktop icons
 idesktoggle idesk on 1>/dev/null 2>&1 &
@@ -52,38 +57,34 @@ idesktoggle idesk on 1>/dev/null 2>&1 &
 $HOME/.fluxbox/scripts/DefaultDock.mxdk
 
 #conky to follow conky toggle settings
-$HOME/.fluxbox/scripts/conkystart
+conkystart
 
-#place applets on the toolbar
+#place network manager on the toolbar
 nm-applet &
-blueman-applet &
 
-#reset headphones
-~/.fluxbox/scripts/BTheadphones_reset
-
-#start pulseaudio before volumeicon so unmute works
-start-pulseaudio-x11 &
+#start pipewire before volumeicon so unmute works
+pipewire-start
 sleep 2
 volumeicon -c volumeicon-fluxbox & 
 
 #place clipboard on the toolbar
-clipit &
-
-#start bluetooth service
-bluez &
+xfce4-clipman &
 
 #put brightness controller and battery monitor on toolbar
-xfce4-power-manager &
-
-#tool to set and preserve screen resolution, if necessary
-#arandr
+#tint2 has its own battery widget so this is unnecessaary
+#xfce4-power-manager &
 
 # start user accessibility bus - if not already running
-/usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately  &
+/usr/libexec/at-spi-bus-launcher --launch-immediately  &
 
-#start app to get last background selected
-~/.fehbg
-#nitrogen --restore
+#update app  menu if it doesn't exist
+if [ ! -f $HOME/.fluxbox/submenus/full_menu ]; then
+    command -v mxfb-menu-generator && mxfb-menu-generator
+fi
+
+#get last background selected
+#~/.fehbg
+nitrogen --restore
 
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
@@ -94,11 +95,16 @@ if [ $? -eq 0 ]; then
 fi
 
 # put apt-notifier on the toolbar
-nohup sh -c 'sleep 3; ionice -c3 nice -n19 nohup python /usr/bin/apt-notifier.py 1>/dev/null 2>&1  &'  1>/dev/null 2>&1  &
+(sleep 6; /usr/bin/apt-notifier) &
+
+# start spice-vdagent in KVM/Qemu 
+if [ -x /usr/bin/spice-vdagent ]; then
+   pidof -q spice-vdagentd && /usr/bin/spice-vdagent
+fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
 exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "~/.fluxbox/log"
+# exec fluxbox -log ~/.fluxbox/log

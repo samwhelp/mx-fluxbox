@@ -1,20 +1,33 @@
-# the default submenus can be found in /usr/share/mxflux/menu/
+#the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (All Apps) {rofi -show drun}
-	[submenu] (Recent files) </usr/share/icons/Papirus/48x48/places/folder-recent.png>
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Disable) {mx-tweak --other}
+   [end]
+	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update list) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
-    [exec] (Browser) {palemoon}
-    [exec] (Email) {claws-mail}
-    [exec] (File manager ) {thunar $HOME/.fluxbox} 
-    [exec] (Help ) {thunar /usr/share/mxflux/help}
-    [exec] (Music) {vlc}
-    [exec] (Run ) {fbrun} 
-    [exec] (Terminal) {xfce4-terminal} 
+    [exec] (Browser) {sensible-browser}
+    [exec] (File manager) {exo-open $HOME/.fluxbox} 
+    [submenu] (Extras)
+    	[exec] (Weather) {mxfb-simple-weather}
+    	[submenu] (Window options)
+    	   	[Exec] (Border) {mxfb-borders}
+    		[Exec] (Titlebar) {mxfb-top}
+        [end]
+        [exec] (Xkcd) {bl-xkcd}
+    [end]
+    [exec] (Help) {mxfb-help}
+    [exec] (Music) {deadbeef}
+    [exec] (Run) {mxfb-rofirun}
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)
@@ -22,14 +35,14 @@
     [submenu] (Settings)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [separator]
     [submenu] (Out of sight)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exit] (Logout  ) 
-        [exec] (Reboot  ) {sudo /sbin/reboot} 
+        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspend) {sudo 'pm-suspend'}
+        [exit] (Logout) 
+        [exec] (Reboot) {sudo /sbin/reboot} 
         [exec] (Shutdown) {sudo /sbin/halt}
-    [end]v
+    [end]
 [end]

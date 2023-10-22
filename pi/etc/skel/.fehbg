@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/usr/share/backgrounds/mxlinuxwine-fb.png' 
+feh --no-fehbg --bg-scale '/usr/share/backgrounds/default23' 
