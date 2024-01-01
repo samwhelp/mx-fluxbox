@@ -63,7 +63,7 @@ if [ -x /usr/bin/fluxbox ]; then
 			
       		#set up the system monitors
 
-			if [ !-d "$HOME/.gkrellm2" ]; then
+			if [ ! -d "$HOME/.gkrellm2" ]; then
 				cp -r /etc/skel/.gkrellm2 "$HOME"
 			fi
 			
