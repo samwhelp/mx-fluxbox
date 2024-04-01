@@ -13,6 +13,12 @@ if [ -x /usr/bin/fluxbox ]; then
       				cp -R /etc/skel/.fluxbox/$i "$HOME/.fluxbox/"
       			fi
         done
+        ##submenus folder can exist on installs on other desktops
+        for i in $(ls --format single-column /etc/skel/.fluxbox/submenus); do
+	        	if [ ! -e "$HOME/.fluxbox/submenus/$i" ]; then
+      				cp -R /etc/skel/.fluxbox/submenus/$i "$HOME/.fluxbox/submenus"
+      			fi
+        done
           	
           	#set up idesk
           	if [ ! -e "$HOME/.ideskrc" ]; then
