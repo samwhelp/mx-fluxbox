@@ -145,3 +145,9 @@
   [Position]	(UPPERLEFT)	{42% 34%}
   [Close]	{yes}
 [end]
+[app] (class=Conky)
+  [Layer]	{12}
+[end]
+[app] (class=Tint2)
+  [Layer] {12}
+[end]
