@@ -1,10 +1,9 @@
-mx-fluxbox (24.12.01mx23+nmu2) UNRELEASED; urgency=medium
+mx-fluxbox (24.08.01mx23) mx; urgency=medium
 
-  * Non-maintainer upload.
   * Exempt conky and panel from hiding with Alt+D
-  * Added that exemption to the pi version as well
+  * Added that exemption to the pi version as well 
 
- -- Dolphin Oracle <mxdevs@mx>  Thu, 01 Aug 2024 10:43:15 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 02 Aug 2024 19:14:14 -0400
 
 mx-fluxbox (24.12.01mx23) mx; urgency=medium
 
