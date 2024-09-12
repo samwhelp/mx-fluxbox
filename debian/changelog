@@ -1,6 +1,5 @@
-mx-fluxbox (24.08.01mx23+nmu1) UNRELEASED; urgency=medium
+mx-fluxbox (24.09.01mx23) mx; urgency=medium
 
-  * Non-maintainer upload.
   * New keys for mxfb-quickshot_delay
 
  -- Dolphin Oracle <mxdevs@mx>  Thu, 12 Sep 2024 09:25:47 -0400
