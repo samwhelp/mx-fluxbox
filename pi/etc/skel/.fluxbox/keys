@@ -22,6 +22,7 @@ none Print :Exec mxfb-quickshot
 Shift Print :Exec mxfb-quickshot -r -png
 # whole screen capture with delay (default 8 s)
 Ctrl Print :Exec mxfb-quickshot_delay
+Ctrl Alt q :Exec mxfb-quickshot_delay
 ## active window capture
 Mod1 Print :Exec mxfb-quickshot -u -png
 ## launch quickshot
