@@ -1,3 +1,9 @@
+mx-fluxbox (25.01.01mx23) mx; urgency=medium
+
+  * set XDG_SESSION_DESKTOP enviornment variable
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 09 Jan 2025 22:14:50 -0500
+
 mx-fluxbox (24.09.01mx23) mx; urgency=medium
 
   * New keys for mxfb-quickshot_delay
