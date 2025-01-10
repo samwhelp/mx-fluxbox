@@ -16,6 +16,7 @@ base-mxfb/bin/* usr/bin
 base-mxfb/volumeicon/* /etc/skel/.config/volumeicon
 idesk-icons/* usr/share/mxflux/idesk-icons
 21fluxbox-defaults-mx etc/X11/Xsession.d
+58fluxbox-session-variable etc/X11/Xsession.d
 
 #base-mxfb/backgrounds/* usr/share/backgrounds
 
