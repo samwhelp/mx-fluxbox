@@ -1,5 +1,5 @@
 # set session variable to Fluxbox
-# /etc/X11/Xsession.d/58fluxbox_session_variable
+# /etc/X11/Xsession.d/58fluxbox-session-variable
 
 
 BASESTARTUP=$(basename "$STARTUP" | cut -d\  -f1)
