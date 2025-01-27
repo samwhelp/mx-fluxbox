@@ -1,33 +1,31 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (MX Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
-            [exec] (Disable) {mx-tweak --other}
+	[submenu] (All Apps)
+        [include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Disable) {mx-tweak --other}
    [end]
-	[submenu] (Recent files) 
+	[separator]
+    [exec] (Browser) {sensible-browser}
+    [exec] (File manager) {exo-open $HOME} 
+    [exec] (Help) {mxfb-help}
+    [submenu] (Multimedia)
+    	[exec] (Audio player) {deadbeef}
+    	[exec] (Webcomic) {bl-xkcd}
+        [end]
+    [submenu] (Other)
+    	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
 			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
-	[separator]
-    [exec] (Browser) {sensible-browser}
-    [exec] (File manager) {exo-open $HOME/.fluxbox} 
-    [submenu] (Extras)
-    	[exec] (Weather) {mxfb-simple-weather}
-    	[submenu] (Window options)
-    	   	[Exec] (Border) {mxfb-borders}
-    		[Exec] (Titlebar) {mxfb-top}
-        [end]
-        [exec] (Xkcd) {bl-xkcd}
-    [end]
-    [exec] (Help) {mxfb-help}
-    [exec] (Music) {deadbeef}
+	[exec] (Weather) 	{mxfb-simple-weather}
+	[end]
     [exec] (Run) {mxfb-rofirun}
     [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {roxterm} 
+    [exec] (Terminal) {x-terminal-emulator} 
     [separator]
     [submenu] (Appearance)
     [include] (~/.fluxbox/submenus/appearance)
@@ -39,8 +37,9 @@
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh } 
         [exec] (Suspend) {sudo 'pm-suspend'}
+        [exec] (Lock) {dm-tool switch-to-greeter}
         [exit] (Logout) 
         [exec] (Reboot) {sudo /sbin/reboot} 
         [exec] (Shutdown) {sudo /sbin/halt}

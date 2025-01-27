@@ -1,3 +1,11 @@
+mx-fluxbox (25.01.01mx23+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Beginning mxfb2025 development
+  * Upgraded menu-mx (reorganized, cleaned, renamed)
+
+ -- Dolphin Oracle <devs@mx>  Mon, 27 Jan 2025 16:48:17 -0500
+
 mx-fluxbox (25.01.01mx23) mx; urgency=medium
 
   * set XDG_SESSION_DESKTOP enviornment variable
